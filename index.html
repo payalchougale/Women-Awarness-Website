@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="NariAdhikar - Women's Legal Rights and Awareness">
+
+    <title>NariAdhikar | Women's Rights & Awareness</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            🌸 <span>NariAdhikar</span>
+        </div>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="legal-rights.html">
+                Legal Rights
+            </a>
+
+            <a href="awareness.html">
+                Awareness
+            </a>
+
+            <a href="emergency.html">
+                Emergency
+            </a>
+
+            <a href="women-care.html">
+                Women Care
+            </a>
+
+            <a href="career.html">
+                Career
+            </a>
+
+            <a href="equality.html">
+                Equality
+            </a>
+
+            <a href="online-help.html">
+                Online Help
+            </a>
+
+        </nav>
+
+        <!-- Language -->
+
+        <div class="language-box">
+
+            🌐
+
+            <select id="languageSelect">
+
+                <option value="en">
+                    English
+                </option>
+
+                <option value="mr">
+                    मराठी
+                </option>
+
+                <option value="hi">
+                    हिंदी
+                </option>
+
+            </select>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                🌸 FOR EVERY WOMAN
+            </p>
+
+            <h1>
+                Know Your Rights.
+                <br>
+                Raise Your Voice.
+                <br>
+                Stay Safe.
+            </h1>
+
+            <p class="hero-description">
+
+                NariAdhikar is a women's legal rights and
+                awareness platform specially designed to make
+                important information simple and accessible,
+                especially for rural women.
+
+            </p>    
+
+            <div class="hero-buttons">
+
+                <a href="legal-rights.html"
+                   class="btn primary-btn">
+
+                    ⚖️ Know Your Rights
+
+                </a>
+
+                <a href="emergency.html"
+                   class="btn emergency-btn">
+
+                    🚨 Emergency Help
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hero Illustration -->
+
+        <div class="women-showcase">
+
+    <!-- Main central image -->
+
+    <div class="main-woman">
+
+        <img
+            src="images/woman-farmer.jpg"
+            alt="Rural woman">
+
+        <div class="main-woman-label">
+
+            <span>🌸</span>
+
+            <div>
+                <strong>Every Woman Matters</strong>
+
+                <small>
+                    Know • Speak • Grow
+                </small>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Small Women -->
+
+    <div class="woman-photo woman-1">
+
+        <img
+            src="images/woman-student.jpg"
+            alt="Woman student">
+
+        <span>
+            🎓 Education
+        </span>
+
+    </div>
+
+
+    <div class="woman-photo woman-2">
+
+        <img
+            src="images/woman-business.jpg"
+            alt="Woman entrepreneur">
+
+        <span>
+            💼 Career
+        </span>
+
+    </div>
+
+
+    <div class="woman-photo woman-3">
+
+        <img
+            src="images/woman-doctor.jpg"
+            alt="Woman healthcare worker">
+
+        <span>
+            ❤️ Healthcare
+        </span>
+
+    </div>
+
+
+    <div class="woman-photo woman-4">
+
+        <img
+            src="images/woman-professional.jpg"
+            alt="Working woman">
+
+        <span>
+            ⚖️ Equality
+        </span>
+
+    </div>
+
+
+    <div class="woman-photo woman-5">
+
+        <img
+            src="images/woman-senior.jpg"
+            alt="Senior woman">
+
+        <span>
+            🛡️ Safety
+        </span>
+
+    </div>
+
+
+    <!-- Decorative circles -->
+
+    <div class="decor-circle circle-1"></div>
+
+    <div class="decor-circle circle-2"></div>
+
+    <div class="sparkle sparkle-1">
+        ✦
+    </div>
+
+    <div class="sparkle sparkle-2">
+        ✦
+    </div>
+
+</div>
+
+    </section>
+
+
+    <!-- ================= QUICK HELP ================= -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                QUICK ACCESS
+            </p>
+
+            <h2>
+                How Can We Help You?
+            </h2>
+
+            <p>
+                Important services are available
+                without creating an account.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+            <!-- Location -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📍
+                </div>
+
+                <h3>
+                    My Location
+                </h3>
+
+                <p>
+                    Find your current location and
+                    share it with someone you trust.
+                </p>
+
+                <button
+                    class="outline-btn"
+                    onclick="getLocation()">
+
+                    📍 Find My Location
+
+                </button>
+
+                <p id="locationResult"></p>
+
+            </div>
+
+
+            <!-- Share Location -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📤
+                </div>
+
+                <h3>
+                    Share Location
+                </h3>
+
+                <p>
+                    Share your current location with
+                    a trusted person.
+                </p>
+
+                <button
+                    class="outline-btn"
+                    onclick="shareLocation()">
+
+                    📤 Share Location
+
+                </button>
+
+            </div>
+
+
+            <!-- Emergency -->
+
+            <div class="feature-card emergency-card">
+
+                <div class="feature-icon">
+                    🚨
+                </div>
+
+                <h3>
+                    Emergency Help
+                </h3>
+
+                <p>
+                    Get quick access to emergency
+                    assistance options.
+                </p>
+
+                <a href="emergency.html"
+                   class="emergency-small-btn">
+
+                    🚨 Get Help
+
+                </a>
+
+            </div>
+            <a href="rural-safety.html"
+   class="journey-card safety-map-card">
+
+    <span>🛡️</span>
+
+    <h3>
+        Find Safe Places Near Me
+    </h3>
+
+    <p>
+        Find nearby police stations,
+        hospitals, women help desks
+        and Sakhi Centres.
+    </p>
+
+    <strong>
+        Open Safety Map →
+    </strong>
+
+</a>
+
+
+            <!-- Women Care -->
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    👩‍⚕️
+                </div>
+
+                <h3>
+                    Women Care
+                </h3>
+
+                <p>
+                    Health, emotional support and
+                    women's care information.
+                </p>
+
+                <a href="women-care.html"
+                   class="outline-btn">
+
+                    👩‍⚕️ Explore
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INFORMATION SECTION ================= -->
+
+    <section class="section light-section">
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                NARIADHIKAR
+            </p>
+
+            <h2>
+                Everything You Need in One Place
+            </h2>
+
+        </div>
+
+
+        <div class="info-grid">
+
+
+            <a href="legal-rights.html"
+               class="info-card">
+
+                <span>⚖️</span>
+
+                <h3>
+                    Legal Rights
+                </h3>
+
+                <p>
+                    Learn about important legal rights
+                    in simple language.
+                </p>
+
+            </a>
+
+
+            <a href="awareness.html"
+               class="info-card">
+
+                <span>📢</span>
+
+                <h3>
+                    Awareness
+                </h3>
+
+                <p>
+                    Learn about safety, harassment,
+                    cyber safety and more.
+                </p>
+
+            </a>
+
+
+            <a href="women-care.html"
+               class="info-card">
+
+                <span>❤️</span>
+
+                <h3>
+                    Women Care
+                </h3>
+
+                <p>
+                    Health and emotional wellbeing
+                    information.
+                </p>
+
+            </a>
+
+
+            <a
+    href="career.html"
+    class="journey-card">
+
+    <span>💼</span>
+
+    <h3>
+        I Want to Build My Career
+    </h3>
+
+    <p>
+        Explore education, skills,
+        jobs and entrepreneurship
+        opportunities.
+    </p>
+
+    <strong>
+        Explore Careers →
+    </strong>
+
+</a>
+
+
+            <a href="equality.html"
+               class="info-card">
+
+                <span>⚖️</span>
+
+                <h3>
+                    Equality
+                </h3>
+
+                <p>
+                    Learn about equality and
+                    opportunities.
+                </p>
+
+            </a>
+
+
+            <a href="online-help.html"
+               class="info-card">
+
+                <span>💬</span>
+
+                <h3>
+                    Online Help
+                </h3>
+
+                <p>
+                    Tell us what kind of help
+                    you are looking for.
+                </p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= VOICE SECTION ================= -->
+
+    <section class="voice-section">
+
+        <div>
+
+            <p class="small-title">
+                ACCESSIBILITY
+            </p>
+
+            <h2>
+                🔊 Listen to Information
+            </h2>
+
+            <p>
+                Don't want to read?
+                Use our audio facility to listen
+                to information.
+            </p>
+
+        </div>
+
+        <div>
+
+            <button
+                class="btn primary-btn"
+                onclick="speakPage()">
+
+                🔊 Listen
+
+            </button>
+
+            <button
+                class="btn outline-btn"
+                onclick="stopSpeech()">
+
+                ⏹ Stop
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WOMEN VOICE ================= -->
+
+    <section class="voice-message">
+
+        <div>
+
+            <span class="big-heart">
+                💗
+            </span>
+
+        </div>
+
+        <div>
+
+            <h2>
+                You Don't Have to Suffer Silently
+            </h2>
+
+            <p>
+
+                Sometimes women do not tell anyone
+                about their problems because of fear,
+                shame, financial problems or family pressure.
+
+                <br><br>
+
+                Remember:
+
+                <strong>
+                    Asking for help is not weakness.
+                </strong>
+
+            </p>
+
+            <a href="online-help.html"
+               class="btn primary-btn">
+
+                💗 I Need Help
+
+            </a>
+
+        </div>
+
+    </section>
+
+<!-- =================================
+     ABOUT NARIADHIKAR
+================================== -->
+
+<section class="home-about">
+
+    <div class="home-about-content">
+
+        <div class="home-about-icon">
+            🌸
+        </div>
+
+        <div>
+
+            <h2>About NariAdhikar</h2>
+
+            <p>
+                NariAdhikar is a women-focused awareness platform
+                created to help women understand their rights,
+                stay safe, take care of their wellbeing and
+                access useful support and opportunities.
+            </p>
+
+            <p>
+                Explore information about legal rights, women care,
+                safety, careers, equality and emergency support
+                in one place.
+            </p>
+
+            <a href="about.html" class="home-about-btn">
+                🌸 Learn More About Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div>
+
+                <h2>
+                    🌸 NariAdhikar
+                </h2>
+
+                <p>
+                    Know Your Rights.
+                    Raise Your Voice.
+                    Stay Safe.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="legal-rights.html">
+                    Legal Rights
+                </a>
+
+                <a href="awareness.html">
+                    Awareness
+                </a>
+
+                <a href="emergency.html">
+                    Emergency
+                </a>
+
+                <a href="career.html">
+                    Career
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Languages
+                </h3>
+
+                <p>
+                    🇮🇳 English
+                </p>
+
+                <p>
+                    🇮🇳 मराठी
+                </p>
+
+                <p>
+                    🇮🇳 हिंदी
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 NariAdhikar |
+            Women's Rights & Awareness
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+<script src="js/ai-legal-assistance.js"></script>
+<a href="about.html" class="about-btn">
+    🌸 About NariAdhikar
+</a>
+</body>
+
+</html>
