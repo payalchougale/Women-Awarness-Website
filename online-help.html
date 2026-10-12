@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="NariAdhikar Online Help - Support and guidance for women">
+
+    <title>NariAdhikar | Online Help</title>
+
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+
+    <style>
+
+        /* =====================================
+           ONLINE HELP HERO
+        ===================================== */
+
+        .help-hero {
+
+            padding: 70px 8%;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    #fff0f7,
+                    #f8edff
+                );
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 40px;
+        }
+
+
+        .help-hero-content {
+
+            max-width: 650px;
+        }
+
+
+        .help-small-title {
+
+            color: #b83280;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .help-hero h1 {
+
+            font-size: 46px;
+
+            color: #54245f;
+
+            margin-bottom: 18px;
+
+            line-height: 1.2;
+        }
+
+
+        .help-hero p {
+
+            color: #666;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+        }
+
+
+        .help-hero-icon {
+
+            font-size: 150px;
+
+            text-align: center;
+        }
+
+
+        /* =====================================
+           HELP CARDS
+        ===================================== */
+
+        .help-section {
+
+            padding: 65px 8%;
+        }
+
+
+        .help-title {
+
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+
+        .help-title h2 {
+
+            color: #54245f;
+
+            font-size: 34px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .help-title p {
+
+            color: #777;
+        }
+
+
+        .help-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+            max-width: 1200px;
+
+            margin: auto;
+        }
+
+
+        .help-card {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            border: 1px solid #efdce9;
+
+            box-shadow:
+                0 8px 25px
+                rgba(70,30,80,.08);
+
+            transition: .3s;
+
+            text-align: center;
+        }
+
+
+        .help-card:hover {
+
+            transform:
+                translateY(-7px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(70,30,80,.14);
+        }
+
+
+        .help-icon {
+
+            font-size: 45px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .help-card h3 {
+
+            color: #54245f;
+
+            margin-bottom: 10px;
+        }
+
+
+        .help-card p {
+
+            color: #666;
+
+            font-size: 15px;
+
+            line-height: 1.6;
+
+            margin-bottom: 18px;
+        }
+
+
+        .help-btn {
+
+            border: none;
+
+            background: #b83280;
+
+            color: white;
+
+            padding: 11px 20px;
+
+            border-radius: 25px;
+
+            cursor: pointer;
+
+            font-weight: bold;
+
+            transition: .3s;
+        }
+
+
+        .help-btn:hover {
+
+            background: #54245f;
+        }
+
+
+        /* =====================================
+           ASK FOR HELP
+        ===================================== */
+
+        .help-form-section {
+
+            padding: 70px 8%;
+
+            background: #fff5fa;
+        }
+
+
+        .help-form {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 10px 35px
+                rgba(70,30,80,.10);
+        }
+
+
+        .help-form h2 {
+
+            text-align: center;
+
+            color: #54245f;
+
+            margin-bottom: 10px;
+        }
+
+
+        .form-description {
+
+            text-align: center;
+
+            color: #777;
+
+            margin-bottom: 30px;
+        }
+
+
+        .form-group {
+
+            margin-bottom: 20px;
+        }
+
+
+        .form-group label {
+
+            display: block;
+
+            color: #54245f;
+
+            font-weight: bold;
+
+            margin-bottom: 8px;
+        }
+
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+
+            width: 100%;
+
+            padding: 13px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+
+            outline: none;
+
+            font-family: Arial, sans-serif;
+        }
+
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+
+            border-color: #b83280;
+        }
+
+
+        .form-group textarea {
+
+            min-height: 140px;
+
+            resize: vertical;
+        }
+
+
+        .private-note {
+
+            background: #fff4f4;
+
+            border: 1px solid #f0cccc;
+
+            padding: 15px;
+
+            border-radius: 10px;
+
+            color: #7a4444;
+
+            font-size: 14px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .submit-help {
+
+            display: block;
+
+            margin: auto;
+
+            background: #b83280;
+
+            color: white;
+
+            border: none;
+
+            padding: 13px 30px;
+
+            border-radius: 25px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            font-weight: bold;
+        }
+
+
+        .submit-help:hover {
+
+            background: #54245f;
+        }
+
+
+        /* =====================================
+           HELP RESULT
+        ===================================== */
+
+        #helpResult {
+
+            display: none;
+
+            margin-top: 25px;
+
+            padding: 20px;
+
+            border-radius: 15px;
+
+            background: #f4fff7;
+
+            border: 1px solid #c8e6d0;
+
+            text-align: center;
+
+            color: #356342;
+        }
+
+
+        /* =====================================
+           QUICK ACTIONS
+        ===================================== */
+
+        .quick-help {
+
+            padding: 65px 8%;
+
+            text-align: center;
+        }
+
+
+        .quick-help h2 {
+
+            color: #54245f;
+
+            margin-bottom: 30px;
+        }
+
+
+        .quick-buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 15px;
+        }
+
+
+        .quick-button {
+
+            text-decoration: none;
+
+            padding: 14px 22px;
+
+            border-radius: 25px;
+
+            background: #fff;
+
+            color: #54245f;
+
+            border: 1px solid #e2cfe5;
+
+            font-weight: bold;
+
+            transition: .3s;
+        }
+
+
+        .quick-button:hover {
+
+            background: #f5e8f7;
+
+            transform:
+                translateY(-3px);
+        }
+
+
+        .emergency-button {
+
+            background: #b83280;
+
+            color: white;
+
+            border-color: #b83280;
+        }
+
+
+        .emergency-button:hover {
+
+            background: #54245f;
+
+            color: white;
+        }
+
+
+        /* =====================================
+           AUDIO BOX
+        ===================================== */
+
+        .audio-help {
+
+            max-width: 850px;
+
+            margin: 40px auto 0;
+
+            padding: 25px;
+
+            border-radius: 20px;
+
+            background: #f9f0fb;
+
+            text-align: center;
+        }
+
+
+        .audio-help h3 {
+
+            color: #54245f;
+
+            margin-bottom: 10px;
+        }
+
+
+        .audio-help p {
+
+            color: #666;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        .help-footer {
+
+            background: #301637;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px 8%;
+        }
+
+
+        .help-footer h3 {
+
+            margin-bottom: 8px;
+        }
+
+
+        /* =====================================
+           MOBILE
+        ===================================== */
+
+        @media(max-width: 900px) {
+
+            .help-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .help-hero {
+
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+        }
+
+
+        @media(max-width: 600px) {
+
+            .help-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .help-hero {
+
+                padding: 50px 6%;
+            }
+
+
+            .help-hero h1 {
+
+                font-size: 34px;
+            }
+
+
+            .help-hero p {
+
+                font-size: 16px;
+            }
+
+
+            .help-hero-icon {
+
+                font-size: 100px;
+            }
+
+
+            .help-section,
+            .help-form-section,
+            .quick-help {
+
+                padding: 50px 5%;
+            }
+
+
+            .help-form {
+
+                padding: 25px 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header class="main-header">
+
+    <nav class="main-nav">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="nav-links">
+
+
+            <a href="index.html">
+                Home
+            </a>
+
+
+            <a href="legal-rights.html">
+                Legal Rights
+            </a>
+
+
+            <a href="women-care.html">
+                Women Care
+            </a>
+
+
+            <a href="awareness.html">
+                Awareness
+            </a>
+
+
+            <a href="rural-safety.html">
+                Rural Safety
+            </a>
+
+
+            <a href="career.html">
+                Career
+            </a>
+
+
+            <a href="online-help.html"
+               class="active">
+
+                Online Help
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="help-hero">
+
+    <div class="help-hero-content">
+
+        <div class="help-small-title">
+
+            YOU ARE NOT ALONE
+
+        </div>
+
+
+        <h1>
+
+            💗 Online Help & Support
+
+        </h1>
+
+
+        <p>
+
+            If you are facing a problem and
+            don't know whom to talk to, start
+            here. NariAdhikar provides simple
+            information to help you understand
+            your options and find appropriate
+            support.
+
+        </p>
+
+    </div>
+
+
+    <div class="help-hero-icon">
+
+        🤝
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     HELP OPTIONS
+===================================== -->
+
+<section class="help-section">
+
+    <div class="help-title">
+
+        <h2>
+            How Can We Help You?
+        </h2>
+
+        <p>
+            Choose the type of support you need.
+        </p>
+
+    </div>
+
+
+    <div class="help-grid">
+
+
+        <!-- LEGAL -->
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                ⚖️
+            </div>
+
+            <h3>
+                Legal Help
+            </h3>
+
+            <p>
+
+                Learn about women's legal rights,
+                possible support services and
+                where to seek further assistance.
+
+            </p>
+
+            <button
+                class="help-btn"
+                onclick="openLegalHelp()">
+
+                Get Legal Help
+
+            </button>
+
+        </div>
+
+
+
+        <!-- WOMEN CARE -->
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                👩‍⚕️
+            </div>
+
+            <h3>
+                Women Care
+            </h3>
+
+            <p>
+
+                Find general information about
+                women's health, wellbeing and
+                available support.
+
+            </p>
+
+            <a
+                href="women-care.html"
+                class="help-btn">
+
+                Women Care
+
+            </a>
+
+        </div>
+
+
+
+        <!-- SAFETY -->
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                🛡️
+            </div>
+
+            <h3>
+                Safety Support
+            </h3>
+
+            <p>
+
+                Find safety information and
+                nearby support options.
+
+            </p>
+
+            <a
+                href="rural-safety.html"
+                class="help-btn">
+
+                Safety Help
+
+            </a>
+
+        </div>
+
+
+
+        <!-- EMERGENCY -->
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                🚨
+            </div>
+
+            <h3>
+                Emergency Help
+            </h3>
+
+            <p>
+
+                If you are in immediate danger,
+                use the emergency support page.
+
+            </p>
+
+            <a
+                href="emergency.html"
+                class="help-btn">
+
+                Emergency
+
+            </a>
+
+        </div>
+
+
+
+        <!-- AI -->
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                🤖
+            </div>
+
+            <h3>
+                AI Legal Assistance
+            </h3>
+
+            <p>
+
+                Ask general questions about
+                women's legal rights and
+                understand where to begin.
+
+            </p>
+
+            <a
+                href="ai-legal-assistance.html"
+                class="help-btn">
+
+                Ask AI
+
+            </a>
+
+        </div>
+
+
+
+        <!-- LOCATION -->
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                📍
+            </div>
+
+            <h3>
+                Find Nearby Help
+            </h3>
+
+            <p>
+
+                Find nearby police stations,
+                hospitals and other support
+                locations.
+
+            </p>
+
+            <a
+                href="rural-safety.html"
+                class="help-btn">
+
+                Find Help
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     ASK FOR HELP FORM
+===================================== -->
+
+<section class="help-form-section">
+
+    <div class="help-form">
+
+        <h2>
+            📝 Tell Us What You Need
+        </h2>
+
+
+        <p class="form-description">
+
+            You can describe your problem
+            in simple words.
+
+        </p>
+
+
+        <div class="private-note">
+
+            🔒 <strong>Privacy:</strong>
+            Do not enter passwords, bank details,
+            OTPs or other sensitive personal
+            information in this form.
+
+        </div>
+
+
+        <!-- CATEGORY -->
+
+        <div class="form-group">
+
+            <label for="helpCategory">
+
+                What kind of help do you need?
+
+            </label>
+
+
+            <select id="helpCategory">
+
+                <option value="">
+                    Select a category
+                </option>
+
+                <option value="legal">
+                    Legal / Rights
+                </option>
+
+                <option value="safety">
+                    Safety / Violence
+                </option>
+
+                <option value="health">
+                    Health / Women Care
+                </option>
+
+                <option value="career">
+                    Career / Education
+                </option>
+
+                <option value="family">
+                    Family / Relationship
+                </option>
+
+                <option value="other">
+                    Other
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- AGE GROUP -->
+
+        <div class="form-group">
+
+            <label for="ageGroup">
+
+                Age group
+
+            </label>
+
+
+            <select id="ageGroup">
+
+                <option value="">
+                    Prefer not to say
+                </option>
+
+                <option value="under18">
+                    Under 18
+                </option>
+
+                <option value="18-25">
+                    18–25
+                </option>
+
+                <option value="26-40">
+                    26–40
+                </option>
+
+                <option value="41-60">
+                    41–60
+                </option>
+
+                <option value="60plus">
+                    Above 60
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- PROBLEM -->
+
+        <div class="form-group">
+
+            <label for="problem">
+
+                Describe your problem
+
+            </label>
+
+
+            <textarea
+                id="problem"
+                placeholder="Write your problem here in your own words...">
+            </textarea>
+
+        </div>
+
+
+
+        <button
+            class="submit-help"
+            onclick="submitHelp()">
+
+            💗 Get Guidance
+
+        </button>
+
+
+        <div id="helpResult">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     QUICK HELP
+===================================== -->
+
+<section class="quick-help">
+
+    <h2>
+        ⚡ Quick Support
+    </h2>
+
+
+    <div class="quick-buttons">
+
+
+        <a
+            href="emergency.html"
+            class="quick-button emergency-button">
+
+            🚨 Emergency Help
+
+        </a>
+
+
+        <a
+            href="rural-safety.html"
+            class="quick-button">
+
+            📍 Nearby Support
+
+        </a>
+
+
+        <a
+            href="legal-rights.html"
+            class="quick-button">
+
+            ⚖️ Know Your Rights
+
+        </a>
+
+
+        <a
+            href="ai-legal-assistance.html"
+            class="quick-button">
+
+            🤖 Ask AI
+
+        </a>
+
+    </div>
+
+
+
+    <!-- AUDIO -->
+
+    <div class="audio-help">
+
+        <h3>
+            🔊 Listen to This Information
+        </h3>
+
+
+        <p>
+
+            If reading is difficult, use the
+            audio button to listen to the
+            information on this page.
+
+        </p>
+
+
+        <button
+            class="help-btn"
+            onclick="speakHelpPage()">
+
+            🔊 Read Aloud
+
+        </button>
+
+
+        <button
+            class="help-btn"
+            onclick="stopHelpSpeech()">
+
+            ⏹ Stop
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer class="help-footer">
+
+    <h3>
+        🌸 NariAdhikar
+    </h3>
+
+
+    <p>
+        Know Your Rights • Speak Up • Stay Safe
+    </p>
+
+
+    <p>
+        Supporting women with accessible
+        information and guidance.
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script src="js/language.js"></script>
+
+<script src="js/online-help.js"></script>
+
+<script src="js/ai-legal-assistance.js"></script>
+
+
+</body>
+
+</html>

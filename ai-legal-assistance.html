@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>NariAdhikar | AI Legal Assistance</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+
+    <style>
+
+        /* =====================================
+           AI LEGAL ASSISTANCE PAGE
+        ===================================== */
+
+        .ai-legal-page {
+
+            background: #fffafd;
+
+            color: #444;
+
+            min-height: 100vh;
+        }
+
+
+        /* =====================================
+           HEADER
+        ===================================== */
+
+        .main-header {
+
+            width: 100%;
+
+            background: rgba(255,255,255,0.98);
+
+            border-bottom: 1px solid #eadbea;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 9999;
+
+            box-shadow:
+                0 3px 15px
+                rgba(70,30,80,0.08);
+        }
+
+
+        .main-nav {
+
+            width: 92%;
+
+            max-width: 1400px;
+
+            min-height: 72px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 20px;
+        }
+
+
+        .logo {
+
+            text-decoration: none;
+
+            color: #54245f;
+
+            font-size: 24px;
+
+            font-weight: 800;
+
+            white-space: nowrap;
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 4px;
+
+            flex: 1;
+        }
+
+
+        .nav-links a {
+
+            text-decoration: none;
+
+            color: #54245f;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            padding: 10px 11px;
+
+            border-radius: 9px;
+
+            white-space: nowrap;
+
+            transition: 0.3s;
+        }
+
+
+        .nav-links a:hover {
+
+            background: #f5e7f6;
+
+            color: #8d3fa3;
+        }
+
+
+        .nav-links a.active {
+
+            background: #9b4bb0;
+
+            color: white;
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================
+           LANGUAGE
+        ===================================== */
+
+        .language-selector {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            flex-shrink: 0;
+        }
+
+
+        .language-selector select {
+
+            border: 1px solid #d9c4dd;
+
+            background: white;
+
+            color: #54245f;
+
+            padding: 8px 10px;
+
+            border-radius: 9px;
+
+            cursor: pointer;
+
+            outline: none;
+
+            font-size: 13px;
+
+            font-weight: 600;
+        }
+
+
+        /* =====================================
+           HERO
+        ===================================== */
+
+        .ai-legal-hero {
+
+            padding: 80px 7%;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8edff,
+                    #fff0f8
+                );
+        }
+
+
+        .ai-icon {
+
+            width: 90px;
+
+            height: 90px;
+
+            margin: auto;
+
+            border-radius: 50%;
+
+            background: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 48px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(70,30,80,0.12);
+        }
+
+
+        .ai-legal-hero h1 {
+
+            color: #54245f;
+
+            font-size: 48px;
+
+            margin: 20px 0 12px;
+        }
+
+
+        .ai-legal-hero h1 span {
+
+            color: #d83d87;
+        }
+
+
+        .ai-legal-hero p {
+
+            max-width: 800px;
+
+            margin: auto;
+
+            color: #666;
+
+            font-size: 17px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================
+           MAIN CONTENT
+        ===================================== */
+
+        .ai-main {
+
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: 50px auto 80px;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 30px;
+        }
+
+
+        /* =====================================
+           INFORMATION CARD
+        ===================================== */
+
+        .ai-info-card {
+
+            background: white;
+
+            border: 1px solid #eadbea;
+
+            border-radius: 22px;
+
+            padding: 30px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(70,30,80,0.07);
+        }
+
+
+        .ai-info-card h2 {
+
+            color: #54245f;
+
+            margin-top: 0;
+        }
+
+
+        .ai-info-card p {
+
+            color: #666;
+
+            line-height: 1.7;
+        }
+
+
+        .feature-list {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin-top: 25px;
+        }
+
+
+        .feature-list li {
+
+            padding: 13px;
+
+            margin-bottom: 10px;
+
+            background: #faf2fc;
+
+            border-radius: 10px;
+
+            color: #555;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================
+           CHAT PREVIEW
+        ===================================== */
+
+        .chat-card {
+
+            background: white;
+
+            border: 1px solid #eadbea;
+
+            border-radius: 22px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 25px
+                rgba(70,30,80,0.08);
+        }
+
+
+        .chat-card-header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7d3c8c,
+                    #a750a9
+                );
+
+            color: white;
+
+            padding: 20px;
+        }
+
+
+        .chat-card-header h2 {
+
+            margin: 0;
+
+            font-size: 20px;
+        }
+
+
+        .chat-card-header p {
+
+            margin: 5px 0 0;
+
+            font-size: 12px;
+
+            opacity: 0.9;
+        }
+
+
+        .chat-preview {
+
+            padding: 25px;
+
+            min-height: 330px;
+
+            background: #fffafd;
+        }
+
+
+        .preview-ai {
+
+            background: #f3e8f7;
+
+            color: #4c3154;
+
+            padding: 14px;
+
+            border-radius:
+                14px 14px 14px 4px;
+
+            margin-bottom: 15px;
+
+            line-height: 1.5;
+
+            font-size: 14px;
+        }
+
+
+        .preview-user {
+
+            background: #7d3c8c;
+
+            color: white;
+
+            padding: 12px;
+
+            border-radius:
+                14px 14px 4px 14px;
+
+            margin-left: auto;
+
+            margin-bottom: 15px;
+
+            width: fit-content;
+
+            max-width: 80%;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================
+           QUICK QUESTIONS
+        ===================================== */
+
+        .quick-section {
+
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: 0 auto 70px;
+
+            text-align: center;
+        }
+
+
+        .quick-section h2 {
+
+            color: #54245f;
+
+            margin-bottom: 10px;
+        }
+
+
+        .quick-section > p {
+
+            color: #777;
+
+            margin-bottom: 30px;
+        }
+
+
+        .quick-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 18px;
+        }
+
+
+        .quick-card {
+
+            background: white;
+
+            border: 1px solid #eadbea;
+
+            border-radius: 18px;
+
+            padding: 22px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        .quick-card:hover {
+
+            transform:
+                translateY(-6px);
+
+            box-shadow:
+                0 12px 30px
+                rgba(70,30,80,0.10);
+        }
+
+
+        .quick-card .icon {
+
+            font-size: 34px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .quick-card h3 {
+
+            color: #54245f;
+
+            font-size: 16px;
+
+            margin: 5px;
+        }
+
+
+        .quick-card p {
+
+            color: #777;
+
+            font-size: 12px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =====================================
+           HOW IT WORKS
+        ===================================== */
+
+        .how-section {
+
+            background: #faf3fc;
+
+            padding: 70px 7%;
+
+            text-align: center;
+        }
+
+
+        .how-section h2 {
+
+            color: #54245f;
+
+            margin-bottom: 40px;
+        }
+
+
+        .steps {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .step {
+
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 18px;
+
+            border: 1px solid #eadbea;
+        }
+
+
+        .step-number {
+
+            width: 45px;
+
+            height: 45px;
+
+            margin: auto auto 15px;
+
+            border-radius: 50%;
+
+            background: #9b4bb0;
+
+            color: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-weight: 800;
+        }
+
+
+        .step h3 {
+
+            color: #54245f;
+
+            font-size: 16px;
+        }
+
+
+        .step p {
+
+            color: #777;
+
+            font-size: 13px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =====================================
+           SAFETY NOTE
+        ===================================== */
+
+        .safety-note {
+
+            width: 90%;
+
+            max-width: 1000px;
+
+            margin: 60px auto;
+
+            padding: 25px;
+
+            background: #fff7e5;
+
+            border: 1px solid #ecd8a5;
+
+            border-radius: 18px;
+
+            text-align: center;
+        }
+
+
+        .safety-note h3 {
+
+            color: #755c2a;
+
+            margin-top: 0;
+        }
+
+
+        .safety-note p {
+
+            color: #6d5b35;
+
+            font-size: 13px;
+
+            line-height: 1.6;
+
+            margin-bottom: 0;
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        .ai-footer {
+
+            background: #54245f;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px;
+        }
+
+
+        .ai-footer p {
+
+            margin: 6px;
+        }
+
+
+        /* =====================================
+           MOBILE
+        ===================================== */
+
+        @media(max-width: 950px) {
+
+            .main-nav {
+
+                flex-wrap: wrap;
+            }
+
+
+            .nav-links {
+
+                order: 3;
+
+                width: 100%;
+
+                overflow-x: auto;
+
+                justify-content: flex-start;
+            }
+
+
+            .ai-main {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .quick-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .steps {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media(max-width: 600px) {
+
+            .ai-legal-hero {
+
+                padding: 60px 5%;
+            }
+
+
+            .ai-legal-hero h1 {
+
+                font-size: 34px;
+            }
+
+
+            .quick-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .steps {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .ai-main {
+
+                width: 92%;
+            }
+
+
+            .language-selector {
+
+                margin-left: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="ai-legal-page">
+
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header class="main-header">
+
+    <nav class="main-nav">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="logo">
+
+            🌸 NariAdhikar
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+
+            <a href="legal-rights.html">
+                Legal Rights
+            </a>
+
+
+            <a
+                href="ai-legal-assistance.html"
+                class="active">
+
+                AI Legal Assistance
+
+            </a>
+
+
+            <a href="women-care.html">
+                Women Care
+            </a>
+
+
+            <a href="awareness.html">
+                Awareness
+            </a>
+
+
+            <a href="rural-safety.html">
+                Rural Safety
+            </a>
+
+
+            <a href="career.html">
+                Career
+            </a>
+
+
+            <a href="equality.html">
+                Equality
+            </a>
+
+
+            <a href="emergency.html">
+                Emergency
+            </a>
+
+        </div>
+
+
+        <!-- LANGUAGE -->
+
+        <div class="language-selector">
+
+            <span>🌐</span>
+
+            <select id="languageSelect">
+
+                <option value="en">
+                    English
+                </option>
+
+                <option value="mr">
+                    मराठी
+                </option>
+
+                <option value="hi">
+                    हिन्दी
+                </option>
+
+            </select>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="ai-legal-hero">
+
+    <div class="ai-icon">
+        🤖
+    </div>
+
+
+    <h1>
+        AI <span>Legal Assistance</span>
+    </h1>
+
+
+    <p>
+
+        Get simple legal-awareness information
+        in an easy-to-understand way.
+
+        Ask questions about women's rights,
+        safety, harassment, equality and
+        available support.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================
+     MAIN CONTENT
+===================================== -->
+
+<section class="ai-main">
+
+
+    <!-- INFORMATION -->
+
+    <div class="ai-info-card">
+
+        <h2>
+            🌸 How Can AI Help You?
+        </h2>
+
+
+        <p>
+
+            NariAdhikar's AI Legal Assistance
+            feature is designed to help women
+            understand legal-awareness topics
+            before approaching an appropriate
+            professional or support service.
+
+        </p>
+
+
+        <ul class="feature-list">
+
+            <li>
+                ⚖️ Understand women's rights
+            </li>
+
+
+            <li>
+                🛡️ Learn about safety and
+                harassment awareness
+            </li>
+
+
+            <li>
+                👩‍⚖️ Understand when to seek
+                professional legal help
+            </li>
+
+
+            <li>
+                🎙️ Ask questions using voice
+                input
+            </li>
+
+
+            <li>
+                🔊 Listen to information using
+                audio
+            </li>
+
+
+            <li>
+                🌐 Access the website in
+                English, Marathi and Hindi
+            </li>
+
+
+            <li>
+                📍 Find nearby support through
+                Rural Safety
+            </li>
+
+
+            <li>
+                🚨 Quickly reach the Emergency
+                section when necessary
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- CHAT PREVIEW -->
+
+    <div class="chat-card">
+
+        <div class="chat-card-header">
+
+            <h2>
+                🤖 Ask NariAdhikar AI
+            </h2>
+
+            <p>
+                Your legal-awareness companion
+            </p>
+
+        </div>
+
+
+        <div class="chat-preview">
+
+            <div class="preview-ai">
+
+                🌸 <strong>Namaste!</strong>
+
+                <br><br>
+
+                How can I help you understand
+                women's rights today?
+
+            </div>
+
+
+            <div class="preview-user">
+
+                What are my basic rights?
+
+            </div>
+
+
+            <div class="preview-ai">
+
+                ⚖️ Women have constitutional
+                and legal protections relating
+                to equality, dignity, safety
+                and protection from
+                discrimination.
+
+                <br><br>
+
+                You can explore the
+                <strong>Legal Rights</strong>
+                section for more information.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     QUICK QUESTIONS
+===================================== -->
+
+<section class="quick-section">
+
+    <h2>
+        💬 What Do You Want to Know?
+    </h2>
+
+
+    <p>
+        Choose a topic to start a conversation
+        with the NariAdhikar assistant.
+    </p>
+
+
+    <div class="quick-grid">
+
+
+        <div
+            class="quick-card"
+            onclick="openAssistantWithQuestion(
+                'What are my basic rights?'
+            )">
+
+            <div class="icon">
+                ⚖️
+            </div>
+
+            <h3>
+                My Rights
+            </h3>
+
+            <p>
+                Learn about basic women's
+                rights and protections.
+            </p>
+
+        </div>
+
+
+
+        <div
+            class="quick-card"
+            onclick="openAssistantWithQuestion(
+                'I am facing harassment'
+            )">
+
+            <div class="icon">
+                🛡️
+            </div>
+
+            <h3>
+                Harassment
+            </h3>
+
+            <p>
+                Learn what steps you may
+                consider when facing harassment.
+            </p>
+
+        </div>
+
+
+
+        <div
+            class="quick-card"
+            onclick="openAssistantWithQuestion(
+                'I need legal help'
+            )">
+
+            <div class="icon">
+                👩‍⚖️
+            </div>
+
+            <h3>
+                Legal Help
+            </h3>
+
+            <p>
+                Understand when and where
+                to seek professional assistance.
+            </p>
+
+        </div>
+
+
+
+        <div
+            class="quick-card"
+            onclick="openAssistantWithQuestion(
+                'I am in danger'
+            )">
+
+            <div class="icon">
+                🚨
+            </div>
+
+            <h3>
+                Emergency
+            </h3>
+
+            <p>
+                Get directed towards the
+                Emergency section.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     HOW IT WORKS
+===================================== -->
+
+<section class="how-section">
+
+    <h2>
+        🌷 How NariAdhikar AI Works
+    </h2>
+
+
+    <div class="steps">
+
+
+        <div class="step">
+
+            <div class="step-number">
+                1
+            </div>
+
+            <h3>
+                Ask
+            </h3>
+
+            <p>
+                Type or speak your question
+                in simple language.
+            </p>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <div class="step-number">
+                2
+            </div>
+
+            <h3>
+                Understand
+            </h3>
+
+            <p>
+                Receive simple legal-awareness
+                information.
+            </p>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <div class="step-number">
+                3
+            </div>
+
+            <h3>
+                Explore
+            </h3>
+
+            <p>
+                Open Legal Rights, Women Care
+                or Rural Safety for more help.
+            </p>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <div class="step-number">
+                4
+            </div>
+
+            <h3>
+                Take Action
+            </h3>
+
+            <p>
+                Contact an appropriate
+                professional or support service
+                when necessary.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SAFETY DISCLAIMER
+===================================== -->
+
+<section class="safety-note">
+
+    <h3>
+        ⚠️ Important Safety Information
+    </h3>
+
+
+    <p>
+
+        NariAdhikar AI provides general
+        legal-awareness information and
+        should not be treated as a substitute
+        for advice from a qualified lawyer,
+        doctor, police officer or other
+        appropriate professional.
+
+        <br><br>
+
+        If you are in immediate danger,
+        use the Emergency section and contact
+        appropriate emergency services.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer class="ai-footer">
+
+    <p>
+        🌸 <strong>NariAdhikar</strong>
+    </p>
+
+    <p>
+        Know Your Rights • Stay Safe •
+        Speak Up
+    </p>
+
+    <p>
+        Legal Awareness • Equality •
+        Women's Empowerment
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================
+     AI ASSISTANT
+===================================== -->
+
+<script src="js/ai-assistant.js"></script>
+
+
+<script>
+
+    /* =====================================
+       QUICK QUESTION → OPEN AI ASSISTANT
+    ===================================== */
+
+    function openAssistantWithQuestion(question) {
+
+        const box =
+            document.getElementById(
+                "aiAssistantBox"
+            );
+
+
+        const input =
+            document.getElementById(
+                "aiUserInput"
+            );
+
+
+        /* Open assistant */
+
+        if (
+            box &&
+            !box.classList.contains("show")
+        ) {
+
+            box.classList.add("show");
+
+        }
+
+
+        /* Put question in input */
+
+        if (input) {
+
+            input.value = question;
+
+            input.focus();
+
+        }
+
+    }
+
+</script>
+
+
+</body>
+
+</html>

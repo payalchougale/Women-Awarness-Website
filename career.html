@@ -1,0 +1,2687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="NariAdhikar - Women's Career, Education, Skills and Opportunities">
+
+    <title>NariAdhikar | Women Career</title>
+
+
+    <style>
+
+        /* =====================================
+           RESET
+        ===================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #fff8fc;
+
+            color: #333;
+
+            line-height: 1.5;
+        }
+
+
+        /* =====================================
+           HEADER
+        ===================================== */
+
+        .main-header {
+
+            width: 100%;
+
+            background: #ffffff;
+
+            border-bottom: 1px solid #eadbea;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 9999;
+
+            box-shadow:
+                0 3px 15px
+                rgba(70, 30, 80, 0.08);
+        }
+
+
+        .main-nav {
+
+            width: 92%;
+
+            max-width: 1400px;
+
+            min-height: 72px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+        }
+
+
+        /* =====================================
+           LOGO
+        ===================================== */
+
+        .logo {
+
+            text-decoration: none;
+
+            color: #54245f;
+
+            font-size: 24px;
+
+            font-weight: 800;
+
+            white-space: nowrap;
+        }
+
+
+        .logo:hover {
+
+            color: #8d3fa3;
+        }
+
+
+        /* =====================================
+           NAVIGATION
+        ===================================== */
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 3px;
+
+            flex: 1;
+        }
+
+
+        .nav-links a {
+
+            text-decoration: none;
+
+            color: #54245f;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            padding: 10px 10px;
+
+            border-radius: 9px;
+
+            white-space: nowrap;
+
+            transition: 0.3s;
+        }
+
+
+        .nav-links a:hover {
+
+            background: #f5e7f6;
+
+            color: #8d3fa3;
+        }
+
+
+        /* ACTIVE CAREER */
+
+        .nav-links a.active {
+
+            background: #9b4bb0;
+
+            color: #ffffff;
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================
+           LANGUAGE
+        ===================================== */
+
+        .language-selector {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            flex-shrink: 0;
+        }
+
+
+        .language-selector span {
+
+            font-size: 18px;
+        }
+
+
+        .language-selector select {
+
+            border: 1px solid #d9c4dd;
+
+            background: #ffffff;
+
+            color: #54245f;
+
+            padding: 8px 10px;
+
+            border-radius: 9px;
+
+            cursor: pointer;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            outline: none;
+        }
+
+
+        .language-selector select:hover {
+
+            border-color: #9b4bb0;
+        }
+
+
+        /* =====================================
+           HERO
+        ===================================== */
+
+        .career-hero {
+
+            min-height: 450px;
+
+            padding: 80px 8%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 50px;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    #fff0f7,
+                    #f8edff
+                );
+        }
+
+
+        .hero-content {
+
+            max-width: 650px;
+        }
+
+
+        .small-title {
+
+            color: #b83280;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 15px;
+
+            font-size: 14px;
+        }
+
+
+        .hero-content h1 {
+
+            font-size: 48px;
+
+            color: #54245f;
+
+            margin-bottom: 20px;
+
+            line-height: 1.2;
+        }
+
+
+        .hero-content p {
+
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            color: #666;
+
+            margin-bottom: 25px;
+        }
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .hero-btn {
+
+            display: inline-block;
+
+            text-decoration: none;
+
+            background: #b83280;
+
+            color: white;
+
+            padding: 13px 24px;
+
+            border-radius: 25px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .hero-btn:hover {
+
+            background: #54245f;
+
+            transform: translateY(-3px);
+        }
+
+
+        .hero-btn.secondary {
+
+            background: white;
+
+            color: #54245f;
+
+            border: 1px solid #dcbcdc;
+        }
+
+
+        .hero-btn.secondary:hover {
+
+            background: #f7eafa;
+        }
+
+
+        .hero-image {
+
+            text-align: center;
+        }
+
+
+        .hero-image img {
+
+            width: 400px;
+
+            max-width: 100%;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 15px 35px
+                rgba(70,30,80,.15);
+        }
+
+
+        /* =====================================
+           SECTION
+        ===================================== */
+
+        .section {
+
+            padding: 70px 8%;
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+
+        .section-title h2 {
+
+            font-size: 34px;
+
+            color: #54245f;
+
+            margin-bottom: 10px;
+        }
+
+
+        .section-title p {
+
+            color: #777;
+
+            font-size: 16px;
+        }
+
+
+        /* =====================================
+           CAREER CARDS
+        ===================================== */
+
+        .career-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .career-card {
+
+            background: white;
+
+            padding: 28px;
+
+            border-radius: 20px;
+
+            border: 1px solid #f0dce9;
+
+            box-shadow:
+                0 8px 25px
+                rgba(70,30,80,.08);
+
+            transition: .3s;
+        }
+
+
+        .career-card:hover {
+
+            transform:
+                translateY(-8px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(70,30,80,.14);
+        }
+
+
+        .career-icon {
+
+            font-size: 42px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .career-card h3 {
+
+            color: #54245f;
+
+            margin-bottom: 10px;
+
+            font-size: 21px;
+        }
+
+
+        .career-card p {
+
+            color: #666;
+
+            line-height: 1.6;
+
+            font-size: 15px;
+        }
+
+
+        .career-card button {
+
+            margin-top: 18px;
+
+            border: none;
+
+            background: #b83280;
+
+            color: white;
+
+            padding: 10px 18px;
+
+            border-radius: 25px;
+
+            cursor: pointer;
+
+            font-weight: bold;
+
+            transition: .3s;
+        }
+
+
+        .career-card button:hover {
+
+            background: #54245f;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================
+   CAREER INFORMATION POPUP
+===================================== */
+
+.career-info {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(35, 15, 42, 0.65);
+
+    z-index: 99999;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    backdrop-filter: blur(4px);
+}
+
+
+.career-info.show {
+
+    display: flex;
+}
+
+
+/* POPUP BOX */
+
+.career-info-box {
+
+    position: relative;
+
+    width: min(850px, 95%);
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 25px 70px
+        rgba(50, 20, 60, .30);
+
+    border: 1px solid #eadbea;
+
+    animation:
+        careerModalOpen .25s ease;
+}
+
+
+@keyframes careerModalOpen {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px)
+            scale(.97);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* CLOSE BUTTON */
+
+.close-info {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 18px;
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f4e5f7;
+
+    color: #54245f;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+
+.close-info:hover {
+
+    background: #54245f;
+
+    color: white;
+
+}
+
+
+/* ICON */
+
+.career-info-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 20px;
+
+    background: #f5e7f8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* TITLE */
+
+.career-info-box h2 {
+
+    color: #54245f;
+
+    font-size: 30px;
+
+    margin: 0 0 20px;
+}
+
+
+/* INTRO */
+
+.career-modal-intro {
+
+    font-size: 18px;
+
+    color: #555;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* TWO COLUMN CONTENT */
+
+.career-modal-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin: 25px 0;
+}
+
+
+/* CONTENT CARDS */
+
+.career-modal-section {
+
+    background: #faf6fc;
+
+    padding: 22px;
+
+    border-radius: 16px;
+
+    border: 1px solid #eadfea;
+}
+
+
+.career-modal-section h3 {
+
+    color: #54245f;
+
+    font-size: 18px;
+
+    margin: 0 0 12px;
+}
+
+
+.career-modal-section ul {
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.career-modal-section li {
+
+    display: flex;
+
+    gap: 9px;
+
+    margin-bottom: 10px;
+
+    color: #555;
+
+    line-height: 1.55;
+}
+
+
+.career-modal-section li span {
+
+    color: #b83280;
+
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+
+/* NEXT STEP */
+
+.career-modal-next {
+
+    background: #faf6fc;
+
+    padding: 22px;
+
+    border-radius: 16px;
+
+    margin-top: 20px;
+
+    border-left: 4px solid #b83280;
+}
+
+
+.career-modal-next strong {
+
+    display: block;
+
+    color: #54245f;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+.career-modal-next p {
+
+    color: #555;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* SAFETY NOTE */
+
+.career-modal-note {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    padding: 16px 18px;
+
+    background: #fff8e7;
+
+    border-left: 4px solid #d8a62a;
+
+    border-radius: 10px;
+
+    color: #66572b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* BUTTONS */
+
+.career-info-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 28px;
+}
+
+
+.career-listen-btn,
+.career-stop-btn {
+
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+
+.career-listen-btn {
+
+    background: #b83280;
+
+    color: white;
+}
+
+
+.career-stop-btn {
+
+    background: #f1e4f5;
+
+    color: #54245f;
+}
+
+
+.career-listen-btn:hover {
+
+    background: #54245f;
+}
+
+
+.career-stop-btn:hover {
+
+    background: #e5d3eb;
+}
+
+
+/* BOTTOM REMINDER */
+
+.career-info-note {
+
+    margin-top: 25px;
+
+    padding: 16px 18px;
+
+    background: #fff8e7;
+
+    border-left: 4px solid #d8a62a;
+
+    border-radius: 10px;
+
+    color: #66572b;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .career-info {
+
+        padding: 15px;
+    }
+
+    .career-info-box {
+
+        width: 100%;
+
+        padding: 28px 20px;
+
+        max-height: 90vh;
+    }
+
+    .career-modal-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .career-info-box h2 {
+
+        font-size: 24px;
+
+    }
+
+    .career-modal-intro {
+
+        font-size: 16px;
+
+    }
+
+    .career-info-actions {
+
+        flex-wrap: wrap;
+
+    }
+
+}
+        /* =====================================
+           CAREER FINDER
+        ===================================== */
+
+        .career-finder {
+
+            background: white;
+
+            max-width: 850px;
+
+            margin: auto;
+
+            padding: 35px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 10px 35px
+                rgba(70,30,80,.10);
+
+            border: 1px solid #f0dce9;
+        }
+
+
+        .career-finder h3 {
+
+            text-align: center;
+
+            color: #54245f;
+
+            font-size: 26px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .question {
+
+            margin-bottom: 25px;
+        }
+
+
+        .question label {
+
+            display: block;
+
+            font-weight: bold;
+
+            margin-bottom: 10px;
+
+            color: #54245f;
+        }
+
+
+        .question select {
+
+            width: 100%;
+
+            padding: 13px;
+
+            border-radius: 10px;
+
+            border: 1px solid #ddd;
+
+            font-size: 15px;
+
+            background: white;
+
+            outline: none;
+        }
+
+
+        .question select:focus {
+
+            border-color: #b83280;
+        }
+
+
+        .find-career-btn {
+
+            display: block;
+
+            margin: 25px auto 0;
+
+            background: #b83280;
+
+            color: white;
+
+            border: none;
+
+            padding: 13px 28px;
+
+            border-radius: 25px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            transition: .3s;
+        }
+
+
+        .find-career-btn:hover {
+
+            background: #54245f;
+
+            transform: translateY(-2px);
+        }
+
+
+        .career-result {
+
+            display: none;
+
+            margin-top: 25px;
+
+            padding: 20px;
+
+            background: #fff1f8;
+
+            border-radius: 15px;
+
+            text-align: center;
+
+            border: 1px solid #efd1e1;
+        }
+
+
+        .career-result h4 {
+
+            color: #54245f;
+
+            margin-bottom: 10px;
+
+            font-size: 20px;
+        }
+
+
+        .career-result p {
+
+            color: #666;
+
+            line-height: 1.6;
+        }
+
+
+        /* =====================================
+           RURAL OPPORTUNITIES
+        ===================================== */
+
+        .opportunity-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .opportunity {
+
+            background: white;
+
+            padding: 25px 15px;
+
+            text-align: center;
+
+            border-radius: 18px;
+
+            border: 1px solid #f0dce9;
+
+            transition: .3s;
+        }
+
+
+        .opportunity:hover {
+
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                0 10px 25px
+                rgba(70,30,80,.08);
+        }
+
+
+        .opportunity span {
+
+            font-size: 38px;
+        }
+
+
+        .opportunity h3 {
+
+            color: #54245f;
+
+            margin: 12px 0 8px;
+
+            font-size: 18px;
+        }
+
+
+        .opportunity p {
+
+            color: #777;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =====================================
+           SKILL DEVELOPMENT
+        ===================================== */
+
+        .skills-box {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .skill {
+
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 18px;
+
+            border-left:
+                5px solid #b83280;
+
+            box-shadow:
+                0 6px 20px
+                rgba(70,30,80,.07);
+
+            transition: .3s;
+        }
+
+
+        .skill:hover {
+
+            transform: translateY(-4px);
+        }
+
+
+        .skill h3 {
+
+            color: #54245f;
+
+            margin-bottom: 10px;
+        }
+
+
+        .skill p {
+
+            color: #666;
+
+            line-height: 1.6;
+        }
+
+
+        /* =====================================
+           CAREER ROADMAP
+        ===================================== */
+
+        .roadmap {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+
+        .roadmap-step {
+
+            text-align: center;
+
+            background: white;
+
+            padding: 25px 18px;
+
+            border-radius: 18px;
+
+            border: 1px solid #f0dce9;
+
+            position: relative;
+        }
+
+
+        .roadmap-number {
+
+            width: 50px;
+
+            height: 50px;
+
+            margin: auto;
+
+            border-radius: 50%;
+
+            background: #b83280;
+
+            color: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 20px;
+
+            font-weight: bold;
+        }
+
+
+        .roadmap-step h3 {
+
+            color: #54245f;
+
+            margin: 15px 0 8px;
+        }
+
+
+        .roadmap-step p {
+
+            color: #777;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================
+           MOTIVATION
+        ===================================== */
+
+        .motivation {
+
+            padding: 65px 8%;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    #54245f,
+                    #b83280
+                );
+
+            color: white;
+        }
+
+
+        .motivation h2 {
+
+            font-size: 32px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .motivation p {
+
+            max-width: 700px;
+
+            margin: auto;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        footer {
+
+            background: #301637;
+
+            color: white;
+
+            padding: 35px 8%;
+
+            text-align: center;
+        }
+
+
+        footer p {
+
+            margin: 5px;
+        }
+
+
+        footer .footer-title {
+
+            font-size: 20px;
+
+            font-weight: bold;
+        }
+
+
+        /* =====================================
+           MOBILE
+        ===================================== */
+
+        @media(max-width: 1100px) {
+
+            .nav-links a {
+
+                padding: 9px 7px;
+
+                font-size: 13px;
+            }
+
+
+            .career-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .opportunity-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .roadmap {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media(max-width: 800px) {
+
+            .main-nav {
+
+                flex-wrap: wrap;
+
+                padding: 10px 0;
+            }
+
+
+            .nav-links {
+
+                order: 3;
+
+                width: 100%;
+
+                overflow-x: auto;
+
+                justify-content: flex-start;
+
+                padding-bottom: 5px;
+            }
+
+
+            .nav-links a {
+
+                flex-shrink: 0;
+            }
+
+
+            .career-hero {
+
+                flex-direction: column;
+
+                text-align: center;
+
+                padding: 60px 6%;
+            }
+
+
+            .hero-content h1 {
+
+                font-size: 36px;
+            }
+
+
+            .hero-buttons {
+
+                justify-content: center;
+            }
+
+
+            .career-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .skills-box {
+
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media(max-width: 500px) {
+
+            .main-nav {
+
+                width: 94%;
+            }
+
+
+            .logo {
+
+                font-size: 21px;
+            }
+
+
+            .language-selector {
+
+                margin-left: auto;
+            }
+
+
+            .career-hero {
+
+                padding: 50px 5%;
+            }
+
+
+            .hero-content h1 {
+
+                font-size: 30px;
+            }
+
+
+            .hero-content p {
+
+                font-size: 16px;
+            }
+
+
+            .section {
+
+                padding: 50px 5%;
+            }
+
+
+            .section-title h2 {
+
+                font-size: 28px;
+            }
+
+
+            .opportunity-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .roadmap {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .career-finder {
+
+                padding: 25px 18px;
+            }
+
+        }
+            /* your existing CSS */
+
+    /* =====================================
+       AI LEGAL ASSISTANT
+    ===================================== */
+
+    .ai-assistant-button {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        z-index: 10000;
+
+        padding: 13px 18px;
+        border: none;
+        border-radius: 30px;
+
+        background: linear-gradient(135deg, #54245f, #b83280);
+        color: white;
+
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 700;
+
+        cursor: pointer;
+
+        box-shadow: 0 8px 25px rgba(84,36,95,.35);
+    }
+
+    .ai-assistant-button:hover {
+        transform: translateY(-3px);
+    }
+
+    .ai-assistant-box {
+        position: fixed;
+
+        right: 25px;
+        bottom: 85px;
+
+        width: 390px;
+        max-width: calc(100vw - 30px);
+
+        height: 560px;
+        max-height: calc(100vh - 110px);
+
+        z-index: 9999;
+
+        display: none;
+        flex-direction: column;
+
+        background: white;
+
+        border-radius: 18px;
+
+        overflow: hidden;
+
+        box-shadow: 0 15px 50px rgba(0,0,0,.25);
+
+        border: 1px solid #eadfea;
+    }
+
+    .ai-assistant-box.show {
+        display: flex;
+    }
+
+    .ai-header {
+        min-height: 65px;
+
+        padding: 14px 18px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background: linear-gradient(135deg,#54245f,#b83280);
+
+        color: white;
+    }
+
+    .ai-header strong {
+        display: block;
+        font-size: 16px;
+    }
+
+    .ai-header small {
+        display: block;
+        margin-top: 3px;
+        opacity: .9;
+        font-size: 11px;
+    }
+
+    .ai-close {
+        width: 35px;
+        height: 35px;
+
+        border: none;
+        border-radius: 50%;
+
+        background: rgba(255,255,255,.2);
+
+        color: white;
+
+        font-size: 20px;
+
+        cursor: pointer;
+    }
+
+    .ai-chat-messages {
+        flex: 1;
+        padding: 18px;
+        overflow-y: auto;
+        background: #fff8fc;
+    }
+
+    .ai-message {
+        width: fit-content;
+        max-width: 90%;
+
+        padding: 13px 15px;
+        margin-bottom: 12px;
+
+        background: #f6e8f3;
+        color: #3d2942;
+
+        border-radius: 14px 14px 14px 4px;
+
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .user-message {
+        width: fit-content;
+        max-width: 85%;
+
+        margin-left: auto;
+        margin-bottom: 12px;
+
+        padding: 11px 14px;
+
+        background: #54245f;
+        color: white;
+
+        border-radius: 14px 14px 4px 14px;
+
+        font-size: 13px;
+    }
+
+    .ai-quick-buttons {
+        display: flex;
+        gap: 7px;
+
+        padding: 10px;
+
+        overflow-x: auto;
+
+        border-top: 1px solid #eadfea;
+        background: white;
+    }
+
+    .ai-quick-buttons button {
+        flex-shrink: 0;
+
+        padding: 7px 10px;
+
+        border: 1px solid #d9bfd5;
+        border-radius: 18px;
+
+        background: white;
+        color: #54245f;
+
+        font-family: inherit;
+        font-size: 11px;
+        font-weight: 600;
+
+        cursor: pointer;
+    }
+
+    .ai-input-area {
+        display: flex;
+        gap: 7px;
+
+        padding: 10px;
+
+        border-top: 1px solid #eadfea;
+        background: white;
+    }
+
+    .ai-input-area input {
+        flex: 1;
+        min-width: 0;
+
+        padding: 11px 13px;
+
+        border: 1px solid #d9c6d7;
+        border-radius: 10px;
+
+        outline: none;
+
+        font-family: inherit;
+        font-size: 13px;
+    }
+
+    .ai-input-area button {
+        width: 40px;
+        height: 40px;
+
+        border: none;
+        border-radius: 10px;
+
+        background: #54245f;
+        color: white;
+
+        cursor: pointer;
+    }
+
+    .ai-disclaimer {
+        padding: 8px 12px;
+
+        background: #fff5df;
+        color: #6b552d;
+
+        border-top: 1px solid #f0dfb7;
+
+        font-size: 9px;
+
+        text-align: center;
+    }
+
+    @media (max-width: 600px) {
+
+        .ai-assistant-button {
+            right: 15px;
+            bottom: 15px;
+        }
+
+        .ai-assistant-box {
+            right: 10px;
+            bottom: 75px;
+
+            width: calc(100vw - 20px);
+            height: 70vh;
+        }
+    }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+  <!-- =====================================
+         HEADER
+    ===================================== -->
+
+<!-- =====================================
+     NARIADHIKAR HEADER
+===================================== -->
+
+<header class="main-header">
+
+    <nav class="main-nav">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+
+        <!-- NAVIGATION -->
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="legal-rights.html">
+                Legal Rights
+            </a>
+
+            <a href="awareness.html" >
+                Awareness
+            </a>
+
+            <a href="emergency.html">
+                Emergency
+            </a>
+
+            <a href="women-care.html">
+                Women Care
+            </a>
+
+            <a href="career.html" class="active">
+                Career
+            </a>
+
+            <a href="equality.html">
+                Equality
+            </a>
+
+            <a href="rural-safety.html">
+                Rural Safety
+            </a>
+
+        </div>
+
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="career-hero">
+
+    <div class="hero-content">
+
+        <div class="small-title">
+            LEARN • GROW • EARN
+        </div>
+
+
+        <h1>
+            🌸 Women's Career & Opportunities
+        </h1>
+
+
+        <p>
+
+            Discover education, skills,
+            employment and self-employment
+            opportunities that can help women
+            build confidence and financial
+            independence.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#career-areas"
+                class="hero-btn">
+
+                Explore Careers
+
+            </a>
+
+
+            <a
+                href="#career-finder"
+                class="hero-btn secondary">
+
+                Find My Career
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+            src="images/woman-professional.jpg"
+            alt="Woman professional">
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     CAREER AREAS
+===================================== -->
+
+<section
+    class="section"
+    id="career-areas">
+
+    <div class="section-title">
+
+        <h2>
+            Explore Your Opportunities
+        </h2>
+
+        <p>
+            There are many ways to build
+            your future.
+        </p>
+
+    </div>
+
+
+    <div class="career-grid">
+
+
+        <!-- EDUCATION -->
+
+        <div class="career-card">
+
+            <div class="career-icon">
+                🎓
+            </div>
+
+            <h3>
+                Education
+            </h3>
+
+            <p>
+                Continue your education,
+                explore courses and learn
+                skills that can support
+                your career goals.
+            </p>
+
+            <button
+                onclick="showCareerInfo('education')">
+
+                Explore
+
+            </button>
+
+        </div>
+
+
+
+        <!-- DIGITAL -->
+
+        <div class="career-card">
+
+            <div class="career-icon">
+                💻
+            </div>
+
+            <h3>
+                Digital Skills
+            </h3>
+
+            <p>
+                Learn computers, digital
+                tools, online services,
+                communication and useful
+                technology skills.
+            </p>
+
+            <button
+                onclick="showCareerInfo('digital')">
+
+                Learn More
+
+            </button>
+
+        </div>
+
+
+
+        <!-- JOBS -->
+
+        <div class="career-card">
+
+            <div class="career-icon">
+                💼
+            </div>
+
+            <h3>
+                Jobs
+            </h3>
+
+            <p>
+                Explore employment options
+                based on your education,
+                skills and interests.
+            </p>
+
+            <button
+                onclick="showCareerInfo('jobs')">
+
+                Explore Jobs
+
+            </button>
+
+        </div>
+
+
+
+        <!-- BUSINESS -->
+
+        <div class="career-card">
+
+            <div class="career-icon">
+                🏪
+            </div>
+
+            <h3>
+                Self Employment
+            </h3>
+
+            <p>
+                Learn about small businesses,
+                local services and
+                entrepreneurship.
+            </p>
+
+            <button
+                onclick="showCareerInfo('business')">
+
+                Start Exploring
+
+            </button>
+
+        </div>
+
+
+
+        <!-- RURAL -->
+
+        <div class="career-card">
+
+            <div class="career-icon">
+                🌾
+            </div>
+
+            <h3>
+                Rural Opportunities
+            </h3>
+
+            <p>
+                Discover opportunities
+                connected with agriculture,
+                local businesses, crafts
+                and community services.
+            </p>
+
+            <button
+                onclick="showCareerInfo('rural')">
+
+                View Options
+
+            </button>
+
+        </div>
+
+
+
+        <!-- FINANCE -->
+
+        <div class="career-card">
+
+            <div class="career-icon">
+                💰
+            </div>
+
+            <h3>
+                Financial Independence
+            </h3>
+
+            <p>
+                Learn basic financial
+                awareness, savings,
+                budgeting and responsible
+                financial planning.
+            </p>
+
+            <button
+                onclick="showCareerInfo('finance')">
+
+                Learn
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     CAREER FINDER
+===================================== -->
+
+<section
+    class="section"
+    id="career-finder">
+
+    <div class="section-title">
+
+        <h2>
+            💗 Find a Career Path
+        </h2>
+
+        <p>
+            Answer a few simple questions
+            and explore suitable areas.
+        </p>
+
+    </div>
+
+
+    <div class="career-finder">
+
+        <h3>
+            What interests you?
+        </h3>
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question">
+
+            <label>
+                1. What do you enjoy?
+            </label>
+
+            <select id="interest">
+
+                <option value="">
+                    Select an option
+                </option>
+
+                <option value="education">
+                    Teaching / Learning
+                </option>
+
+                <option value="technology">
+                    Computers / Technology
+                </option>
+
+                <option value="business">
+                    Business
+                </option>
+
+                <option value="creative">
+                    Art / Creative Work
+                </option>
+
+                <option value="health">
+                    Health / Helping People
+                </option>
+
+                <option value="agriculture">
+                    Agriculture / Rural Work
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question">
+
+            <label>
+                2. What type of work do you prefer?
+            </label>
+
+            <select id="workType">
+
+                <option value="">
+                    Select an option
+                </option>
+
+                <option value="home">
+                    Work from home
+                </option>
+
+                <option value="local">
+                    Work near my village/town
+                </option>
+
+                <option value="office">
+                    Office / Organization
+                </option>
+
+                <option value="business">
+                    My own business
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question">
+
+            <label>
+                3. What is your current level?
+            </label>
+
+            <select id="educationLevel">
+
+                <option value="">
+                    Select an option
+                </option>
+
+                <option value="school">
+                    School Student
+                </option>
+
+                <option value="college">
+                    College Student
+                </option>
+
+                <option value="graduate">
+                    Graduate
+                </option>
+
+                <option value="skill">
+                    Skilled / Experienced
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <button
+            class="find-career-btn"
+            onclick="findCareer()">
+
+            🔎 Find My Career Path
+
+        </button>
+
+
+        <!-- RESULT -->
+
+        <div
+            class="career-result"
+            id="careerResult">
+
+            <h4 id="resultTitle"></h4>
+
+            <p id="resultText"></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     RURAL OPPORTUNITIES
+===================================== -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>
+            🌾 Opportunities for Rural Women
+        </h2>
+
+        <p>
+            Explore different ways to learn,
+            work and earn locally.
+        </p>
+
+    </div>
+
+
+    <div class="opportunity-grid">
+
+
+        <div class="opportunity">
+
+            <span>🧵</span>
+
+            <h3>
+                Handicrafts
+            </h3>
+
+            <p>
+                Explore traditional crafts,
+                tailoring and handmade products.
+            </p>
+
+        </div>
+
+
+
+        <div class="opportunity">
+
+            <span>🌱</span>
+
+            <h3>
+                Agriculture
+            </h3>
+
+            <p>
+                Explore agriculture and
+                related livelihood opportunities.
+            </p>
+
+        </div>
+
+
+
+        <div class="opportunity">
+
+            <span>🍱</span>
+
+            <h3>
+                Food Business
+            </h3>
+
+            <p>
+                Explore food preparation,
+                catering and small businesses.
+            </p>
+
+        </div>
+
+
+
+        <div class="opportunity">
+
+            <span>💻</span>
+
+            <h3>
+                Digital Work
+            </h3>
+
+            <p>
+                Learn digital skills and
+                explore suitable online work.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SKILL DEVELOPMENT
+===================================== -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>
+            📚 Skills You Can Learn
+        </h2>
+
+        <p>
+            Start with one skill and keep growing.
+        </p>
+
+    </div>
+
+
+    <div class="skills-box">
+
+
+        <div class="skill">
+
+            <h3>
+                💻 Computer Skills
+            </h3>
+
+            <p>
+                Learn basic computer operation,
+                internet usage, online forms,
+                email and digital services.
+            </p>
+
+        </div>
+
+
+
+        <div class="skill">
+
+            <h3>
+                🗣️ Communication Skills
+            </h3>
+
+            <p>
+                Improve communication,
+                confidence, teamwork and
+                professional interaction.
+            </p>
+
+        </div>
+
+
+
+        <div class="skill">
+
+            <h3>
+                💰 Financial Skills
+            </h3>
+
+            <p>
+                Learn budgeting, saving and
+                basic financial awareness.
+            </p>
+
+        </div>
+
+
+
+        <div class="skill">
+
+            <h3>
+                🏪 Business Skills
+            </h3>
+
+            <p>
+                Learn about planning,
+                customers, products,
+                pricing and small business
+                management.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     CAREER ROADMAP
+===================================== -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>
+            🌱 Build Your Career Step by Step
+        </h2>
+
+        <p>
+            You don't need to do everything at once.
+            Start with one step.
+        </p>
+
+    </div>
+
+
+    <div class="roadmap">
+
+
+        <div class="roadmap-step">
+
+            <div class="roadmap-number">
+                1
+            </div>
+
+            <h3>
+                Discover
+            </h3>
+
+            <p>
+                Identify your interests,
+                strengths and goals.
+            </p>
+
+        </div>
+
+
+
+        <div class="roadmap-step">
+
+            <div class="roadmap-number">
+                2
+            </div>
+
+            <h3>
+                Learn
+            </h3>
+
+            <p>
+                Build useful skills through
+                education and training.
+            </p>
+
+        </div>
+
+
+
+        <div class="roadmap-step">
+
+            <div class="roadmap-number">
+                3
+            </div>
+
+            <h3>
+                Practice
+            </h3>
+
+            <p>
+                Gain experience through
+                projects, volunteering or work.
+            </p>
+
+        </div>
+
+
+
+        <div class="roadmap-step">
+
+            <div class="roadmap-number">
+                4
+            </div>
+
+            <h3>
+                Grow
+            </h3>
+
+            <p>
+                Apply for opportunities and
+                continue developing.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     MOTIVATION
+===================================== -->
+
+<section class="motivation">
+
+    <h2>
+        💗 Your Future Matters
+    </h2>
+
+    <p>
+
+        Education and skills can open
+        new opportunities. Start with
+        what you know, learn something
+        new and take one step toward
+        your goals.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================
+     CAREER INFORMATION POPUP
+===================================== -->
+
+<div class="career-info" id="careerInfo">
+
+    <div class="career-info-box">
+
+        <button
+            class="close-info"
+            onclick="closeCareerInfo()">
+            ×
+        </button>
+
+        <div
+            class="career-info-icon"
+            id="careerInfoIcon">
+            🌸
+        </div>
+
+        <h2 id="infoTitle">
+            Career Information
+        </h2>
+
+        <div id="infoText">
+            Career information will appear here.
+        </div>
+
+        <div class="career-info-actions">
+
+            <button
+                class="career-listen-btn"
+                onclick="speakCareerInfo()">
+                🔊 Listen
+            </button>
+
+            <button
+                class="career-stop-btn"
+                onclick="stopCareerInfoSpeech()">
+                ⏹ Stop
+            </button>
+
+        </div>
+
+        <div class="career-info-note">
+            💡 <strong>Remember:</strong>
+            Choose opportunities carefully and verify
+            course, job, training and financial information
+            before sharing personal information or paying money.
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+    <p class="footer-title">
+        🌸 NariAdhikar
+    </p>
+
+    <p>
+        Know Your Rights • Build Your Future
+    </p>
+
+    <p>
+        Women's Education • Career •
+        Skills • Empowerment
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script src="js/language.js"></script>
+
+<script src="js/career.js"></script>
+
+<script src="js/ai-legal-assistance.js"></script>
+
+
+</body>
+
+</html>

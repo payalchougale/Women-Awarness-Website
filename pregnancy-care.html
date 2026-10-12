@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Care | NariAdhikar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .pregnancy-page {
+            background: #fffafc;
+            min-height: 100vh;
+        }
+
+        .pregnancy-hero {
+            background: linear-gradient(135deg, #54245f, #b83280);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .pregnancy-hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .pregnancy-hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .pregnancy-container {
+            width: min(1100px, 92%);
+            margin: auto;
+            padding: 45px 0;
+        }
+
+        .pregnancy-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+            margin-bottom: 45px;
+        }
+
+        .pregnancy-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(84, 36, 95, 0.15);
+        }
+
+        .pregnancy-intro h2 {
+            color: #54245f;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .pregnancy-intro p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .pregnancy-section {
+            margin-bottom: 45px;
+        }
+
+        .pregnancy-section h2 {
+            text-align: center;
+            color: #54245f;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .effect-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .effect-card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #eadfea;
+            box-shadow: 0 5px 18px rgba(84, 36, 95, 0.08);
+        }
+
+        .effect-card h3 {
+            color: #b83280;
+            margin-bottom: 10px;
+        }
+
+        .effect-card p {
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .do-dont {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .do-box,
+        .dont-box {
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        .do-box {
+            background: #f0fbf4;
+            border: 1px solid #ccebd5;
+        }
+
+        .dont-box {
+            background: #fff3f3;
+            border: 1px solid #f0cccc;
+        }
+
+        .do-box h3 {
+            color: #287a45;
+            margin-bottom: 15px;
+        }
+
+        .dont-box h3 {
+            color: #b83232;
+            margin-bottom: 15px;
+        }
+
+        .do-box ul,
+        .dont-box ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .do-box li,
+        .dont-box li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .doctor-box {
+            background: linear-gradient(135deg, #f8e8f2, #f3e3f7);
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            border: 1px solid #eadfea;
+        }
+
+        .doctor-box h2 {
+            color: #54245f;
+            margin-bottom: 15px;
+        }
+
+        .doctor-box p {
+            max-width: 750px;
+            margin: 0 auto 15px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .care-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .care-action-btn {
+            display: inline-block;
+            background: #b83280;
+            color: white;
+            text-decoration: none;
+            padding: 11px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        .care-action-btn:hover {
+            background: #54245f;
+        }
+
+        .health-disclaimer {
+            margin-top: 35px;
+            padding: 18px;
+            background: #fff8e7;
+            border: 1px solid #f0dfaa;
+            border-radius: 12px;
+            color: #66572b;
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .pregnancy-intro,
+            .effect-grid,
+            .do-dont {
+                grid-template-columns: 1fr;
+            }
+
+            .pregnancy-hero h1 {
+                font-size: 32px;
+            }
+
+            .pregnancy-hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body class="pregnancy-page">
+
+<header class="main-header">
+    <nav class="main-nav">
+        <a href="index.html" class="logo">🌸 NariAdhikar</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="legal-rights.html">Legal Rights</a>
+            <a href="women-care.html">Women Care</a>
+            <a href="awareness.html">Awareness</a>
+            <a href="rural-safety.html">Rural Safety</a>
+            <a href="career.html">Career</a>
+            <a href="equality.html">Equality</a>
+            <a href="emergency.html">Emergency</a>
+        </div>
+    </nav>
+</header>
+
+
+<section class="pregnancy-hero">
+    <h1>🤰 Pregnancy Care</h1>
+
+    <p>
+        Learn about pregnancy care, healthy habits, regular check-ups,
+        warning signs, and when it is important to seek professional medical help.
+    </p>
+</section>
+
+
+<main class="pregnancy-container">
+
+    <!-- INTRO -->
+    <section class="pregnancy-intro">
+
+        <div>
+            <img
+                src="images/pregnancy-care.png"
+                alt="Pregnancy care awareness"
+                class="pregnancy-image"
+            >
+        </div>
+
+        <div>
+            <h2>Pregnancy Needs Care and Support</h2>
+
+            <p>
+                Pregnancy is a major physical and emotional change in a woman's life.
+                Regular antenatal care, nutritious food, adequate rest and support
+                from healthcare professionals can help monitor the health of both
+                the mother and baby.
+            </p>
+
+            <p>
+                Every pregnancy is different. If something feels unusual or
+                concerning, it is important to contact a qualified healthcare
+                professional rather than ignoring the symptoms.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- COMMON CHANGES -->
+    <section class="pregnancy-section">
+
+        <h2>🌷 Common Changes During Pregnancy</h2>
+
+        <div class="effect-grid">
+
+            <div class="effect-card">
+                <h3>🤢 Nausea</h3>
+                <p>
+                    Nausea or vomiting can occur, particularly during early pregnancy.
+                </p>
+            </div>
+
+            <div class="effect-card">
+                <h3>😴 Tiredness</h3>
+                <p>
+                    Increased tiredness and the need for more rest are common.
+                </p>
+            </div>
+
+            <div class="effect-card">
+                <h3>🍽️ Appetite Changes</h3>
+                <p>
+                    Appetite, food preferences and sensitivity to smells may change.
+                </p>
+            </div>
+
+            <div class="effect-card">
+                <h3>💧 Frequent Urination</h3>
+                <p>
+                    Needing to urinate more frequently can occur during pregnancy.
+                </p>
+            </div>
+
+            <div class="effect-card">
+                <h3>💗 Emotional Changes</h3>
+                <p>
+                    Hormonal and life changes may affect mood and emotions.
+                </p>
+            </div>
+
+            <div class="effect-card">
+                <h3>🌸 Body Changes</h3>
+                <p>
+                    Weight, breast size, abdomen and other parts of the body change
+                    as pregnancy progresses.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- DO AND DON'T -->
+    <section class="pregnancy-section">
+
+        <h2>💗 Pregnancy Care: Do & Don't</h2>
+
+        <div class="do-dont">
+
+            <div class="do-box">
+                <h3>✅ Do</h3>
+
+                <ul>
+                    <li>Attend recommended antenatal check-ups.</li>
+                    <li>Follow advice given by your healthcare professional.</li>
+                    <li>Eat a varied and nutritious diet.</li>
+                    <li>Drink enough fluids unless your doctor advises otherwise.</li>
+                    <li>Get adequate rest and sleep.</li>
+                    <li>Take medicines or supplements only as advised by a healthcare professional.</li>
+                    <li>Ask for emotional and practical support when needed.</li>
+                </ul>
+            </div>
+
+
+            <div class="dont-box">
+                <h3>❌ Don't</h3>
+
+                <ul>
+                    <li>Do not ignore unusual or severe symptoms.</li>
+                    <li>Do not take medicines or supplements without medical advice.</li>
+                    <li>Do not skip important antenatal appointments.</li>
+                    <li>Do not smoke or use alcohol during pregnancy.</li>
+                    <li>Do not feel embarrassed about asking pregnancy-related questions.</li>
+                    <li>Do not rely only on information from social media for medical decisions.</li>
+                    <li>Do not delay urgent medical care when warning signs occur.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHEN TO SEEK HELP -->
+    <section class="pregnancy-section">
+
+        <div class="doctor-box">
+
+            <h2>👩‍⚕️ When Should You Seek Medical Help?</h2>
+
+            <p>
+                Contact a qualified healthcare professional if you have concerns
+                about your pregnancy or notice symptoms that are unusual for you.
+            </p>
+
+            <p>
+                Seek urgent medical care for symptoms such as heavy vaginal bleeding,
+                severe abdominal or pelvic pain, severe headache with vision changes,
+                difficulty breathing, chest pain, fainting, seizures, or other
+                serious or rapidly worsening symptoms.
+            </p>
+
+            <p>
+                During later pregnancy, a noticeable reduction or change in your
+                baby's usual movements should also be discussed promptly with your
+                maternity care provider.
+            </p>
+
+            <div class="care-actions">
+
+                <a
+                    href="https://www.google.com/maps/search/gynecologist+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🩺 Find a Gynecologist
+                </a>
+
+                <a
+                    href="https://www.google.com/maps/search/hospital+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🏥 Find a Hospital
+                </a>
+
+                <a href="women-care.html" class="care-action-btn">
+                    ← Back to Women Care
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DISCLAIMER -->
+    <div class="health-disclaimer">
+        <strong>Medical Information Disclaimer:</strong>
+        This page provides general health-awareness information and is not a
+        substitute for diagnosis, treatment or advice from a qualified healthcare
+        professional. Pregnancy care can vary from person to person. If you have
+        concerns or urgent symptoms, contact a qualified healthcare professional
+        or seek emergency medical care.
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 NariAdhikar. Empowering Women Through Awareness.</p>
+</footer>
+
+
+<script src="js/language.js"></script>
+<script src="js/ai-legal-assistance.js"></script>
+
+</body>
+</html>

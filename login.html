@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | NariAdhikar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f8e8f2, #f5e7f8);
+            min-height: 100vh;
+        }
+
+        .login-container {
+            min-height: calc(100vh - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 430px;
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 22px;
+            box-shadow: 0 15px 45px rgba(70, 30, 80, 0.18);
+            border: 1px solid #eadfea;
+        }
+
+        .login-icon {
+            width: 75px;
+            height: 75px;
+            margin: 0 auto 18px;
+            border-radius: 20px;
+            background: #f8e8f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+        }
+
+        .login-box h1 {
+            text-align: center;
+            color: #54245f;
+            margin: 0 0 8px;
+            font-size: 28px;
+        }
+
+        .login-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 28px;
+            line-height: 1.5;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #54245f;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .form-group input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 14px;
+            border: 1px solid #d9cbdd;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: #b83280;
+            box-shadow: 0 0 0 3px rgba(184, 50, 128, 0.10);
+        }
+
+        .login-btn,
+        .signup-btn {
+            width: 100%;
+            border: none;
+            padding: 13px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .login-btn {
+            background: #b83280;
+            color: white;
+        }
+
+        .login-btn:hover {
+            background: #54245f;
+        }
+
+        .signup-btn {
+            background: #ffffff;
+            color: #54245f;
+            border: 1px solid #d9cbdd;
+            margin-top: 10px;
+        }
+
+        .signup-btn:hover {
+            background: #f8e8f2;
+        }
+
+        .message {
+            display: none;
+            padding: 11px 13px;
+            border-radius: 9px;
+            margin-bottom: 18px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .message.success {
+            display: block;
+            background: #eaf8ee;
+            color: #216e39;
+            border: 1px solid #b7dfc2;
+        }
+
+        .message.error {
+            display: block;
+            background: #fff0f0;
+            color: #a61b1b;
+            border: 1px solid #efb6b6;
+        }
+
+        .form-divider {
+            text-align: center;
+            margin: 25px 0 15px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #54245f;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-home:hover {
+            color: #b83280;
+        }
+
+        .security-note {
+            margin-top: 20px;
+            padding: 12px;
+            background: #fff8e7;
+            border-left: 4px solid #d8a62a;
+            border-radius: 8px;
+            color: #66572b;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .login-box {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="main-header">
+    <nav class="main-nav">
+
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="legal-rights.html">Legal Rights</a>
+            <a href="women-care.html">Women Care</a>
+            <a href="awareness.html">Awareness</a>
+            <a href="rural-safety.html">Rural Safety</a>
+            <a href="career.html">Career</a>
+            <a href="equality.html">Equality</a>
+            <a href="emergency.html">Emergency</a>
+        </div>
+
+    </nav>
+</header>
+
+
+<main class="login-container">
+
+    <div class="login-box">
+
+        <div class="login-icon">
+            🔐
+        </div>
+
+        <h1>NariAdhikar Login</h1>
+
+        <p class="login-subtitle">
+            Login to manage your personal emergency contacts.
+        </p>
+
+
+        <!-- MESSAGE -->
+        <div id="message" class="message"></div>
+
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm">
+
+            <div class="form-group">
+                <label for="loginMobile">
+                    📱 Mobile Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="loginMobile"
+                    name="mobile"
+                    placeholder="Enter 10-digit mobile number"
+                    maxlength="10"
+                    pattern="[0-9]{10}"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="loginPassword">
+                    🔒 Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+
+            <button
+                type="submit"
+                class="login-btn"
+                id="loginButton"
+            >
+                🔐 Login
+            </button>
+
+        </form>
+
+
+        <div class="form-divider">
+            Don't have an account?
+        </div>
+
+
+        <!-- SIGNUP BUTTON -->
+        <button
+            type="button"
+            class="signup-btn"
+            id="showSignupButton"
+        >
+            📝 Create New Account
+        </button>
+
+
+        <!-- SIGNUP FORM -->
+        <form
+            id="signupForm"
+            class="hidden"
+            style="margin-top: 20px;"
+        >
+
+            <div class="form-group">
+                <label for="signupName">
+                    👤 Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    name="name"
+                    placeholder="Enter your full name"
+                    maxlength="100"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="signupMobile">
+                    📱 Mobile Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="signupMobile"
+                    name="mobile"
+                    placeholder="Enter 10-digit mobile number"
+                    maxlength="10"
+                    pattern="[0-9]{10}"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="signupPassword">
+                    🔒 Password
+                </label>
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    name="password"
+                    placeholder="Minimum 6 characters"
+                    minlength="6"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="confirmPassword">
+                    🔒 Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Enter password again"
+                    minlength="6"
+                    required
+                >
+            </div>
+
+
+            <button
+                type="submit"
+                class="login-btn"
+                id="signupSubmitButton"
+            >
+                📝 Create Account
+            </button>
+
+        </form>
+
+
+        <a
+            href="index.html"
+            class="back-home"
+        >
+            ← Back to Home
+        </a>
+
+
+        <div class="security-note">
+            🔒 <strong>Privacy:</strong>
+            Your password is securely hashed on the server.
+            It is not stored as plain text in the database.
+        </div>
+
+    </div>
+
+</main>
+
+
+<script>
+
+    // --------------------------------------------------
+    // ELEMENTS
+    // --------------------------------------------------
+
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+    const showSignupButton =
+        document.getElementById("showSignupButton");
+
+    const message =
+        document.getElementById("message");
+
+
+    // --------------------------------------------------
+    // SHOW MESSAGE
+    // --------------------------------------------------
+
+    function showMessage(text, type) {
+
+        message.textContent = text;
+
+        message.className = "message " + type;
+    }
+
+
+    // --------------------------------------------------
+    // SHOW / HIDE SIGNUP
+    // --------------------------------------------------
+
+    showSignupButton.addEventListener("click", function () {
+
+        signupForm.classList.toggle("hidden");
+
+        if (signupForm.classList.contains("hidden")) {
+
+            showSignupButton.textContent =
+                "📝 Create New Account";
+
+        } else {
+
+            showSignupButton.textContent =
+                "✖ Hide Sign Up";
+
+        }
+
+    });
+
+
+    // --------------------------------------------------
+    // LOGIN
+    // --------------------------------------------------
+
+    loginForm.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+        const mobile =
+            document.getElementById("loginMobile").value.trim();
+
+        const password =
+            document.getElementById("loginPassword").value;
+
+
+        if (!/^\d{10}$/.test(mobile)) {
+
+            showMessage(
+                "Please enter a valid 10-digit mobile number.",
+                "error"
+            );
+
+            return;
+        }
+
+
+        try {
+
+            const response = await fetch("/api/login", {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    mobile: mobile,
+                    password: password
+                })
+
+            });
+
+
+            const data = await response.json();
+
+
+            if (!response.ok) {
+
+                showMessage(
+                    data.message || "Login failed.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            showMessage(
+                "Login successful! Redirecting...",
+                "success"
+            );
+
+
+            // IMPORTANT:
+            // Server-side session is used.
+            // We are NOT storing login status in localStorage.
+
+            setTimeout(function () {
+
+                window.location.href =
+                    "emergency-contacts.html";
+
+            }, 800);
+
+
+        } catch (error) {
+
+            console.error(error);
+
+            showMessage(
+                "Cannot connect to the server. Make sure npm start is running.",
+                "error"
+            );
+
+        }
+
+    });
+
+
+    // --------------------------------------------------
+    // SIGNUP
+    // --------------------------------------------------
+
+    signupForm.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+
+        const name =
+            document.getElementById("signupName").value.trim();
+
+        const mobile =
+            document.getElementById("signupMobile").value.trim();
+
+        const password =
+            document.getElementById("signupPassword").value;
+
+        const confirmPassword =
+            document.getElementById("confirmPassword").value;
+
+
+        if (!name) {
+
+            showMessage(
+                "Please enter your name.",
+                "error"
+            );
+
+            return;
+        }
+
+
+        if (!/^\d{10}$/.test(mobile)) {
+
+            showMessage(
+                "Please enter a valid 10-digit mobile number.",
+                "error"
+            );
+
+            return;
+        }
+
+
+        if (password.length < 6) {
+
+            showMessage(
+                "Password must contain at least 6 characters.",
+                "error"
+            );
+
+            return;
+        }
+
+
+        if (password !== confirmPassword) {
+
+            showMessage(
+                "Passwords do not match.",
+                "error"
+            );
+
+            return;
+        }
+
+
+        try {
+
+            const response = await fetch("/api/signup", {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    name: name,
+                    mobile: mobile,
+                    password: password
+                })
+
+            });
+
+
+            const data = await response.json();
+
+
+            if (!response.ok) {
+
+                showMessage(
+                    data.message || "Account creation failed.",
+                    "error"
+                );
+
+                return;
+            }
+
+
+            showMessage(
+                "Account created successfully! Please login.",
+                "success"
+            );
+
+
+            // IMPORTANT:
+            // Signup does NOT automatically login.
+            // User must manually enter login details.
+
+            signupForm.reset();
+
+            signupForm.classList.add("hidden");
+
+            showSignupButton.textContent =
+                "📝 Create New Account";
+
+            document.getElementById("loginMobile").value =
+                mobile;
+
+            document.getElementById("loginPassword").focus();
+
+
+        } catch (error) {
+
+            console.error(error);
+
+            showMessage(
+                "Cannot connect to the server. Make sure npm start is running.",
+                "error"
+            );
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NariAdhikar | Women Awareness</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <style>
+
+        /* =====================================
+           AWARENESS PAGE
+        ===================================== */
+
+        .awareness-page {
+
+            background: #faf7fc;
+            min-height: 100vh;
+            padding-bottom: 70px;
+
+        }
+
+
+        .awareness-hero {
+
+            padding: 120px 7% 65px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f7eafa,
+                    #fff7fb
+                );
+
+        }
+
+
+        .awareness-hero h1 {
+
+            color: var(--dark-purple);
+
+            font-size: 42px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .awareness-hero p {
+
+            max-width: 750px;
+
+            margin: auto;
+
+            color: var(--gray);
+
+            line-height: 1.7;
+
+        }
+
+
+        /* SEARCH */
+
+        .awareness-search {
+
+            max-width: 650px;
+
+            margin: 30px auto 0;
+
+            display: flex;
+
+            background: white;
+
+            padding: 7px;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(70,30,80,.10);
+
+        }
+
+
+        .awareness-search input {
+
+            flex: 1;
+
+            border: none;
+
+            outline: none;
+
+            padding: 14px;
+
+            font-size: 15px;
+
+        }
+
+
+        .awareness-search button {
+
+            border: none;
+
+            background: var(--primary);
+
+            color: white;
+
+            padding: 0 20px;
+
+            border-radius: 11px;
+
+            cursor: pointer;
+
+        }
+
+
+        /* =====================================
+           CATEGORY FILTERS
+        ===================================== */
+
+        .awareness-categories {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            padding: 30px 6%;
+
+        }
+
+
+        .awareness-filter {
+
+            border: 1px solid var(--border);
+
+            background: white;
+
+            padding: 10px 17px;
+
+            border-radius: 20px;
+
+            cursor: pointer;
+
+            color: var(--dark-purple);
+
+        }
+
+
+        .awareness-filter.active {
+
+            background: var(--primary);
+
+            color: white;
+
+        }
+
+
+        /* =====================================
+           AWARENESS CARDS
+        ===================================== */
+
+        .awareness-grid {
+
+            max-width: 1150px;
+
+            margin: auto;
+
+            padding: 10px 6%;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(260px, 1fr)
+                );
+
+            gap: 22px;
+
+        }
+
+
+        .awareness-card {
+
+            background: white;
+
+            border: 1px solid var(--border);
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            transition: .3s;
+
+        }
+
+
+        .awareness-card:hover {
+
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(70,30,80,.12);
+
+        }
+
+
+        .awareness-image {
+
+            height: 170px;
+
+            background: #eee;
+
+            overflow: hidden;
+
+        }
+
+
+        .awareness-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+        }
+
+
+        .awareness-content {
+
+            padding: 22px;
+
+        }
+
+
+        .awareness-tag {
+
+            display: inline-block;
+
+            background: #f3e5f5;
+
+            color: var(--dark-purple);
+
+            padding: 5px 10px;
+
+            border-radius: 15px;
+
+            font-size: 11px;
+
+            font-weight: bold;
+
+        }
+
+
+        .awareness-content h3 {
+
+            color: var(--dark-purple);
+
+            margin: 12px 0 8px;
+
+        }
+
+
+        .awareness-content p {
+
+            color: var(--gray);
+
+            font-size: 14px;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* BUTTONS */
+
+        .awareness-actions {
+
+            display: flex;
+
+            gap: 8px;
+
+            margin-top: 18px;
+
+        }
+
+
+        .awareness-actions button {
+
+            border: none;
+
+            padding: 9px 12px;
+
+            border-radius: 9px;
+
+            cursor: pointer;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+        }
+
+
+        .listen-awareness {
+
+            background: #eaf7ef;
+
+            color: #176b3a;
+
+        }
+
+
+        .read-awareness {
+
+            background: #f2e8f8;
+
+            color: var(--dark-purple);
+
+        }
+
+
+        /* =====================================
+           FEATURED VIDEO
+        ===================================== */
+
+        .awareness-video {
+
+            max-width: 1100px;
+
+            margin: 70px auto;
+
+            padding: 0 6%;
+
+        }
+
+
+        .video-box {
+
+            background: #24172b;
+
+            border-radius: 25px;
+
+            padding: 30px;
+
+            color: white;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 30px;
+
+            align-items: center;
+
+        }
+
+
+        .video-box video {
+
+            width: 100%;
+
+            border-radius: 15px;
+
+        }
+
+
+        .video-text h2 {
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .video-text p {
+
+            color: #ddd;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* =====================================
+           MYTH VS FACT
+        ===================================== */
+
+        .myth-section {
+
+            padding: 70px 6%;
+
+            background: white;
+
+        }
+
+
+        .myth-grid {
+
+            max-width: 1050px;
+
+            margin: 30px auto 0;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(280px, 1fr)
+                );
+
+            gap: 20px;
+
+        }
+
+
+        .myth-card {
+
+            padding: 22px;
+
+            border-radius: 18px;
+
+            border: 1px solid var(--border);
+
+        }
+
+
+        .myth {
+
+            color: #b42318;
+
+            font-weight: bold;
+
+        }
+
+
+        .fact {
+
+            color: #176b3a;
+
+            font-weight: bold;
+
+            margin-top: 12px;
+
+        }
+
+
+        /* =====================================
+           MOBILE
+        ===================================== */
+
+        @media(max-width: 700px) {
+
+            .awareness-hero h1 {
+
+                font-size: 30px;
+
+            }
+
+
+            .awareness-search {
+
+                margin-left: 5%;
+
+                margin-right: 5%;
+
+            }
+
+
+            .video-box {
+
+                grid-template-columns: 1fr;
+
+                padding: 20px;
+
+            }
+
+        }
+/* =====================================
+   AWARENESS READ MORE MODAL
+===================================== */
+
+#awarenessModal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+}
+
+#awarenessModal .awareness-modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+
+#awarenessModal .awareness-modal-box {
+    background: #ffffff;
+
+    width: 900px;
+    max-width: 92vw;
+
+    max-height: 82vh;
+
+    overflow-y: auto;
+
+    padding: 38px 45px;
+
+    border-radius: 28px;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 20px 60px rgba(50, 20, 60, 0.30);
+}
+
+
+/* CLOSE BUTTON */
+
+#awarenessModal .awareness-modal-close {
+    position: absolute;
+
+    top: 20px;
+    right: 22px;
+
+    width: 54px;
+    height: 54px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f3e5f7;
+
+    color: var(--dark-purple);
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+#awarenessModal .awareness-modal-close:hover {
+    background: #ead4ef;
+}
+
+
+/* TITLE */
+
+#awarenessModal .awareness-modal-title {
+    color: var(--dark-purple);
+
+    font-size: 34px;
+
+    line-height: 1.25;
+
+    margin: 0 70px 20px 0;
+
+    padding: 0;
+}
+
+
+/* CONTENT */
+
+#awarenessModal .awareness-modal-content {
+    color: var(--gray);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+#awarenessModal .awareness-modal-content p {
+    margin: 0 0 16px 0;
+
+    padding: 0;
+}
+
+
+#awarenessModal .awareness-modal-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* LISTEN BUTTON */
+
+#awarenessModal .awareness-modal-listen {
+    display: inline-block;
+
+    margin-top: 22px;
+
+    border: none;
+
+    background: var(--primary);
+
+    color: white;
+
+    padding: 13px 25px;
+
+    border-radius: 11px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+#awarenessModal .awareness-modal-listen:hover {
+    background: var(--dark-purple);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    #awarenessModal .awareness-modal-box {
+        width: 94vw;
+
+        max-height: 85vh;
+
+        padding: 30px 22px;
+
+        border-radius: 20px;
+    }
+
+
+    #awarenessModal .awareness-modal-title {
+        font-size: 26px;
+
+        margin-right: 50px;
+    }
+
+
+    #awarenessModal .awareness-modal-content {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+}
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- =====================================
+         HEADER
+    ===================================== -->
+
+<!-- =====================================
+     NARIADHIKAR HEADER
+===================================== -->
+
+<header class="main-header">
+
+    <nav class="main-nav">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+
+        <!-- NAVIGATION -->
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="legal-rights.html">
+                Legal Rights
+            </a>
+
+            <a href="awareness.html" class="active">
+                Awareness
+            </a>
+
+            <a href="emergency.html">
+                Emergency
+            </a>
+
+            <a href="women-care.html">
+                Women Care
+            </a>
+
+            <a href="career.html">
+                Career
+            </a>
+
+            <a href="equality.html">
+                Equality
+            </a>
+
+            <a href="rural-safety.html">
+                Rural Safety
+            </a>
+
+        </div>
+
+
+    </nav>
+
+</header>
+
+
+    <main class="awareness-page">
+
+
+        <!-- =================================
+             HERO
+        ================================= -->
+
+        <section class="awareness-hero">
+
+            <p class="small-title">
+                KNOW • LEARN • PROTECT
+            </p>
+
+            <h1>
+                🌸 Women Awareness
+            </h1>
+
+            <p>
+                Simple and useful information about
+                women's rights, safety, health,
+                education, careers and financial
+                awareness.
+            </p>
+
+
+            <!-- SEARCH -->
+
+            <div class="awareness-search">
+
+                <input
+                    type="text"
+                    id="awarenessSearch"
+                    placeholder="Search awareness topics..."
+                    onkeyup="searchAwareness()">
+
+                <button>
+                    🔎 Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             CATEGORIES
+        ================================= -->
+
+        <div class="awareness-categories">
+
+            <button
+                class="awareness-filter active"
+                onclick="filterAwareness('all', this)">
+
+                🌸 All
+
+            </button>
+
+
+            <button
+                class="awareness-filter"
+                onclick="filterAwareness('rights', this)">
+
+                ⚖️ Rights
+
+            </button>
+
+
+            <button
+                class="awareness-filter"
+                onclick="filterAwareness('safety', this)">
+
+                🛡️ Safety
+
+            </button>
+
+
+            <button
+                class="awareness-filter"
+                onclick="filterAwareness('health', this)">
+
+                🏥 Health
+
+            </button>
+
+
+            <button
+                class="awareness-filter"
+                onclick="filterAwareness('career', this)">
+
+                💼 Career
+
+            </button>
+
+
+            <button
+                class="awareness-filter"
+                onclick="filterAwareness('finance', this)">
+
+                💰 Finance
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================
+             AWARENESS CARDS
+        ================================= -->
+
+        <section class="awareness-grid">
+
+
+            <!-- CARD 1 -->
+
+            <article
+                class="awareness-card"
+                data-category="rights"
+                data-title="women legal rights">
+
+                <div class="awareness-image">
+
+                    <img
+                        src="images/legal-awareness.jpg"
+                        alt="Women legal rights">
+
+                </div>
+
+                <div class="awareness-content">
+
+                    <span class="awareness-tag">
+                        ⚖️ RIGHTS
+                    </span>
+
+                    <h3>
+                        Know Your Legal Rights
+                    </h3>
+
+                    <p>
+                        Learn about important legal
+                        rights in simple language and
+                        understand where to seek help.
+                    </p>
+
+                    <div class="awareness-actions">
+
+                        <button
+                            class="listen-awareness"
+                            onclick="speakText(
+                                'Learn about your legal rights and how to seek help.'
+                            )">
+
+                            🔊 Listen
+
+                        </button>
+
+                        <button
+                            class="read-awareness"
+                            onclick="showAwareness(
+                                'Know Your Legal Rights',
+                                'Women have legal protections and can seek appropriate support when their rights are violated. Always verify legal information through official sources.'
+                            )">
+
+                            📖 Read
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 2 -->
+
+            <article
+                class="awareness-card"
+                data-category="safety"
+                data-title="personal safety">
+
+                <div class="awareness-image">
+
+                    <img
+                        src="images/safety-awareness.jpg"
+                        alt="Women safety">
+
+                </div>
+
+                <div class="awareness-content">
+
+                    <span class="awareness-tag">
+                        🛡️ SAFETY
+                    </span>
+
+                    <h3>
+                        Personal Safety Awareness
+                    </h3>
+
+                    <p>
+                        Learn simple safety practices,
+                        emergency planning and ways to
+                        find nearby support.
+                    </p>
+
+                    <div class="awareness-actions">
+
+                        <button
+                            class="listen-awareness"
+                            onclick="speakText(
+                                'Learn simple personal safety practices and emergency planning.'
+                            )">
+
+                            🔊 Listen
+
+                        </button>
+
+                        <button
+                            class="read-awareness"
+                            onclick="showAwareness(
+                                'Personal Safety',
+                                'Keep important emergency contacts accessible, stay aware of your surroundings and use trusted support services when needed.'
+                            )">
+
+                            📖 Read
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 3 -->
+
+            <article
+                class="awareness-card"
+                data-category="health"
+                data-title="women health">
+
+                <div class="awareness-image">
+
+                    <img
+                        src="images/health-awareness.jpg"
+                        alt="Women health">
+
+                </div>
+
+                <div class="awareness-content">
+
+                    <span class="awareness-tag">
+                        🏥 HEALTH
+                    </span>
+
+                    <h3>
+                        Health Awareness
+                    </h3>
+
+                    <p>
+                        Learn about healthcare,
+                        preventive care and when
+                        to seek professional help.
+                    </p>
+
+                    <div class="awareness-actions">
+
+                        <button
+                            class="listen-awareness"
+                            onclick="speakText(
+                                'Learn about women health, preventive care and when to seek professional help.'
+                            )">
+
+                            🔊 Listen
+
+                        </button>
+
+                        <button
+                            class="read-awareness"
+                            onclick="showAwareness(
+                                'Health Awareness',
+                                'Regular healthcare and timely professional advice are important. Use qualified healthcare professionals for medical concerns.'
+                            )">
+
+                            📖 Read
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 4 -->
+
+            <article
+                class="awareness-card"
+                data-category="career"
+                data-title="women career education">
+
+                <div class="awareness-image">
+
+                    <img
+                        src="images/career-awareness.jpg"
+                        alt="Women career">
+
+                </div>
+
+                <div class="awareness-content">
+
+                    <span class="awareness-tag">
+                        💼 CAREER
+                    </span>
+
+                    <h3>
+                        Education & Career
+                    </h3>
+
+                    <p>
+                        Discover education, skills,
+                        employment and entrepreneurship
+                        opportunities.
+                    </p>
+
+                    <div class="awareness-actions">
+
+                        <button
+                            class="listen-awareness"
+                            onclick="speakText(
+                                'Discover education, skills, employment and entrepreneurship opportunities.'
+                            )">
+
+                            🔊 Listen
+
+                        </button>
+
+                        <button
+                            class="read-awareness"
+                            onclick="showAwareness(
+                                'Education and Career',
+                                'Education and skill development can help women explore employment, entrepreneurship and other opportunities.'
+                            )">
+
+                            📖 Read
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 5 -->
+
+            <article
+                class="awareness-card"
+                data-category="finance"
+                data-title="financial awareness">
+
+                <div class="awareness-image">
+
+                    <img
+                        src="images/finance-awareness.jpg"
+                        alt="Women financial awareness">
+
+                </div>
+
+                <div class="awareness-content">
+
+                    <span class="awareness-tag">
+                        💰 FINANCE
+                    </span>
+
+                    <h3>
+                        Financial Awareness
+                    </h3>
+
+                    <p>
+                        Learn about savings, banking,
+                        financial independence and
+                        avoiding financial scams.
+                    </p>
+
+                    <div class="awareness-actions">
+
+                        <button
+                            class="listen-awareness"
+                            onclick="speakText(
+                                'Learn about savings, banking, financial independence and avoiding financial scams.'
+                            )">
+
+                            🔊 Listen
+
+                        </button>
+
+                        <button
+                            class="read-awareness"
+                            onclick="showAwareness(
+                                'Financial Awareness',
+                                'Understand basic banking and financial safety. Never share your PIN, password or OTP with others.'
+                            )">
+
+                            📖 Read
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 6 -->
+
+            <article
+                class="awareness-card"
+                data-category="safety"
+                data-title="cyber safety online fraud">
+
+                <div class="awareness-image">
+
+                    <img
+                        src="images/cyber-awareness.jpg"
+                        alt="Cyber safety">
+
+                </div>
+
+                <div class="awareness-content">
+
+                    <span class="awareness-tag">
+                        🔐 CYBER SAFETY
+                    </span>
+
+                    <h3>
+                        Online Safety
+                    </h3>
+
+                    <p>
+                        Learn how to identify scams,
+                        protect personal information
+                        and stay safer online.
+                    </p>
+
+                    <div class="awareness-actions">
+
+                        <button
+                            class="listen-awareness"
+                            onclick="speakText(
+                                'Learn how to identify scams and protect your personal information online.'
+                            )">
+
+                            🔊 Listen
+
+                        </button>
+
+                        <button
+                            class="read-awareness"
+                            onclick="showAwareness(
+                                'Online Safety',
+                                'Do not share OTPs, passwords or sensitive information with unknown people. Be careful with suspicious links, messages and calls.'
+                            )">
+
+                            📖 Read
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             FEATURED VIDEO
+        ================================= -->
+
+        <section class="awareness-video">
+
+            <div class="video-box">
+
+                <div class="video-text">
+
+                    <h2>
+                        🎥 Learn Through Video
+                    </h2>
+
+                    <p>
+                        Some information is easier to
+                        understand through visual examples.
+                        Our awareness section can provide
+                        simple videos in local languages.
+                    </p>
+
+                </div>
+
+
+                <video
+                    controls
+                    
+                    <source
+                        src="videos/women_awarness_video.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support video.
+
+                </video>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             MYTH VS FACT
+        ================================= -->
+
+        <section class="myth-section">
+
+            <div class="section-heading"
+                 style="text-align:center">
+
+                <p class="small-title">
+                    KNOW THE TRUTH
+                </p>
+
+                <h2>
+                    💡 Myth vs Fact
+                </h2>
+
+            </div>
+
+
+            <div class="myth-grid">
+
+
+                <div class="myth-card">
+
+                    <div class="myth">
+                        ❌ Myth
+                    </div>
+
+                    <p>
+                        "I should stay silent if
+                        someone is troubling me."
+                    </p>
+
+                    <div class="fact">
+                        ✅ Fact
+                    </div>
+
+                    <p>
+                        You can seek help from
+                        trusted people and appropriate
+                        support services.
+                    </p>
+
+                </div>
+
+
+                <div class="myth-card">
+
+                    <div class="myth">
+                        ❌ Myth
+                    </div>
+
+                    <p>
+                        "I cannot ask about my
+                        legal rights."
+                    </p>
+
+                    <div class="fact">
+                        ✅ Fact
+                    </div>
+
+                    <p>
+                        Learning about your rights
+                        can help you make informed
+                        decisions.
+                    </p>
+
+                </div>
+
+
+                <div class="myth-card">
+
+                    <div class="myth">
+                        ❌ Myth
+                    </div>
+
+                    <p>
+                        "I should share my OTP if
+                        someone says they are from a bank."
+                    </p>
+
+                    <div class="fact">
+                        ✅ Fact
+                    </div>
+
+                    <p>
+                        Never share OTPs or passwords
+                        with unknown callers.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         AWARENESS JAVASCRIPT
+    ===================================== -->
+
+    <script src="js/awareness.js"></script>
+<script src="js/ai-legal-assistance.js"></script>
+
+</body>
+
+</html>

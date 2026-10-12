@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Regular Checkups | NariAdhikar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .checkup-page {
+            background: #fffafc;
+            min-height: 100vh;
+        }
+
+        .checkup-hero {
+            background: linear-gradient(135deg, #54245f, #b83280);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .checkup-hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .checkup-hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .checkup-container {
+            width: min(1100px, 92%);
+            margin: auto;
+            padding: 45px 0;
+        }
+
+        .checkup-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+            margin-bottom: 45px;
+        }
+
+        .checkup-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(84, 36, 95, 0.15);
+        }
+
+        .checkup-intro h2 {
+            color: #54245f;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .checkup-intro p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .checkup-section {
+            margin-bottom: 45px;
+        }
+
+        .checkup-section h2 {
+            text-align: center;
+            color: #54245f;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .effect-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .effect-card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #eadfea;
+            box-shadow: 0 5px 18px rgba(84, 36, 95, 0.08);
+        }
+
+        .effect-card h3 {
+            color: #b83280;
+            margin-bottom: 10px;
+        }
+
+        .effect-card p {
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .do-dont {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .do-box,
+        .dont-box {
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        .do-box {
+            background: #f0fbf4;
+            border: 1px solid #ccebd5;
+        }
+
+        .dont-box {
+            background: #fff3f3;
+            border: 1px solid #f0cccc;
+        }
+
+        .do-box h3 {
+            color: #287a45;
+            margin-bottom: 15px;
+        }
+
+        .dont-box h3 {
+            color: #b83232;
+            margin-bottom: 15px;
+        }
+
+        .do-box ul,
+        .dont-box ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .do-box li,
+        .dont-box li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .doctor-box {
+            background: linear-gradient(135deg, #f8e8f2, #f3e3f7);
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            border: 1px solid #eadfea;
+        }
+
+        .doctor-box h2 {
+            color: #54245f;
+            margin-bottom: 15px;
+        }
+
+        .doctor-box p {
+            max-width: 750px;
+            margin: 0 auto 15px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .care-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .care-action-btn {
+            display: inline-block;
+            background: #b83280;
+            color: white;
+            text-decoration: none;
+            padding: 11px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        .care-action-btn:hover {
+            background: #54245f;
+        }
+
+        .health-disclaimer {
+            margin-top: 35px;
+            padding: 18px;
+            background: #fff8e7;
+            border: 1px solid #f0dfaa;
+            border-radius: 12px;
+            color: #66572b;
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .checkup-intro,
+            .effect-grid,
+            .do-dont {
+                grid-template-columns: 1fr;
+            }
+
+            .checkup-hero h1 {
+                font-size: 32px;
+            }
+
+            .checkup-hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body class="checkup-page">
+
+<header class="main-header">
+    <nav class="main-nav">
+
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="legal-rights.html">Legal Rights</a>
+            <a href="women-care.html">Women Care</a>
+            <a href="awareness.html">Awareness</a>
+            <a href="rural-safety.html">Rural Safety</a>
+            <a href="career.html">Career</a>
+            <a href="equality.html">Equality</a>
+            <a href="emergency.html">Emergency</a>
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="checkup-hero">
+
+    <h1>🩺 Regular Checkups</h1>
+
+    <p>
+        Regular health checkups can help women understand their health,
+        identify concerns early and get appropriate medical guidance.
+    </p>
+
+</section>
+
+
+<main class="checkup-container">
+
+
+    <!-- INTRO -->
+
+    <section class="checkup-intro">
+
+        <div>
+
+            <img
+                src="images/regular-checkups.jpg"
+                alt="Regular health checkup awareness"
+                class="checkup-image"
+            >
+
+        </div>
+
+        <div>
+
+            <h2>Your Health Deserves Attention</h2>
+
+            <p>
+                Regular healthcare visits give you an opportunity to discuss
+                your health, ask questions and identify problems that may need
+                further evaluation.
+            </p>
+
+            <p>
+                The type and frequency of checkups can vary depending on your
+                age, health history, family history, lifestyle and individual
+                needs.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CHECKUP AREAS -->
+
+    <section class="checkup-section">
+
+        <h2>🌷 What Can Be Discussed?</h2>
+
+        <div class="effect-grid">
+
+            <div class="effect-card">
+                <h3>🩺 General Health</h3>
+                <p>
+                    Discuss your overall health, symptoms, medicines and
+                    any health concerns you may have.
+                </p>
+            </div>
+
+            <div class="effect-card">
+                <h3>🩸 Blood Health</h3>
+                <p>
+                    Your healthcare professional may recommend blood tests
+                    when appropriate based on your symptoms and health needs.
+                </p>
+            </div>
+
+            <div class="effect-card">
+                <h3>❤️ Blood Pressure</h3>
+                <p>
+                    Blood pressure can be checked as part of routine healthcare
+                    and monitored when necessary.
+                </p>
+            </div>
+
+            <div class="effect-card">
+                <h3>🌸 Women's Health</h3>
+                <p>
+                    Discuss menstrual concerns, reproductive health and other
+                    women-specific health questions.
+                </p>
+            </div>
+
+            <div class="effect-card">
+                <h3>🧠 Mental Wellbeing</h3>
+                <p>
+                    Talk about stress, anxiety, low mood, sleep problems or
+                    other concerns affecting your wellbeing.
+                </p>
+            </div>
+
+            <div class="effect-card">
+                <h3>🥗 Lifestyle</h3>
+                <p>
+                    Discuss nutrition, physical activity, sleep and other
+                    lifestyle factors that may affect your health.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DO AND DON'T -->
+
+    <section class="checkup-section">
+
+        <h2>💗 Healthy Checkup Habits: Do & Don't</h2>
+
+        <div class="do-dont">
+
+            <div class="do-box">
+
+                <h3>✅ Do</h3>
+
+                <ul>
+                    <li>Keep track of important health information.</li>
+                    <li>Tell your healthcare professional about ongoing symptoms.</li>
+                    <li>Ask questions when you do not understand something.</li>
+                    <li>Carry information about medicines you are taking.</li>
+                    <li>Follow recommended follow-up appointments.</li>
+                    <li>Discuss relevant family health history.</li>
+                    <li>Seek medical help when new or concerning symptoms appear.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="dont-box">
+
+                <h3>❌ Don't</h3>
+
+                <ul>
+                    <li>Do not ignore persistent or unusual symptoms.</li>
+                    <li>Do not hide important health information from your doctor.</li>
+                    <li>Do not take medicines without appropriate medical advice.</li>
+                    <li>Do not postpone necessary follow-up care.</li>
+                    <li>Do not feel embarrassed about asking health questions.</li>
+                    <li>Do not rely only on online information for diagnosis.</li>
+                    <li>Do not assume every symptom is harmless.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHEN TO SEEK HELP -->
+
+    <section class="checkup-section">
+
+        <div class="doctor-box">
+
+            <h2>👩‍⚕️ When Should You See a Doctor?</h2>
+
+            <p>
+                You should consider speaking with a healthcare professional
+                when you have a new, persistent or unexplained health concern.
+            </p>
+
+            <p>
+                Seek urgent medical care for serious symptoms such as severe
+                chest pain, difficulty breathing, fainting, severe bleeding,
+                sudden weakness or other rapidly worsening symptoms.
+            </p>
+
+            <p>
+                Your healthcare professional can decide whether an examination,
+                screening test or further investigation is appropriate for you.
+            </p>
+
+            <div class="care-actions">
+
+                <a
+                    href="https://www.google.com/maps/search/doctor+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🩺 Find a Doctor
+                </a>
+
+                <a
+                    href="https://www.google.com/maps/search/women%27s+health+clinic+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🌸 Women's Health Clinic
+                </a>
+
+                <a
+                    href="https://www.google.com/maps/search/hospital+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🏥 Find a Hospital
+                </a>
+
+                <a
+                    href="women-care.html"
+                    class="care-action-btn"
+                >
+                    ← Back to Women Care
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DISCLAIMER -->
+
+    <div class="health-disclaimer">
+
+        <strong>Health Information Disclaimer:</strong>
+
+        This page provides general health-awareness information and is not
+        a substitute for diagnosis, treatment or personalised advice from
+        a qualified healthcare professional. Healthcare needs differ between
+        individuals. If you have health concerns or urgent symptoms, seek
+        appropriate medical care.
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 NariAdhikar. Empowering Women Through Awareness.
+    </p>
+
+</footer>
+
+
+<script src="js/language.js"></script>
+<script src="js/ai-legal-assistance.js"></script>
+
+</body>
+</html>

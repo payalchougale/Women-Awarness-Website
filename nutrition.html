@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nutrition & Anemia | NariAdhikar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .nutrition-page {
+            background: #fffafc;
+            min-height: 100vh;
+        }
+
+        .nutrition-hero {
+            background: linear-gradient(135deg, #54245f, #b83280);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .nutrition-hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .nutrition-hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .nutrition-container {
+            width: min(1100px, 92%);
+            margin: auto;
+            padding: 45px 0;
+        }
+
+        .nutrition-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+            margin-bottom: 45px;
+        }
+
+        .nutrition-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(84, 36, 95, 0.15);
+        }
+
+        .nutrition-intro h2 {
+            color: #54245f;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .nutrition-intro p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .nutrition-section {
+            margin-bottom: 45px;
+        }
+
+        .nutrition-section h2 {
+            text-align: center;
+            color: #54245f;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .effect-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .effect-card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #eadfea;
+            box-shadow: 0 5px 18px rgba(84, 36, 95, 0.08);
+        }
+
+        .effect-card h3 {
+            color: #b83280;
+            margin-bottom: 10px;
+        }
+
+        .effect-card p {
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .do-dont {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .do-box,
+        .dont-box {
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        .do-box {
+            background: #f0fbf4;
+            border: 1px solid #ccebd5;
+        }
+
+        .dont-box {
+            background: #fff3f3;
+            border: 1px solid #f0cccc;
+        }
+
+        .do-box h3 {
+            color: #287a45;
+            margin-bottom: 15px;
+        }
+
+        .dont-box h3 {
+            color: #b83232;
+            margin-bottom: 15px;
+        }
+
+        .do-box ul,
+        .dont-box ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .do-box li,
+        .dont-box li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .doctor-box {
+            background: linear-gradient(135deg, #f8e8f2, #f3e3f7);
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            border: 1px solid #eadfea;
+        }
+
+        .doctor-box h2 {
+            color: #54245f;
+            margin-bottom: 15px;
+        }
+
+        .doctor-box p {
+            max-width: 750px;
+            margin: 0 auto 15px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .care-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .care-action-btn {
+            display: inline-block;
+            background: #b83280;
+            color: white;
+            text-decoration: none;
+            padding: 11px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        .care-action-btn:hover {
+            background: #54245f;
+        }
+
+        .health-disclaimer {
+            margin-top: 35px;
+            padding: 18px;
+            background: #fff8e7;
+            border: 1px solid #f0dfaa;
+            border-radius: 12px;
+            color: #66572b;
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .nutrition-intro,
+            .effect-grid,
+            .do-dont {
+                grid-template-columns: 1fr;
+            }
+
+            .nutrition-hero h1 {
+                font-size: 32px;
+            }
+
+            .nutrition-hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body class="nutrition-page">
+
+<header class="main-header">
+    <nav class="main-nav">
+
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="legal-rights.html">Legal Rights</a>
+            <a href="women-care.html">Women Care</a>
+            <a href="awareness.html">Awareness</a>
+            <a href="rural-safety.html">Rural Safety</a>
+            <a href="career.html">Career</a>
+            <a href="equality.html">Equality</a>
+            <a href="emergency.html">Emergency</a>
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="nutrition-hero">
+
+    <h1>🥗 Nutrition & Anemia</h1>
+
+    <p>
+        Learn about balanced nutrition, essential nutrients, anemia prevention,
+        healthy eating habits and when it may be important to seek medical help.
+    </p>
+
+</section>
+
+
+<main class="nutrition-container">
+
+
+    <!-- INTRO -->
+
+    <section class="nutrition-intro">
+
+        <div>
+
+            <img
+                src="images/nutrition.jpg"
+                alt="Nutrition and healthy eating awareness"
+                class="nutrition-image"
+            >
+
+        </div>
+
+
+        <div>
+
+            <h2>Good Nutrition Matters</h2>
+
+            <p>
+                Good nutrition helps support energy, growth, immunity and
+                overall health. Women and girls need a balanced diet that
+                provides enough protein, vitamins, minerals, healthy fats,
+                carbohydrates and fluids.
+            </p>
+
+            <p>
+                Iron is especially important because iron deficiency can lead
+                to anemia. Eating a varied diet and seeking medical advice
+                when symptoms or concerns occur can help support better health.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- IMPORTANT NUTRIENTS -->
+
+    <section class="nutrition-section">
+
+        <h2>🌷 Important Nutrients for Women</h2>
+
+        <div class="effect-grid">
+
+            <div class="effect-card">
+
+                <h3>🥬 Iron</h3>
+
+                <p>
+                    Iron is needed to make hemoglobin, which helps carry
+                    oxygen in the blood. Sources include leafy vegetables,
+                    beans, lentils and fortified foods.
+                </p>
+
+            </div>
+
+
+            <div class="effect-card">
+
+                <h3>🥛 Calcium</h3>
+
+                <p>
+                    Calcium supports healthy bones and teeth. Milk, curd,
+                    some fortified foods, tofu and certain leafy vegetables
+                    can provide calcium.
+                </p>
+
+            </div>
+
+
+            <div class="effect-card">
+
+                <h3>🍊 Vitamin C</h3>
+
+                <p>
+                    Vitamin C supports normal body functions and can help
+                    improve absorption of iron from plant-based foods.
+                </p>
+
+            </div>
+
+
+            <div class="effect-card">
+
+                <h3>🥚 Protein</h3>
+
+                <p>
+                    Protein helps the body build and repair tissues. Sources
+                    include pulses, beans, dairy products, soy, nuts and seeds.
+                </p>
+
+            </div>
+
+
+            <div class="effect-card">
+
+                <h3>🌾 Folate</h3>
+
+                <p>
+                    Folate is an important nutrient for normal cell growth.
+                    Green vegetables, beans, peas and fortified foods can
+                    provide folate.
+                </p>
+
+            </div>
+
+
+            <div class="effect-card">
+
+                <h3>💧 Water</h3>
+
+                <p>
+                    Adequate fluids help the body maintain normal functions.
+                    Water is generally the best choice for everyday hydration.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DO AND DON'T -->
+
+    <section class="nutrition-section">
+
+        <h2>💗 Healthy Eating: Do & Don't</h2>
+
+        <div class="do-dont">
+
+
+            <div class="do-box">
+
+                <h3>✅ Do</h3>
+
+                <ul>
+
+                    <li>Eat a variety of fruits and vegetables.</li>
+
+                    <li>Include pulses, beans and other protein-rich foods.</li>
+
+                    <li>Include iron-rich foods in your regular diet.</li>
+
+                    <li>Choose whole grains and other nutritious foods.</li>
+
+                    <li>Drink enough water throughout the day.</li>
+
+                    <li>Maintain regular and balanced meals.</li>
+
+                    <li>Discuss supplements with a healthcare professional when needed.</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="dont-box">
+
+                <h3>❌ Don't</h3>
+
+                <ul>
+
+                    <li>Do not depend mainly on highly processed or sugary foods.</li>
+
+                    <li>Do not skip meals regularly.</li>
+
+                    <li>Do not take iron or other supplements without appropriate advice.</li>
+
+                    <li>Do not ignore persistent tiredness or weakness.</li>
+
+                    <li>Do not follow extreme diets without professional guidance.</li>
+
+                    <li>Do not assume every symptom is caused by poor nutrition.</li>
+
+                    <li>Do not delay medical evaluation when symptoms are concerning.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ANEMIA -->
+
+    <section class="nutrition-section">
+
+        <div class="doctor-box">
+
+            <h2>🩸 Understanding Anemia</h2>
+
+            <p>
+                Anemia can occur when the body does not have enough healthy
+                red blood cells or hemoglobin. Iron deficiency is one possible
+                cause, but anemia can have several causes.
+            </p>
+
+            <p>
+                Symptoms can include tiredness, weakness, dizziness,
+                shortness of breath or pale skin. These symptoms can also
+                have other causes, so proper medical evaluation is important.
+            </p>
+
+            <p>
+                If you have persistent symptoms, very heavy periods, or
+                concerns about anemia, speak with a qualified healthcare
+                professional. They may recommend an examination or blood test
+                when appropriate.
+            </p>
+
+
+            <div class="care-actions">
+
+                <a
+                    href="https://www.google.com/maps/search/dietitian+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🥗 Find a Dietitian
+                </a>
+
+
+                <a
+                    href="https://www.google.com/maps/search/doctor+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🩺 Find a Doctor
+                </a>
+
+
+                <a
+                    href="https://www.google.com/maps/search/hospital+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🏥 Find a Hospital
+                </a>
+
+
+                <a
+                    href="women-care.html"
+                    class="care-action-btn"
+                >
+                    ← Back to Women Care
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DISCLAIMER -->
+
+    <div class="health-disclaimer">
+
+        <strong>Health Information Disclaimer:</strong>
+
+        This page provides general health-awareness information and is not
+        a substitute for diagnosis, treatment or personalised advice from
+        a qualified healthcare professional. Nutritional needs can vary
+        between individuals. If you have persistent symptoms or health
+        concerns, consult a qualified healthcare professional.
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 NariAdhikar. Empowering Women Through Awareness.
+    </p>
+
+</footer>
+
+
+<script src="js/language.js"></script>
+<script src="js/ai-legal-assistance.js"></script>
+
+</body>
+</html>

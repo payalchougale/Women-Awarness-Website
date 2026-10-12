@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Self Care | NariAdhikar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .selfcare-page {
+            background: #fffafc;
+            min-height: 100vh;
+        }
+
+        .selfcare-hero {
+            background: linear-gradient(135deg, #54245f, #b83280);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .selfcare-hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .selfcare-hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .selfcare-container {
+            width: min(1100px, 92%);
+            margin: auto;
+            padding: 45px 0;
+        }
+
+        .selfcare-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: center;
+            margin-bottom: 45px;
+        }
+
+        .selfcare-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(84, 36, 95, 0.15);
+        }
+
+        .selfcare-intro h2 {
+            color: #54245f;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .selfcare-intro p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .selfcare-section {
+            margin-bottom: 45px;
+        }
+
+        .selfcare-section h2 {
+            text-align: center;
+            color: #54245f;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .effect-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .effect-card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #eadfea;
+            box-shadow: 0 5px 18px rgba(84, 36, 95, 0.08);
+        }
+
+        .effect-card h3 {
+            color: #b83280;
+            margin-bottom: 10px;
+        }
+
+        .effect-card p {
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .do-dont {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .do-box,
+        .dont-box {
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        .do-box {
+            background: #f0fbf4;
+            border: 1px solid #ccebd5;
+        }
+
+        .dont-box {
+            background: #fff3f3;
+            border: 1px solid #f0cccc;
+        }
+
+        .do-box h3 {
+            color: #287a45;
+            margin-bottom: 15px;
+        }
+
+        .dont-box h3 {
+            color: #b83232;
+            margin-bottom: 15px;
+        }
+
+        .do-box ul,
+        .dont-box ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .do-box li,
+        .dont-box li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .doctor-box {
+            background: linear-gradient(135deg, #f8e8f2, #f3e3f7);
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            border: 1px solid #eadfea;
+        }
+
+        .doctor-box h2 {
+            color: #54245f;
+            margin-bottom: 15px;
+        }
+
+        .doctor-box p {
+            max-width: 750px;
+            margin: 0 auto 15px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .care-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .care-action-btn {
+            display: inline-block;
+            background: #b83280;
+            color: white;
+            text-decoration: none;
+            padding: 11px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        .care-action-btn:hover {
+            background: #54245f;
+        }
+
+        .health-disclaimer {
+            margin-top: 35px;
+            padding: 18px;
+            background: #fff8e7;
+            border: 1px solid #f0dfaa;
+            border-radius: 12px;
+            color: #66572b;
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .selfcare-intro,
+            .effect-grid,
+            .do-dont {
+                grid-template-columns: 1fr;
+            }
+
+            .selfcare-hero h1 {
+                font-size: 32px;
+            }
+
+            .selfcare-hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body class="selfcare-page">
+
+<header class="main-header">
+    <nav class="main-nav">
+
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="legal-rights.html">Legal Rights</a>
+            <a href="women-care.html">Women Care</a>
+            <a href="awareness.html">Awareness</a>
+            <a href="rural-safety.html">Rural Safety</a>
+            <a href="career.html">Career</a>
+            <a href="equality.html">Equality</a>
+            <a href="emergency.html">Emergency</a>
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="selfcare-hero">
+
+    <h1>🌸 Self Care</h1>
+
+    <p>
+        Take time to care for your body, mind and emotions through
+        simple healthy habits and everyday self-care practices.
+    </p>
+
+</section>
+
+
+<main class="selfcare-container">
+
+
+    <!-- INTRO -->
+
+    <section class="selfcare-intro">
+
+        <div>
+
+            <img
+                src="images/self-care.jpg"
+                alt="Self care and wellbeing awareness"
+                class="selfcare-image"
+            >
+
+        </div>
+
+        <div>
+
+            <h2>Taking Care of Yourself Matters</h2>
+
+            <p>
+                Self-care means paying attention to your physical, emotional
+                and mental wellbeing. It can include getting enough rest,
+                eating balanced meals, staying active and making time for
+                activities that help you feel refreshed.
+            </p>
+
+            <p>
+                Self-care is not selfish. Looking after your own wellbeing
+                can help you manage everyday responsibilities and recognise
+                when you need additional support.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SELF CARE AREAS -->
+
+    <section class="selfcare-section">
+
+        <h2>🌷 Areas of Self Care</h2>
+
+        <div class="effect-grid">
+
+            <div class="effect-card">
+
+                <h3>😴 Sleep & Rest</h3>
+
+                <p>
+                    Give your body enough time to rest and maintain a
+                    regular sleep routine whenever possible.
+                </p>
+
+            </div>
+
+
+            <div class="effect-card">
+
+                <h3>🥗 Healthy Nutrition</h3>
+
+                <p>
+                    Choose a varied and balanced diet and drink enough
+                    fluids to support your everyday wellbeing.
+                </p>
+
+            </div>
+
+
+            <div class="effect-card">
+
+                <h3>🏃 Physical Activity</h3>
+
+                <p>
+                    Regular movement or suitable physical activity can
+                    support physical health and overall wellbeing.
+                </p>
+
+            </div>
+
+
+            <div class="effect-card">
+
+                <h3>🧠 Mental Wellbeing</h3>
+
+                <p>
+                    Make time to relax, manage stress and talk to someone
+                    you trust when you are struggling.
+                </p>
+
+            </div>
+
+
+            <div class="effect-card">
+
+                <h3>💗 Personal Time</h3>
+
+                <p>
+                    Spend some time on hobbies, interests and activities
+                    that you enjoy.
+                </p>
+
+            </div>
+
+
+            <div class="effect-card">
+
+                <h3>🤝 Social Support</h3>
+
+                <p>
+                    Stay connected with trusted family members, friends
+                    or other supportive people.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DO AND DON'T -->
+
+    <section class="selfcare-section">
+
+        <h2>💗 Self Care: Do & Don't</h2>
+
+        <div class="do-dont">
+
+            <div class="do-box">
+
+                <h3>✅ Do</h3>
+
+                <ul>
+
+                    <li>Make time for adequate rest and sleep.</li>
+
+                    <li>Eat regular, balanced meals.</li>
+
+                    <li>Stay physically active in a suitable way.</li>
+
+                    <li>Take short breaks when you feel overwhelmed.</li>
+
+                    <li>Spend time doing activities you enjoy.</li>
+
+                    <li>Talk to trusted people about your feelings.</li>
+
+                    <li>Seek professional help when you need additional support.</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="dont-box">
+
+                <h3>❌ Don't</h3>
+
+                <ul>
+
+                    <li>Do not ignore persistent physical or emotional problems.</li>
+
+                    <li>Do not feel guilty for taking reasonable time to rest.</li>
+
+                    <li>Do not compare your wellbeing journey with others.</li>
+
+                    <li>Do not use harmful substances as a way to cope with stress.</li>
+
+                    <li>Do not try to handle serious problems completely alone.</li>
+
+                    <li>Do not ignore symptoms that are getting worse.</li>
+
+                    <li>Do not delay professional help when it is needed.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHEN TO SEEK HELP -->
+
+    <section class="selfcare-section">
+
+        <div class="doctor-box">
+
+            <h2>👩‍⚕️ When Should You Seek Professional Help?</h2>
+
+            <p>
+                Self-care can support everyday wellbeing, but it cannot
+                replace professional healthcare when you have a health
+                condition or serious concern.
+            </p>
+
+            <p>
+                Consider speaking with a healthcare professional if you
+                have persistent physical symptoms, ongoing emotional
+                difficulties, problems affecting your daily life or concerns
+                that are becoming difficult to manage.
+            </p>
+
+            <p>
+                If you feel unsafe or have thoughts of harming yourself or
+                someone else, seek urgent professional or emergency support.
+            </p>
+
+
+            <div class="care-actions">
+
+                <a
+                    href="https://www.google.com/maps/search/doctor+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🩺 Find a Doctor
+                </a>
+
+                <a
+                    href="https://www.google.com/maps/search/psychologist+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🧠 Find a Psychologist
+                </a>
+
+                <a
+                    href="https://www.google.com/maps/search/hospital+near+me"
+                    target="_blank"
+                    class="care-action-btn"
+                >
+                    🏥 Find a Hospital
+                </a>
+
+                <a
+                    href="women-care.html"
+                    class="care-action-btn"
+                >
+                    ← Back to Women Care
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DISCLAIMER -->
+
+    <div class="health-disclaimer">
+
+        <strong>Health Information Disclaimer:</strong>
+
+        This page provides general health-awareness information and is not
+        a substitute for diagnosis, treatment or personalised advice from
+        a qualified healthcare professional. Self-care needs can differ
+        between individuals. If you have health concerns or urgent symptoms,
+        seek appropriate professional medical care.
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 NariAdhikar. Empowering Women Through Awareness.
+    </p>
+
+</footer>
+
+
+<script src="js/language.js"></script>
+<script src="js/ai-legal-assistance.js"></script>
+
+</body>
+</html>

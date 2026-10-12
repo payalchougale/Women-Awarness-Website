@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>NariAdhikar | Women Care</title>
+
+    <!-- MAIN CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <style>
+
+        /* =====================================
+           WOMEN CARE PAGE
+        ===================================== */
+
+        .women-care-page {
+            background: #fffafd;
+        }
+
+
+        /* =====================================
+           HEADER
+        ===================================== */
+
+        .main-header {
+            width: 100%;
+            background: rgba(255,255,255,0.97);
+
+            border-bottom: 1px solid #eadbea;
+
+            position: sticky;
+            top: 0;
+
+            z-index: 9999;
+
+            box-shadow:
+                0 3px 15px rgba(70,30,80,0.06);
+        }
+
+
+        .main-nav {
+
+            width: 90%;
+            max-width: 1400px;
+
+            min-height: 72px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 25px;
+        }
+
+
+        .main-nav .logo {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            text-decoration: none;
+
+            color: #54245f;
+
+            font-size: 25px;
+
+            font-weight: 700;
+
+            white-space: nowrap;
+        }
+
+
+        .main-nav .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 3px;
+
+            flex: 1;
+        }
+
+
+        .main-nav .nav-links a {
+
+            text-decoration: none;
+
+            color: #54245f;
+
+            font-size: 14px;
+
+            font-weight: 500;
+
+            padding: 10px 12px;
+
+            border-radius: 10px;
+
+            transition: 0.3s;
+
+            white-space: nowrap;
+        }
+
+
+        .main-nav .nav-links a:hover {
+
+            background: #f5e7f6;
+
+            color: #8d3fa3;
+        }
+
+
+        .main-nav .nav-links a.active {
+
+            background: #9b4bb0;
+
+            color: white;
+        }
+
+
+        /* LANGUAGE */
+
+        .language-selector {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            flex-shrink: 0;
+        }
+
+
+        .language-selector span {
+
+            font-size: 20px;
+        }
+
+
+        .language-selector select {
+
+            border: 1px solid #d9c4dd;
+
+            background: white;
+
+            color: #54245f;
+
+            padding: 8px 10px;
+
+            border-radius: 9px;
+
+            cursor: pointer;
+
+            outline: none;
+        }
+
+
+        /* =====================================
+           HERO
+        ===================================== */
+
+        .care-hero {
+
+            padding: 90px 8% 70px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff0fa,
+                    #f8efff
+                );
+        }
+
+
+        .care-label {
+
+            color: #9144a3;
+
+            font-weight: 700;
+
+            letter-spacing: 4px;
+
+            font-size: 14px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .care-hero h1 {
+
+            font-size: 52px;
+
+            color: #54245f;
+
+            margin: 10px 0 20px;
+        }
+
+
+        .care-hero h1 span {
+
+            color: #d83d87;
+        }
+
+
+        .care-hero p {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            color: #666;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================
+           QUICK ACTIONS
+        ===================================== */
+
+        .care-actions {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+
+            max-width: 1100px;
+
+            margin: -35px auto 60px;
+
+            padding: 0 5%;
+
+            position: relative;
+        }
+
+
+        .care-action {
+
+            background: white;
+
+            border: 1px solid #eadbea;
+
+            border-radius: 20px;
+
+            padding: 25px;
+
+            text-align: center;
+
+            box-shadow:
+                0 10px 30px
+                rgba(70,30,80,0.08);
+
+            transition: 0.3s;
+
+            cursor: pointer;
+        }
+
+
+        .care-action:hover {
+
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 18px 35px
+                rgba(70,30,80,0.14);
+        }
+
+
+        .care-action .icon {
+
+            font-size: 35px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .care-action h3 {
+
+            color: #54245f;
+
+            margin: 5px 0;
+
+            font-size: 17px;
+        }
+
+
+        .care-action p {
+
+            color: #777;
+
+            font-size: 13px;
+
+            margin: 0;
+        }
+
+
+        /* =====================================
+           SEARCH
+        ===================================== */
+
+        .care-search-section {
+
+            text-align: center;
+
+            padding: 20px 5% 50px;
+        }
+
+
+        .care-search-section h2 {
+
+            color: #54245f;
+
+            font-size: 30px;
+        }
+
+
+        .care-search-box {
+
+            max-width: 700px;
+
+            margin: 25px auto;
+
+            display: flex;
+
+            background: white;
+
+            border: 1px solid #e4d6e7;
+
+            border-radius: 15px;
+
+            padding: 7px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(70,30,80,0.08);
+        }
+
+
+        .care-search-box input {
+
+            flex: 1;
+
+            border: none;
+
+            outline: none;
+
+            padding: 15px;
+
+            font-size: 16px;
+        }
+
+
+        .care-search-box button {
+
+            border: none;
+
+            background: #9b4bb0;
+
+            color: white;
+
+            padding: 0 25px;
+
+            border-radius: 11px;
+
+            cursor: pointer;
+
+            font-size: 15px;
+        }
+
+
+        /* =====================================
+           INFORMATION CARDS
+        ===================================== */
+
+        .care-info {
+
+            padding: 40px 7% 80px;
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+
+        .section-title h2 {
+
+            color: #54245f;
+
+            font-size: 32px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .section-title p {
+
+            color: #777;
+
+            max-width: 700px;
+
+            margin: auto;
+
+            line-height: 1.6;
+        }
+
+
+        .care-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+            max-width: 1200px;
+
+            margin: auto;
+        }
+
+
+        .care-card {
+
+            background: white;
+
+            border: 1px solid #eadbea;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            transition: 0.3s;
+
+            box-shadow:
+                0 8px 25px
+                rgba(70,30,80,0.06);
+        }
+
+
+        .care-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(70,30,80,0.12);
+        }
+
+
+        .care-card-top {
+
+            font-size: 45px;
+
+            padding: 25px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff0fa,
+                    #f6ecff
+                );
+        }
+
+
+        .care-card-content {
+
+            padding: 25px;
+        }
+
+
+        .care-card h3 {
+
+            color: #54245f;
+
+            margin-top: 0;
+        }
+
+
+        .care-card p {
+
+            color: #666;
+
+            line-height: 1.6;
+
+            font-size: 14px;
+        }
+
+
+        .care-card button {
+
+            border: none;
+
+            background: #f4e6f6;
+
+            color: #54245f;
+
+            padding: 9px 15px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            font-weight: 600;
+        }
+
+
+        /* =====================================
+           SUPPORT SECTION
+        ===================================== */
+
+        .support-section {
+
+            padding: 70px 7%;
+
+            background: #faf5fc;
+        }
+
+
+        .support-box {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            background: white;
+
+            border-radius: 25px;
+
+            padding: 40px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 40px;
+
+            box-shadow:
+                0 10px 35px
+                rgba(70,30,80,0.08);
+        }
+
+
+        .support-box h2 {
+
+            color: #54245f;
+        }
+
+
+        .support-box p {
+
+            color: #666;
+
+            line-height: 1.7;
+        }
+
+
+        .support-list {
+
+            list-style: none;
+
+            padding: 0;
+        }
+
+
+        .support-list li {
+
+            padding: 13px 0;
+
+            border-bottom:
+                1px solid #eee;
+
+            color: #555;
+        }
+
+
+        .support-list strong {
+
+            color: #54245f;
+        }
+
+
+        /* =====================================
+           AUDIO
+        ===================================== */
+
+        .audio-box {
+
+            max-width: 850px;
+
+            margin: 50px auto;
+
+            padding: 30px;
+
+            background: #f8effa;
+
+            border-radius: 20px;
+
+            text-align: center;
+        }
+
+
+        .audio-box h3 {
+
+            color: #54245f;
+        }
+
+
+        .audio-box button {
+
+            border: none;
+
+            padding: 12px 20px;
+
+            margin: 5px;
+
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            background: #9b4bb0;
+
+            color: white;
+
+            font-weight: 600;
+        }
+
+
+        .audio-box button.stop {
+
+            background: #eee;
+
+            color: #54245f;
+        }
+
+
+        /* =====================================
+           VIDEO
+        ===================================== */
+
+        .video-section {
+
+            padding: 70px 7%;
+
+            text-align: center;
+        }
+
+
+        .video-container {
+
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+
+        .video-container iframe {
+
+            width: 100%;
+
+            height: 450px;
+
+            border: none;
+
+            border-radius: 20px;
+        }
+
+
+        /* =====================================
+           FAQ
+        ===================================== */
+
+        .faq-section {
+
+            padding: 70px 7%;
+
+            background: #fffafd;
+        }
+
+
+        .faq-container {
+
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+
+        .faq-item {
+
+            background: white;
+
+            border: 1px solid #eadbea;
+
+            border-radius: 12px;
+
+            margin-bottom: 12px;
+
+            overflow: hidden;
+        }
+
+
+        .faq-question {
+
+            width: 100%;
+
+            border: none;
+
+            background: white;
+
+            padding: 18px 20px;
+
+            text-align: left;
+
+            cursor: pointer;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            color: #54245f;
+
+            display: flex;
+
+            justify-content: space-between;
+        }
+
+
+        .faq-answer {
+
+            display: none;
+
+            padding: 0 20px 20px;
+
+            color: #666;
+
+            line-height: 1.6;
+
+            font-size: 14px;
+        }
+
+
+        .faq-answer.show {
+
+            display: block;
+        }
+
+
+        /* =====================================
+           EMERGENCY
+        ===================================== */
+
+        .care-emergency {
+
+            margin: 50px auto;
+
+            max-width: 1100px;
+
+            padding: 35px;
+
+            border-radius: 22px;
+
+            background: #fff0f0;
+
+            border: 1px solid #f1cccc;
+
+            text-align: center;
+        }
+
+
+        .care-emergency h2 {
+
+            color: #c62828;
+        }
+
+
+        .emergency-call {
+
+            display: inline-block;
+
+            text-decoration: none;
+
+            background: #d62828;
+
+            color: white;
+
+            padding: 15px 30px;
+
+            border-radius: 30px;
+
+            font-weight: 700;
+
+            margin-top: 10px;
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        .care-footer {
+
+            text-align: center;
+
+            padding: 35px;
+
+            background: #54245f;
+
+            color: white;
+        }
+
+
+        .care-footer p {
+
+            margin: 5px;
+        }
+
+
+        /* =====================================
+           MOBILE
+        ===================================== */
+
+        @media (max-width: 900px) {
+
+            .care-actions {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .care-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .support-box {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .main-nav {
+
+                flex-wrap: wrap;
+
+                padding: 10px 0;
+
+            }
+
+
+            .main-nav .nav-links {
+
+                order: 3;
+
+                width: 100%;
+
+                overflow-x: auto;
+
+                justify-content: flex-start;
+
+            }
+
+
+            .care-hero {
+
+                padding: 60px 5%;
+            }
+
+
+            .care-hero h1 {
+
+                font-size: 35px;
+
+            }
+
+
+            .care-actions {
+
+                grid-template-columns: 1fr;
+
+                margin-top: 20px;
+
+            }
+
+
+            .care-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .video-container iframe {
+
+                height: 250px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body class="women-care-page">
+
+  <!-- =====================================
+         HEADER
+    ===================================== -->
+
+<!-- =====================================
+     NARIADHIKAR HEADER
+===================================== -->
+
+<header class="main-header">
+
+    <nav class="main-nav">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+
+        <!-- NAVIGATION -->
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="legal-rights.html">
+                Legal Rights
+            </a>
+
+            <a href="awareness.html" >
+                Awareness
+            </a>
+
+            <a href="emergency.html">
+                Emergency
+            </a>
+
+            <a href="women-care.html" class="active">
+                Women Care
+            </a>
+
+            <a href="career.html">
+                Career
+            </a>
+
+            <a href="equality.html">
+                Equality
+            </a>
+
+            <a href="rural-safety.html">
+                Rural Safety
+            </a>
+
+        </div>
+
+
+    </nav>
+
+</header>
+
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="care-hero">
+
+    <div class="care-label">
+        CARE • HEALTH • WELLBEING
+    </div>
+
+
+    <h1>
+        💗 Women <span>Care</span>
+    </h1>
+
+
+    <p>
+        Simple, trustworthy and easy-to-understand
+        information to help women take care of
+        their physical health, mental wellbeing and
+        personal safety.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================
+     QUICK ACTIONS
+===================================== -->
+
+<section class="care-actions">
+
+
+    <div
+        class="care-action"
+        onclick="findHealthcare()">
+
+        <div class="icon">
+            🏥
+        </div>
+
+        <h3>
+            Find Healthcare
+        </h3>
+
+        <p>
+            Find nearby hospitals and healthcare
+            services.
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="care-action"
+        onclick="findDoctor()">
+
+        <div class="icon">
+            👩‍⚕️
+        </div>
+
+        <h3>
+            Doctor Help
+        </h3>
+
+        <p>
+            Get information about seeking medical
+            support.
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="care-action"
+        onclick="openWomenHelpline()">
+
+        <div class="icon">
+            📞
+        </div>
+
+        <h3>
+            Women Helpline
+        </h3>
+
+        <p>
+            Get help when you feel unsafe or need
+            support.
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="care-action"
+        onclick="speakWomenCare()">
+
+        <div class="icon">
+            🔊
+        </div>
+
+        <h3>
+            Listen
+        </h3>
+
+        <p>
+            Listen to important information.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SEARCH
+===================================== -->
+
+<section class="care-search-section">
+
+    <h2>
+        🔎 Find Women's Health Information
+    </h2>
+
+
+    <div class="care-search-box">
+
+        <input
+            type="text"
+            id="careSearch"
+            placeholder="Search health topics...">
+
+
+        <button
+            onclick="searchCareTopics()">
+
+            🔍 Search
+
+        </button>
+
+    </div>
+
+
+    <p id="searchResult"></p>
+
+</section>
+
+
+
+<!-- =====================================
+     HEALTH INFORMATION
+===================================== -->
+
+<section class="care-info">
+
+
+    <div class="section-title">
+
+        <h2>
+            🌷 Women's Health & Wellbeing
+        </h2>
+
+        <p>
+            Learn about common health and wellbeing
+            topics in simple language.
+        </p>
+
+    </div>
+
+
+
+    <div class="care-grid">
+
+
+        <!-- CARD 1 -->
+
+        <div class="care-card">
+
+            <div class="care-card-top">
+                🩸
+            </div>
+
+            <div class="care-card-content">
+
+                <h3>
+                    Menstrual Health
+                </h3>
+
+                <p>
+                    Understand periods, menstrual
+                    hygiene and when it may be useful
+                    to speak with a healthcare
+                    professional.
+                </p>
+
+                <a href="menstrual-health.html" class="learn-more-btn">
+                    Learn More →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 2 -->
+
+        <div class="care-card">
+
+            <div class="care-card-top">
+                🧠
+            </div>
+
+            <div class="care-card-content">
+
+                <h3>
+                    Mental Wellbeing
+                </h3>
+
+                <p>
+                    Your mental wellbeing matters.
+                    Learn about stress, emotional
+                    difficulties and finding support.
+                </p>
+                <a href="mental-wellbeing.html" class="learn-more-btn">
+                    Learn More →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 3 -->
+
+        <div class="care-card">
+
+            <div class="care-card-top">
+                🤰
+            </div>
+
+            <div class="care-card-content">
+
+                <h3>
+                    Pregnancy Care
+                </h3>
+
+                <p>
+                    Learn why regular healthcare
+                    checkups and professional guidance
+                    are important during pregnancy.
+                </p>
+
+                <a href="pregnancy-care.html" class="learn-more-btn">
+                    Learn More →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 4 -->
+
+        <div class="care-card">
+
+            <div class="care-card-top">
+                🥗
+            </div>
+
+            <div class="care-card-content">
+
+                <h3>
+                    Nutrition
+                </h3>
+
+                <p>
+                    Learn the importance of balanced
+                    nutrition, hydration and healthy
+                    eating habits.
+                </p>
+
+                <a href="nutrition.html" class="learn-more-btn">
+                    Learn More →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 5 -->
+
+        <div class="care-card">
+
+            <div class="care-card-top">
+                🩺
+            </div>
+
+            <div class="care-card-content">
+
+                <h3>
+                    Regular Checkups
+                </h3>
+
+                <p>
+                    Regular healthcare visits can help
+                    identify health concerns early.
+                </p>
+
+                <a href="regular-checkups.html" class="learn-more-btn">
+                    Learn More →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 6 -->
+
+        <div class="care-card">
+
+            <div class="care-card-top">
+                💗
+            </div>
+
+            <div class="care-card-content">
+
+                <h3>
+                    Self Care
+                </h3>
+
+                <p>
+                    Taking time for rest, emotional
+                    wellbeing and personal safety is
+                    important.
+                </p>
+
+                <a href="self-care.html" class="learn-more-btn">
+                    Learn More →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SUPPORT
+===================================== -->
+
+<section class="support-section">
+
+    <div class="support-box">
+
+
+        <div>
+
+            <h2>
+                👩‍⚕️ When Should I Seek Help?
+            </h2>
+
+            <p>
+                If something about your health worries
+                you, talking to a qualified healthcare
+                professional is a good place to start.
+            </p>
+
+            <p>
+                You do not have to ignore a health
+                problem or feel embarrassed about
+                asking for help.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <ul class="support-list">
+
+                <li>
+                    🩺 <strong>Doctor:</strong>
+                    Consult a qualified healthcare
+                    professional.
+                </li>
+
+                <li>
+                    🏥 <strong>Hospital:</strong>
+                    Visit a healthcare facility when
+                    professional care is needed.
+                </li>
+
+                <li>
+                    💗 <strong>Trusted Person:</strong>
+                    Talk to someone you trust.
+                </li>
+
+                <li>
+                    🚨 <strong>Emergency:</strong>
+                    Seek immediate emergency help
+                    when there is serious danger.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     AUDIO
+===================================== -->
+
+<section class="audio-box">
+
+    <h3>
+        🔊 Listen to Women Care Information
+    </h3>
+
+    <p>
+        For users who prefer listening instead
+        of reading.
+    </p>
+
+
+    <button
+        onclick="speakWomenCare()">
+
+        ▶️ Play Audio
+
+    </button>
+
+
+    <button
+        class="stop"
+        onclick="stopWomenCareSpeech()">
+
+        ⏹️ Stop
+
+    </button>
+
+</section>
+
+
+
+<!-- =====================================
+     VIDEO
+===================================== -->
+
+<section class="video-section">
+
+    <div class="section-title">
+
+        <h2>
+            🎥 Women's Health Awareness
+        </h2>
+
+        <p>
+            Educational videos can make health
+            information easier to understand.
+        </p>
+
+    </div>
+
+
+    <div class="video-container">
+
+
+        <iframe
+            src="https://www.youtube.com/embed/hpDgm9M7yOg"
+            title="Women's Health Awareness"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     FAQ
+===================================== -->
+
+<section class="faq-section">
+
+    <div class="section-title">
+
+        <h2>
+            ❓ Frequently Asked Questions
+        </h2>
+
+    </div>
+
+
+    <div class="faq-container">
+
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)">
+
+                When should I visit a doctor?
+
+                <span>+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                If you have a health concern,
+                persistent symptoms, or something
+                that worries you, consider speaking
+                with a qualified healthcare
+                professional.
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)">
+
+                Is mental health important?
+
+                <span>+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                Yes. Mental wellbeing is an important
+                part of overall health. Talking to
+                someone you trust or seeking
+                professional support can help.
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)">
+
+                Should women ignore health problems?
+
+                <span>+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                No. Ignoring a health concern can
+                delay getting appropriate help.
+                If something concerns you, consider
+                speaking with a healthcare professional.
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleFAQ(this)">
+
+                Where can I find emergency help?
+
+                <span>+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                If you are in immediate danger,
+                contact the appropriate emergency
+                service or go to the nearest
+                emergency healthcare facility.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     EMERGENCY
+===================================== -->
+
+<section class="care-emergency">
+
+    <h2>
+        🚨 Need Immediate Help?
+    </h2>
+
+    <p>
+        If you or someone else is in immediate
+        danger, contact emergency services.
+    </p>
+
+
+    <a
+        href="tel:112"
+        class="emergency-call">
+
+        📞 Call Emergency 112
+
+    </a>
+
+</section>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer class="care-footer">
+
+    <p>
+        🌸 <strong>NariAdhikar</strong>
+    </p>
+
+    <p>
+        Know • Learn • Protect
+    </p>
+
+    <p>
+        Women's rights, awareness, safety and
+        wellbeing.
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script src="js/women-care.js"></script>
+
+<script src="js/ai-legal-assistance.js"></script>
+</body>
+
+</html>

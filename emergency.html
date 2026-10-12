@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="NariAdhikar Emergency Help - Emergency contacts, helplines, location sharing and safety support for women.">
+
+    <title>NariAdhikar | Emergency Help</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body class="emergency-page">
+
+   <!-- =====================================
+         HEADER
+    ===================================== -->
+
+<!-- =====================================
+     NARIADHIKAR HEADER
+===================================== -->
+
+<header class="main-header">
+
+    <nav class="main-nav">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+
+        <!-- NAVIGATION -->
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="legal-rights.html">
+                Legal Rights
+            </a>
+
+            <a href="awareness.html" >
+                Awareness
+            </a>
+
+            <a href="emergency.html" class="active">
+                Emergency
+            </a>
+
+            <a href="women-care.html">
+                Women Care
+            </a>
+
+            <a href="career.html">
+                Career
+            </a>
+
+            <a href="equality.html">
+                Equality
+            </a>
+
+            <a href="rural-safety.html">
+                Rural Safety
+            </a>
+
+        </div>
+
+
+    </nav>
+
+</header>
+
+
+
+
+
+<!-- =====================================================
+     EMERGENCY HERO
+===================================================== -->
+
+<section class="emergency-hero">
+
+    <h1>
+        🚨 Emergency Help
+    </h1>
+
+
+    <p>
+
+        If you or another woman is in immediate
+        danger, get help quickly. NariAdhikar
+        provides emergency information,
+        helplines and location-sharing support.
+
+    </p>
+
+
+    <!-- CALL 112 -->
+
+    <a
+        href="tel:112"
+        class="main-emergency-btn">
+
+        <span>
+            📞
+        </span>
+
+        Call Emergency 112
+
+    </a>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUICK ACTIONS
+===================================================== -->
+
+<section class="emergency-actions">
+
+
+    <!-- EMERGENCY -->
+
+    <div class="emergency-action-card">
+
+        <div class="emergency-action-icon">
+            🚨
+        </div>
+
+        <h3>
+            Emergency
+        </h3>
+
+        <p>
+            Call emergency services when
+            you are in immediate danger.
+        </p>
+
+        <a
+            href="tel:112"
+            class="action-btn">
+
+            📞 Call 112
+
+        </a>
+
+    </div>
+
+
+
+    <!-- WOMEN HELPLINE -->
+
+    <div class="emergency-action-card">
+
+        <div class="emergency-action-icon">
+            👩
+        </div>
+
+        <h3>
+            Women Helpline
+        </h3>
+
+        <p>
+            Get support and assistance
+            for women-related emergencies.
+        </p>
+
+        <a
+            href="tel:181"
+            class="action-btn">
+
+            📞 Call 181
+
+        </a>
+
+    </div>
+
+
+
+    <!-- LOCATION -->
+
+    <div class="emergency-action-card">
+
+        <div class="emergency-action-icon">
+            📍
+        </div>
+
+        <h3>
+            Share Location
+        </h3>
+
+        <p>
+            Share your current location
+            with a trusted person.
+        </p>
+
+        <button
+            class="action-btn"
+            onclick="shareEmergencyLocation()">
+
+            📍 Share Location
+
+        </button>
+
+    </div>
+
+
+
+    <!-- POLICE -->
+
+    <div class="emergency-action-card">
+
+        <div class="emergency-action-icon">
+            👮
+        </div>
+
+        <h3>
+            Police
+        </h3>
+
+        <p>
+            Contact police if you need
+            immediate protection.
+        </p>
+
+        <a
+            href="tel:112"
+            class="action-btn">
+
+            📞 Get Help
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MY EMERGENCY CONTACTS
+===================================================== -->
+
+<section class="my-emergency-contacts">
+
+
+    <div class="emergency-section-title">
+
+        <h2>
+            👨‍👩‍👧 My Emergency Contacts
+        </h2>
+
+        <p>
+
+            Save your parents, family members
+            or trusted people for quick access
+            during an emergency.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="contact-login-box">
+
+
+        <div class="contact-icon">
+            💗
+        </div>
+
+
+        <h3>
+            Add Your Trusted Contact
+        </h3>
+
+
+        <p>
+
+            Your emergency page is available
+            without login. Login is only required
+            when you want to save personal
+            emergency contact information.
+
+        </p>
+
+
+        <a
+            href="login.html"
+            class="login-contact-btn">
+
+            🔐 Login to Add Contact
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     IMPORTANT HELPLINES
+===================================================== -->
+
+<section class="emergency-contacts">
+
+
+    <div class="emergency-section-title">
+
+        <h2>
+            📞 Important Helplines
+        </h2>
+
+        <p>
+
+            Save these numbers or call them
+            when you need assistance.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="helpline-grid">
+
+
+        <!-- 112 -->
+
+        <div class="helpline-card">
+
+            <div class="helpline-icon">
+                🚨
+            </div>
+
+            <h3>
+                Emergency
+            </h3>
+
+            <div class="helpline-number">
+                112
+            </div>
+
+            <p>
+
+                Police, fire and emergency
+                assistance.
+
+            </p>
+
+            <a
+                href="tel:112"
+                class="call-btn">
+
+                📞 Call Now
+
+            </a>
+
+        </div>
+
+
+
+        <!-- WOMEN HELPLINE -->
+
+        <div class="helpline-card">
+
+            <div class="helpline-icon">
+                👩
+            </div>
+
+            <h3>
+                Women Helpline
+            </h3>
+
+            <div class="helpline-number">
+                181
+            </div>
+
+            <p>
+
+                Support for women facing
+                difficult situations.
+
+            </p>
+
+            <a
+                href="tel:181"
+                class="call-btn">
+
+                📞 Call Now
+
+            </a>
+
+        </div>
+
+
+
+        <!-- CHILD HELPLINE -->
+
+        <div class="helpline-card">
+
+            <div class="helpline-icon">
+                👧
+            </div>
+
+            <h3>
+                Child Helpline
+            </h3>
+
+            <div class="helpline-number">
+                1098
+            </div>
+
+            <p>
+
+                Help and protection
+                for children.
+
+            </p>
+
+            <a
+                href="tel:1098"
+                class="call-btn">
+
+                📞 Call Now
+
+            </a>
+
+        </div>
+
+
+
+        <!-- CYBER CRIME -->
+
+        <div class="helpline-card">
+
+            <div class="helpline-icon">
+                💻
+            </div>
+
+            <h3>
+                Cyber Crime
+            </h3>
+
+            <div class="helpline-number">
+                1930
+            </div>
+
+            <p>
+
+                Report cyber financial fraud
+                and related emergencies.
+
+            </p>
+
+            <a
+                href="tel:1930"
+                class="call-btn">
+
+                📞 Call Now
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LOCATION
+===================================================== -->
+
+<section class="emergency-location">
+
+
+    <h2>
+        📍 Share Your Current Location
+    </h2>
+
+
+    <p>
+
+        Your location can help a trusted person
+        or emergency service understand where
+        you are.
+
+    </p>
+
+
+
+    <div class="location-buttons">
+
+
+        <!-- GET LOCATION -->
+
+        <button
+            class="location-btn"
+            onclick="getEmergencyLocation()">
+
+            📍 Get My Location
+
+        </button>
+
+
+
+        <!-- SHARE LOCATION -->
+
+        <button
+            class="location-btn share-btn"
+            onclick="shareEmergencyLocation()">
+
+            📤 Share My Location
+
+        </button>
+
+    </div>
+
+
+
+    <!-- LOCATION RESULT -->
+
+    <div id="emergencyLocationResult">
+
+        Your location will appear here.
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SAFETY INSTRUCTIONS
+===================================================== -->
+
+<section class="safety-instructions">
+
+
+    <div class="emergency-section-title">
+
+        <h2>
+            🛡️ What To Do In An Emergency
+        </h2>
+
+        <p>
+
+            Simple steps that can help
+            you stay safer.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="safety-grid">
+
+
+        <!-- CALL FOR HELP -->
+
+        <div class="safety-card">
+
+            <span>
+                📞
+            </span>
+
+            <h3>
+                Call For Help
+            </h3>
+
+            <p>
+
+                If you are in immediate danger,
+                call emergency services or ask
+                someone nearby to help.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- SHARE LOCATION -->
+
+        <div class="safety-card">
+
+            <span>
+                📍
+            </span>
+
+            <h3>
+                Share Your Location
+            </h3>
+
+            <p>
+
+                Share your current location with
+                a trusted family member, friend
+                or person you trust.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- SAFE PLACE -->
+
+        <div class="safety-card">
+
+            <span>
+                🏃‍♀️
+            </span>
+
+            <h3>
+                Move To A Safer Place
+            </h3>
+
+            <p>
+
+                If possible, move towards a
+                crowded or safer public place.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- TRUSTED PERSON -->
+
+        <div class="safety-card">
+
+            <span>
+                👥
+            </span>
+
+            <h3>
+                Contact Someone You Trust
+            </h3>
+
+            <p>
+
+                Tell a trusted person what is
+                happening. You do not have to
+                face the situation alone.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- EVIDENCE -->
+
+        <div class="safety-card">
+
+            <span>
+                📷
+            </span>
+
+            <h3>
+                Keep Important Evidence
+            </h3>
+
+            <p>
+
+                Where appropriate and safe,
+                preserve messages, documents
+                or other information related
+                to the incident.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- SUPPORT -->
+
+        <div class="safety-card">
+
+            <span>
+                💗
+            </span>
+
+            <h3>
+                Do Not Blame Yourself
+            </h3>
+
+            <p>
+
+                Asking for help is a sign of
+                strength. Your safety matters.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SUPPORT SECTION
+===================================================== -->
+
+<section class="speak-section">
+
+
+    <h2>
+        💗 You Don't Have To Stay Silent
+    </h2>
+
+
+    <p>
+
+        Many women ignore problems because
+        they are afraid, embarrassed or do not
+        know where to get help.
+
+        NariAdhikar is here to help you
+        understand your options.
+
+    </p>
+
+
+
+    <div class="speak-box">
+
+
+        <strong>
+
+            "Your voice matters.
+            Your safety matters.
+            Asking for help is your right."
+
+        </strong>
+
+
+        <br>
+        <br>
+
+
+        <p>
+
+            Talk to someone you trust,
+            learn about your rights, or use
+            the Women Care, Legal Rights and
+            Rural Safety sections of NariAdhikar.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/language.js"></script>
+
+<script src="js/emergency.js"></script>
+
+<script src="js/ai-legal-assistance.js"></script>
+
+
+</body>
+
+</html>

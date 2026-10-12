@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mental Wellbeing | NariAdhikar</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <style>
+
+        /* =====================================
+           MENTAL WELLBEING PAGE
+        ===================================== */
+
+        .mental-page {
+            background: #fff8fc;
+            min-height: 100vh;
+            padding-bottom: 60px;
+        }
+
+
+        /* HERO */
+
+        .mental-hero {
+            background: linear-gradient(
+                135deg,
+                #54245f,
+                #b83280
+            );
+
+            color: white;
+
+            padding: 55px 20px;
+
+            text-align: center;
+        }
+
+        .mental-hero h1 {
+            margin: 0 0 12px;
+
+            font-size: 38px;
+        }
+
+        .mental-hero p {
+            max-width: 700px;
+
+            margin: auto;
+
+            font-size: 17px;
+
+            line-height: 1.7;
+        }
+
+
+        /* MAIN CONTAINER */
+
+        .mental-container {
+            width: min(1050px, 92%);
+
+            margin: 35px auto;
+        }
+
+
+        /* IMAGE + INTRO */
+
+        .mental-intro {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 30px;
+
+            align-items: center;
+
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 8px 30px rgba(84,36,95,.08);
+        }
+
+        .mental-image img {
+            width: 100%;
+
+            height: 300px;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+        }
+
+        .mental-intro h2 {
+            color: #54245f;
+
+            margin-top: 0;
+        }
+
+        .mental-intro p {
+            color: #555;
+
+            line-height: 1.7;
+        }
+
+
+        /* INFORMATION CARDS */
+
+        .mental-section {
+            margin-top: 30px;
+
+            background: white;
+
+            padding: 28px;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 6px 25px rgba(84,36,95,.07);
+        }
+
+        .mental-section h2 {
+            color: #54245f;
+
+            margin-top: 0;
+
+            margin-bottom: 15px;
+        }
+
+        .mental-section p {
+            color: #555;
+
+            line-height: 1.7;
+        }
+
+
+        /* EFFECTS */
+
+        .effect-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 15px;
+        }
+
+        .effect-card {
+            background: #fff4fa;
+
+            border: 1px solid #f0d8e8;
+
+            border-radius: 14px;
+
+            padding: 20px;
+
+            text-align: center;
+        }
+
+        .effect-card .emoji {
+            font-size: 35px;
+        }
+
+        .effect-card h3 {
+            color: #54245f;
+
+            margin: 10px 0;
+        }
+
+        .effect-card p {
+            font-size: 14px;
+
+            margin: 0;
+        }
+
+
+        /* DO / DON'T */
+
+        .do-dont {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 20px;
+        }
+
+        .do-box,
+        .dont-box {
+            padding: 22px;
+
+            border-radius: 15px;
+        }
+
+        .do-box {
+            background: #effaf2;
+
+            border: 1px solid #cdebd4;
+        }
+
+        .dont-box {
+            background: #fff2f2;
+
+            border: 1px solid #f0cccc;
+        }
+
+        .do-box h3 {
+            color: #24733b;
+        }
+
+        .dont-box h3 {
+            color: #b83232;
+        }
+
+        .do-box li,
+        .dont-box li {
+            margin-bottom: 10px;
+
+            line-height: 1.5;
+        }
+
+
+        /* WARNING */
+
+        .doctor-box {
+            background: #fff7e5;
+
+            border-left: 5px solid #e0a52d;
+
+            padding: 20px;
+
+            border-radius: 10px;
+        }
+
+        .doctor-box h3 {
+            color: #765414;
+
+            margin-top: 0;
+        }
+
+
+        /* BUTTONS */
+
+        .care-actions {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+        .care-action-btn {
+            display: inline-block;
+
+            padding: 12px 18px;
+
+            background: #54245f;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            font-weight: 700;
+        }
+
+        .care-action-btn:hover {
+            background: #b83280;
+        }
+
+
+        /* DISCLAIMER */
+
+        .health-disclaimer {
+            margin-top: 30px;
+
+            padding: 18px;
+
+            background: #f5edf7;
+
+            border-radius: 12px;
+
+            color: #555;
+
+            font-size: 13px;
+
+            line-height: 1.6;
+
+            text-align: center;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+
+            .mental-intro {
+                grid-template-columns: 1fr;
+            }
+
+            .effect-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .do-dont {
+                grid-template-columns: 1fr;
+            }
+
+            .mental-hero h1 {
+                font-size: 29px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header class="main-header">
+
+    <nav class="main-nav">
+
+        <a href="index.html"
+           class="logo">
+
+            🌸 NariAdhikar
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="legal-rights.html">
+                Legal Rights
+            </a>
+
+            <a href="women-care.html"
+               class="active">
+                Women Care
+            </a>
+
+            <a href="awareness.html">
+                Awareness
+            </a>
+
+            <a href="rural-safety.html">
+                Rural Safety
+            </a>
+
+            <a href="career.html">
+                Career
+            </a>
+
+            <a href="equality.html">
+                Equality
+            </a>
+
+            <a href="emergency.html">
+                Emergency
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================
+     PAGE
+===================================== -->
+
+<main class="mental-page">
+
+
+    <!-- HERO -->
+
+    <section class="mental-hero">
+
+        <h1>
+            🧠 Mental Wellbeing
+        </h1>
+
+        <p>
+            Understand your mental wellbeing, take care of your
+            emotional health, and know when it is important
+            to seek professional support.
+        </p>
+
+    </section>
+
+
+
+    <div class="mental-container">
+
+
+        <!-- =================================
+             IMAGE + INTRO
+        ================================== -->
+
+        <section class="mental-intro">
+
+            <div class="mental-image">
+
+                <img
+                    src="images/mental-wellbeing.png"
+                    alt="Mental wellbeing awareness">
+
+            </div>
+
+
+            <div>
+
+                <h2>
+                    🌸 Your Mental Health Matters
+                </h2>
+
+                <p>
+                    Mental wellbeing is about how you feel,
+                    think and manage everyday situations.
+                </p>
+
+                <p>
+                    Everyone can experience stress, worry,
+                    sadness or difficult emotions at different
+                    times in life. Taking care of your mental
+                    wellbeing is an important part of overall health.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             HOW IT CAN AFFECT YOU
+        ================================== -->
+
+        <section class="mental-section">
+
+            <h2>
+                💗 How Can Mental Health Affect You?
+            </h2>
+
+            <p>
+                Emotional and mental difficulties can affect
+                people in different ways. Some common experiences
+                may include:
+            </p>
+
+
+            <div class="effect-grid">
+
+
+                <div class="effect-card">
+
+                    <div class="emoji">
+                        😟
+                    </div>
+
+                    <h3>
+                        Stress
+                    </h3>
+
+                    <p>
+                        You may feel worried, pressured or
+                        overwhelmed by everyday situations.
+                    </p>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <div class="emoji">
+                        😴
+                    </div>
+
+                    <h3>
+                        Sleep Changes
+                    </h3>
+
+                    <p>
+                        Stress and difficult emotions can
+                        sometimes affect your sleep or rest.
+                    </p>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <div class="emoji">
+                        💭
+                    </div>
+
+                    <h3>
+                        Low Mood
+                    </h3>
+
+                    <p>
+                        You may feel sad, tired or lose interest
+                        in activities you usually enjoy.
+                    </p>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <div class="emoji">
+                        🧠
+                    </div>
+
+                    <h3>
+                        Concentration
+                    </h3>
+
+                    <p>
+                        Stress can sometimes make it difficult
+                        to focus on everyday tasks.
+                    </p>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <div class="emoji">
+                        😔
+                    </div>
+
+                    <h3>
+                        Feeling Alone
+                    </h3>
+
+                    <p>
+                        You may feel isolated or find it difficult
+                        to talk about what you are experiencing.
+                    </p>
+
+                </div>
+
+
+                <div class="effect-card">
+
+                    <div class="emoji">
+                        🌸
+                    </div>
+
+                    <h3>
+                        Everyone Is Different
+                    </h3>
+
+                    <p>
+                        Mental wellbeing affects people differently,
+                        and every person's experience is unique.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             TAKE CARE
+        ================================== -->
+
+        <section class="mental-section">
+
+            <h2>
+                💗 How Should You Take Care?
+            </h2>
+
+            <div class="do-dont">
+
+
+                <div class="do-box">
+
+                    <h3>
+                        ✅ What To Do
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Get enough sleep and regular rest.
+                        </li>
+
+                        <li>
+                            Stay physically active in a way
+                            that feels comfortable.
+                        </li>
+
+                        <li>
+                            Eat regular, balanced meals and
+                            drink enough water.
+                        </li>
+
+                        <li>
+                            Spend time with supportive friends
+                            and family.
+                        </li>
+
+                        <li>
+                            Take short breaks when you feel
+                            stressed or overwhelmed.
+                        </li>
+
+                        <li>
+                            Try simple breathing or relaxation
+                            activities.
+                        </li>
+
+                        <li>
+                            Make time for hobbies and activities
+                            you enjoy.
+                        </li>
+
+                        <li>
+                            Talk about your feelings with
+                            someone you trust.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="dont-box">
+
+                    <h3>
+                        ❌ What To Avoid
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Do not ignore emotional difficulties
+                            that continue or affect daily life.
+                        </li>
+
+                        <li>
+                            Do not feel ashamed about asking
+                            for mental-health support.
+                        </li>
+
+                        <li>
+                            Do not try to handle every difficult
+                            situation completely alone.
+                        </li>
+
+                        <li>
+                            Do not put unnecessary pressure
+                            on yourself to be perfect.
+                        </li>
+
+                        <li>
+                            Avoid using alcohol, tobacco or drugs
+                            to cope with emotional difficulties.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             WHEN TO SEEK HELP
+        ================================== -->
+
+        <section class="mental-section">
+
+            <div class="doctor-box">
+
+                <h3>
+                    🚨 When Should You Seek Professional Help?
+                </h3>
+
+                <p>
+                    Speak with a qualified healthcare or
+                    mental-health professional if difficult
+                    feelings continue, become difficult to
+                    manage, or start affecting your daily life.
+                </p>
+
+                <ul>
+
+                    <li>
+                        You feel persistently sad, worried or
+                        overwhelmed.
+                    </li>
+
+                    <li>
+                        Your emotions are affecting your studies,
+                        work, relationships or everyday activities.
+                    </li>
+
+                    <li>
+                        You are having ongoing sleep or
+                        concentration difficulties.
+                    </li>
+
+                    <li>
+                        You are finding it increasingly difficult
+                        to cope with everyday situations.
+                    </li>
+
+                    <li>
+                        You feel that you need professional
+                        support or someone to talk to.
+                    </li>
+
+                </ul>
+
+                <p>
+                    If you feel that you may hurt yourself or
+                    someone else, or you cannot keep yourself
+                    safe, seek urgent help from local emergency
+                    services or go to the nearest hospital
+                    emergency department.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             HELP
+        ================================== -->
+
+        <section class="mental-section">
+
+            <h2>
+                🏥 Need Mental Health Support?
+            </h2>
+
+            <p>
+                If you are concerned about your mental wellbeing,
+                consider speaking with a qualified psychologist,
+                psychiatrist, counsellor or other healthcare
+                professional.
+            </p>
+
+            <div class="care-actions">
+
+                <a
+                    href="https://www.google.com/maps/search/psychologist+near+me"
+                    target="_blank"
+                    class="care-action-btn">
+
+                    👩‍⚕️ Find Psychologist
+
+                </a>
+
+
+                <a
+                    href="https://www.google.com/maps/search/psychiatrist+near+me"
+                    target="_blank"
+                    class="care-action-btn">
+
+                    🧠 Find Psychiatrist
+
+                </a>
+
+
+                <a
+                    href="https://www.google.com/maps/search/hospital+near+me"
+                    target="_blank"
+                    class="care-action-btn">
+
+                    🏥 Find Hospital
+
+                </a>
+
+
+                <a
+                    href="women-care.html"
+                    class="care-action-btn">
+
+                    ← Back to Women Care
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <div class="health-disclaimer">
+
+            <strong>Important:</strong>
+
+            This page provides general mental-health
+            awareness information. It is not a diagnosis
+            or a substitute for advice from a qualified
+            healthcare professional.
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div>
+
+            <h2>
+                🌸 NariAdhikar
+            </h2>
+
+            <p>
+                Know Your Rights.
+                Raise Your Voice.
+                Stay Safe.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 NariAdhikar |
+        Women's Rights & Awareness
+
+    </div>
+
+</footer>
+
+
+<script src="js/language.js"></script>
+
+<script src="js/ai-legal-assistance.js"></script>
+
+
+</body>
+
+</html>

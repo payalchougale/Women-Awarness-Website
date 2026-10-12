@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>NariAdhikar | Equality</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <style>
+
+        /* =====================================
+           EQUALITY PAGE
+        ===================================== */
+
+        .equality-page {
+            background: #fffafd;
+            color: #444;
+        }
+
+
+        /* =====================================
+           HEADER
+        ===================================== */
+
+        .main-header {
+
+            width: 100%;
+
+            background: rgba(255,255,255,0.97);
+
+            border-bottom: 1px solid #eadbea;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 9999;
+
+            box-shadow:
+                0 3px 15px rgba(70,30,80,0.06);
+        }
+
+
+        .main-nav {
+
+            width: 92%;
+
+            max-width: 1400px;
+
+            min-height: 72px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 20px;
+        }
+
+
+        .logo {
+
+            text-decoration: none;
+
+            color: #54245f;
+
+            font-size: 24px;
+
+            font-weight: 700;
+
+            white-space: nowrap;
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 3px;
+
+            flex: 1;
+        }
+
+
+        .nav-links a {
+
+            text-decoration: none;
+
+            color: #54245f;
+
+            padding: 10px 11px;
+
+            border-radius: 9px;
+
+            font-size: 14px;
+
+            white-space: nowrap;
+
+            transition: 0.3s;
+        }
+
+
+        .nav-links a:hover {
+
+            background: #f5e7f6;
+
+            color: #8d3fa3;
+        }
+
+
+        .nav-links a.active {
+
+            background: #9b4bb0;
+
+            color: white;
+        }
+
+
+        /* =====================================
+           LANGUAGE
+        ===================================== */
+
+        .language-selector {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 6px;
+        }
+
+
+        .language-selector select {
+
+            padding: 8px 10px;
+
+            border-radius: 9px;
+
+            border: 1px solid #d9c4dd;
+
+            color: #54245f;
+
+            background: white;
+
+            cursor: pointer;
+        }
+
+
+        /* =====================================
+           HERO
+        ===================================== */
+
+        .equality-hero {
+
+            text-align: center;
+
+            padding: 90px 7% 80px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8edff,
+                    #fff0f8
+                );
+        }
+
+
+        .equality-label {
+
+            color: #9144a3;
+
+            font-weight: 700;
+
+            letter-spacing: 4px;
+
+            font-size: 14px;
+        }
+
+
+        .equality-hero h1 {
+
+            color: #54245f;
+
+            font-size: 52px;
+
+            margin: 18px 0;
+        }
+
+
+        .equality-hero h1 span {
+
+            color: #d83d87;
+        }
+
+
+        .equality-hero p {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            color: #666;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================
+           INTRO
+        ===================================== */
+
+        .equality-intro {
+
+            max-width: 1100px;
+
+            margin: -35px auto 70px;
+
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 22px;
+
+            text-align: center;
+
+            position: relative;
+
+            box-shadow:
+                0 12px 35px
+                rgba(70,30,80,0.09);
+
+            border: 1px solid #eadbea;
+        }
+
+
+        .equality-intro h2 {
+
+            color: #54245f;
+
+            margin-top: 0;
+        }
+
+
+        .equality-intro p {
+
+            color: #666;
+
+            line-height: 1.7;
+
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+
+        /* =====================================
+           EQUALITY CARDS
+        ===================================== */
+
+        .equality-section {
+
+            padding: 20px 7% 80px;
+        }
+
+
+        .section-heading {
+
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+
+        .section-heading h2 {
+
+            color: #54245f;
+
+            font-size: 32px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .section-heading p {
+
+            color: #777;
+
+            max-width: 700px;
+
+            margin: auto;
+
+            line-height: 1.6;
+        }
+
+
+        .equality-grid {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .equality-card {
+
+            background: white;
+
+            border: 1px solid #eadbea;
+
+            border-radius: 20px;
+
+            padding: 28px;
+
+            transition: 0.3s;
+
+            box-shadow:
+                0 8px 25px
+                rgba(70,30,80,0.06);
+        }
+
+
+        .equality-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(70,30,80,0.12);
+        }
+
+
+        .equality-icon {
+
+            width: 65px;
+
+            height: 65px;
+
+            border-radius: 18px;
+
+            background: #f7eafa;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 32px;
+
+            margin-bottom: 18px;
+        }
+
+
+        .equality-card h3 {
+
+            color: #54245f;
+
+            margin: 0 0 10px;
+        }
+
+
+        .equality-card p {
+
+            color: #666;
+
+            line-height: 1.6;
+
+            font-size: 14px;
+        }
+
+
+        .learn-btn {
+
+            border: none;
+
+            background: #f2e4f5;
+
+            color: #54245f;
+
+            padding: 10px 15px;
+
+            border-radius: 9px;
+
+            cursor: pointer;
+
+            font-weight: 600;
+
+            margin-top: 8px;
+        }
+
+
+        .learn-btn:hover {
+
+            background: #9b4bb0;
+
+            color: white;
+        }
+
+
+        /* =====================================
+           EQUALITY CHECK
+        ===================================== */
+
+        .equality-check {
+
+            padding: 70px 7%;
+
+            background: #faf4fc;
+        }
+
+
+        .check-box {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            background: white;
+
+            border-radius: 25px;
+
+            padding: 40px;
+
+            text-align: center;
+
+            box-shadow:
+                0 10px 30px
+                rgba(70,30,80,0.07);
+        }
+
+
+        .check-box h2 {
+
+            color: #54245f;
+        }
+
+
+        .check-question {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 18px;
+
+            margin: 12px 0;
+
+            border: 1px solid #eadbea;
+
+            border-radius: 12px;
+
+            text-align: left;
+
+            gap: 20px;
+        }
+
+
+        .check-question span {
+
+            color: #54245f;
+
+            font-weight: 600;
+        }
+
+
+        .check-question button {
+
+            border: none;
+
+            padding: 8px 16px;
+
+            border-radius: 8px;
+
+            background: #9b4bb0;
+
+            color: white;
+
+            cursor: pointer;
+        }
+
+
+        /* =====================================
+           WOMEN SHOULD KNOW
+        ===================================== */
+
+        .know-section {
+
+            padding: 80px 7%;
+        }
+
+
+        .know-box {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 40px;
+
+            align-items: center;
+        }
+
+
+        .know-content h2 {
+
+            color: #54245f;
+
+            font-size: 32px;
+        }
+
+
+        .know-content p {
+
+            color: #666;
+
+            line-height: 1.7;
+        }
+
+
+        .know-list {
+
+            list-style: none;
+
+            padding: 0;
+        }
+
+
+        .know-list li {
+
+            padding: 13px;
+
+            margin-bottom: 10px;
+
+            background: #faf3fc;
+
+            border-radius: 10px;
+
+            color: #555;
+        }
+
+
+        .know-visual {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f7eafa,
+                    #fff0f8
+                );
+
+            min-height: 350px;
+
+            border-radius: 30px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 120px;
+        }
+
+
+        /* =====================================
+           AUDIO
+        ===================================== */
+
+        .audio-section {
+
+            padding: 60px 7%;
+
+            background: #f9f1fb;
+
+            text-align: center;
+        }
+
+
+        .audio-section h2 {
+
+            color: #54245f;
+        }
+
+
+        .audio-section button {
+
+            border: none;
+
+            padding: 12px 22px;
+
+            border-radius: 10px;
+
+            margin: 5px;
+
+            cursor: pointer;
+
+            background: #9b4bb0;
+
+            color: white;
+
+            font-weight: 600;
+        }
+
+
+        .audio-section button.stop {
+
+            background: #eeeeee;
+
+            color: #54245f;
+        }
+
+
+        /* =====================================
+           FAQ
+        ===================================== */
+
+        .faq-section {
+
+            padding: 70px 7%;
+        }
+
+
+        .faq-container {
+
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+
+        .faq-item {
+
+            border: 1px solid #eadbea;
+
+            background: white;
+
+            border-radius: 12px;
+
+            margin-bottom: 12px;
+
+            overflow: hidden;
+        }
+
+
+        .faq-question {
+
+            width: 100%;
+
+            border: none;
+
+            background: white;
+
+            padding: 18px;
+
+            text-align: left;
+
+            cursor: pointer;
+
+            color: #54245f;
+
+            font-weight: 600;
+
+            display: flex;
+
+            justify-content: space-between;
+        }
+
+
+        .faq-answer {
+
+            display: none;
+
+            padding: 0 18px 18px;
+
+            color: #666;
+
+            line-height: 1.6;
+
+            font-size: 14px;
+        }
+
+
+        .faq-answer.show {
+
+            display: block;
+        }
+
+
+        /* =====================================
+           SUPPORT
+        ===================================== */
+
+        .equality-support {
+
+            margin: 20px auto 70px;
+
+            max-width: 1100px;
+
+            background: #fff0f6;
+
+            border: 1px solid #f0cada;
+
+            border-radius: 22px;
+
+            padding: 35px;
+
+            text-align: center;
+        }
+
+
+        .equality-support h2 {
+
+            color: #54245f;
+        }
+
+
+        .equality-support p {
+
+            color: #666;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        .equality-footer {
+
+            background: #54245f;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px;
+        }
+
+
+        .equality-footer p {
+
+            margin: 6px;
+        }
+
+
+        /* =====================================
+           MOBILE
+        ===================================== */
+
+        @media(max-width: 950px) {
+
+            .equality-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .know-box {
+
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media(max-width: 650px) {
+
+            .main-nav {
+
+                flex-wrap: wrap;
+
+                padding: 10px 0;
+            }
+
+
+            .nav-links {
+
+                order: 3;
+
+                width: 100%;
+
+                overflow-x: auto;
+
+                justify-content: flex-start;
+            }
+
+
+            .equality-hero {
+
+                padding: 60px 5%;
+            }
+
+
+            .equality-hero h1 {
+
+                font-size: 36px;
+            }
+
+
+            .equality-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .check-question {
+
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+
+            .know-visual {
+
+                min-height: 250px;
+
+                font-size: 80px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body class="equality-page">
+
+  <!-- =====================================
+         HEADER
+    ===================================== -->
+
+<!-- =====================================
+     NARIADHIKAR HEADER
+===================================== -->
+
+<header class="main-header">
+
+    <nav class="main-nav">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+
+        <!-- NAVIGATION -->
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="legal-rights.html">
+                Legal Rights
+            </a>
+
+            <a href="awareness.html" >
+                Awareness
+            </a>
+
+            <a href="emergency.html">
+                Emergency
+            </a>
+
+            <a href="women-care.html">
+                Women Care
+            </a>
+
+            <a href="career.html">
+                Career
+            </a>
+
+            <a href="equality.html" class="active">
+                Equality
+            </a>
+
+            <a href="rural-safety.html">
+                Rural Safety
+            </a>
+
+        </div>
+
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="equality-hero">
+
+    <div class="equality-label">
+        EQUALITY • RESPECT • OPPORTUNITY
+    </div>
+
+
+    <h1>
+        ⚖️ Women <span>Equality</span>
+    </h1>
+
+
+    <p>
+        Every woman deserves equal respect,
+        equal opportunity and the freedom to
+        participate in education, employment,
+        family decisions and society without
+        discrimination.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================
+     INTRO
+===================================== -->
+
+<section class="equality-intro">
+
+    <h2>
+        🌷 What Does Equality Mean?
+    </h2>
+
+    <p>
+        Equality means that women and men should
+        have equal dignity, opportunities and
+        protection under the law. Women should be
+        able to learn, work, make decisions and
+        participate in society without unfair
+        discrimination.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================
+     EQUALITY AREAS
+===================================== -->
+
+<section class="equality-section">
+
+    <div class="section-heading">
+
+        <h2>
+            🌸 Know Your Equality
+        </h2>
+
+        <p>
+            Learn about important areas where
+            equality matters in everyday life.
+        </p>
+
+    </div>
+
+
+    <div class="equality-grid">
+
+
+        <!-- EDUCATION -->
+
+        <div class="equality-card">
+
+            <div class="equality-icon">
+                🎓
+            </div>
+
+            <h3>
+                Equal Education
+            </h3>
+
+            <p>
+                Girls and women should have
+                opportunities to access education,
+                develop skills and continue learning.
+            </p>
+
+            <button
+                class="learn-btn"
+                onclick="showEqualityInfo('education')">
+
+                Learn More →
+
+            </button>
+
+        </div>
+
+
+
+        <!-- EMPLOYMENT -->
+
+        <div class="equality-card">
+
+            <div class="equality-icon">
+                💼
+            </div>
+
+            <h3>
+                Equal Employment
+            </h3>
+
+            <p>
+                Women should have fair opportunities
+                to seek employment and develop their
+                careers.
+            </p>
+
+            <button
+                class="learn-btn"
+                onclick="showEqualityInfo('employment')">
+
+                Learn More →
+
+            </button>
+
+        </div>
+
+
+
+        <!-- PAY -->
+
+        <div class="equality-card">
+
+            <div class="equality-icon">
+                💰
+            </div>
+
+            <h3>
+                Equal Pay
+            </h3>
+
+            <p>
+                Equal work should not be unfairly
+                valued because of gender. Women
+                should know about workplace rights.
+            </p>
+
+            <button
+                class="learn-btn"
+                onclick="showEqualityInfo('pay')">
+
+                Learn More →
+
+            </button>
+
+        </div>
+
+
+
+        <!-- DECISION -->
+
+        <div class="equality-card">
+
+            <div class="equality-icon">
+                🗣️
+            </div>
+
+            <h3>
+                Right to Participate
+            </h3>
+
+            <p>
+                Women should have the opportunity
+                to express their views and participate
+                in decisions affecting their lives.
+            </p>
+
+            <button
+                class="learn-btn"
+                onclick="showEqualityInfo('decision')">
+
+                Learn More →
+
+            </button>
+
+        </div>
+
+
+
+        <!-- DIGITAL -->
+
+        <div class="equality-card">
+
+            <div class="equality-icon">
+                📱
+            </div>
+
+            <h3>
+                Digital Equality
+            </h3>
+
+            <p>
+                Access to digital education,
+                technology and information can help
+                women participate in modern society.
+            </p>
+
+            <button
+                class="learn-btn"
+                onclick="showEqualityInfo('digital')">
+
+                Learn More →
+
+            </button>
+
+        </div>
+
+
+
+        <!-- NO DISCRIMINATION -->
+
+        <div class="equality-card">
+
+            <div class="equality-icon">
+                🤝
+            </div>
+
+            <h3>
+                Freedom From Discrimination
+            </h3>
+
+            <p>
+                Women should know how to recognise
+                unfair discrimination and where to
+                seek appropriate support.
+            </p>
+
+            <button
+                class="learn-btn"
+                onclick="showEqualityInfo('discrimination')">
+
+                Learn More →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     EQUALITY CHECK
+===================================== -->
+
+<section class="equality-check">
+
+    <div class="check-box">
+
+        <h2>
+            💡 Equality Awareness Check
+        </h2>
+
+        <p>
+            Test your understanding of basic
+            equality principles.
+        </p>
+
+
+        <div class="check-question">
+
+            <span>
+                1. Should girls have access to education?
+            </span>
+
+            <button
+                onclick="answerQuestion(true)">
+
+                Yes
+
+            </button>
+
+        </div>
+
+
+        <div class="check-question">
+
+            <span>
+                2. Should discrimination based on
+                gender be treated seriously?
+            </span>
+
+            <button
+                onclick="answerQuestion(true)">
+
+                Yes
+
+            </button>
+
+        </div>
+
+
+        <div class="check-question">
+
+            <span>
+                3. Can women participate in
+                decisions about their lives?
+            </span>
+
+            <button
+                onclick="answerQuestion(true)">
+
+                Yes
+
+            </button>
+
+        </div>
+
+
+        <p id="checkResult"></p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     WOMEN SHOULD KNOW
+===================================== -->
+
+<section class="know-section">
+
+    <div class="know-box">
+
+
+        <div class="know-content">
+
+            <h2>
+                🌷 Things Every Woman Should Know
+            </h2>
+
+            <p>
+                Knowing your rights and opportunities
+                can help you make informed decisions
+                and seek support when necessary.
+            </p>
+
+
+            <ul class="know-list">
+
+                <li>
+                    🎓 Education can open new
+                    opportunities.
+                </li>
+
+                <li>
+                    💼 Women can build careers and
+                    develop professional skills.
+                </li>
+
+                <li>
+                    🗣️ Your opinion and choices matter.
+                </li>
+
+                <li>
+                    🤝 You can seek support when facing
+                    discrimination.
+                </li>
+
+                <li>
+                    📚 Learning about legal rights can
+                    help you make informed decisions.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="know-visual">
+
+            ⚖️
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     AUDIO
+===================================== -->
+
+<section class="audio-section">
+
+    <h2>
+        🔊 Listen to Equality Information
+    </h2>
+
+    <p>
+        Prefer listening instead of reading?
+        Use the audio facility.
+    </p>
+
+
+    <button onclick="speakEquality()">
+
+        ▶️ Play Audio
+
+    </button>
+
+
+    <button
+        class="stop"
+        onclick="stopEqualitySpeech()">
+
+        ⏹️ Stop
+
+    </button>
+
+</section>
+
+
+
+<!-- =====================================
+     FAQ
+===================================== -->
+
+<section class="faq-section">
+
+    <div class="section-heading">
+
+        <h2>
+            ❓ Equality FAQs
+        </h2>
+
+    </div>
+
+
+    <div class="faq-container">
+
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleEqualityFAQ(this)">
+
+                What does equality mean?
+
+                <span>+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                Equality means that people should
+                have equal dignity, opportunities
+                and protection without unfair
+                discrimination.
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleEqualityFAQ(this)">
+
+                Why is women's education important?
+
+                <span>+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                Education can improve knowledge,
+                skills, confidence and access to
+                opportunities.
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleEqualityFAQ(this)">
+
+                What should I do if I face
+                discrimination?
+
+                <span>+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                Consider speaking with a trusted
+                person or an appropriate support,
+                legal or institutional service.
+                Keep relevant information or
+                documents when it is safe to do so.
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <button
+                class="faq-question"
+                onclick="toggleEqualityFAQ(this)">
+
+                Why should women know their rights?
+
+                <span>+</span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+                Awareness can help women understand
+                available protections, opportunities
+                and possible sources of support.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SUPPORT
+===================================== -->
+
+<section class="equality-support">
+
+    <h2>
+        💗 You Don't Have to Stay Silent
+    </h2>
+
+    <p>
+        If you experience discrimination,
+        harassment, violence or another serious
+        problem, consider reaching out to a trusted
+        person or an appropriate professional,
+        legal or emergency support service.
+    </p>
+
+    <p>
+        If you are in immediate danger, use the
+        Emergency section of NariAdhikar.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer class="equality-footer">
+
+    <p>
+        🌸 <strong>NariAdhikar</strong>
+    </p>
+
+    <p>
+        Know • Learn • Protect
+    </p>
+
+    <p>
+        Equality • Awareness • Opportunity
+    </p>
+
+</footer>
+
+
+
+<script src="js/equality.js"></script>
+<script src="js/ai-legal-assistance.js"></script>
+
+<!-- =====================================
+     EQUALITY INFORMATION MODAL
+===================================== -->
+
+<div class="equality-info-modal" id="equalityInfoModal">
+
+    <div class="equality-info-box">
+
+        <button
+            class="equality-close-btn"
+            onclick="closeEqualityInfo()">
+            ×
+        </button>
+
+        <div class="equality-info-icon" id="equalityInfoIcon">
+            🌸
+        </div>
+
+        <h2 id="equalityInfoTitle">
+            Equality Information
+        </h2>
+
+        <div id="equalityInfoContent">
+            Information will appear here.
+        </div>
+
+        <div class="equality-info-actions">
+
+            <button
+                class="equality-listen-btn"
+                onclick="speakEqualityInfo()">
+                🔊 Listen
+            </button>
+
+            <button
+                class="equality-stop-btn"
+                onclick="stopEqualityInfoSpeech()">
+                ⏹ Stop
+            </button>
+
+        </div>
+
+        <div class="equality-info-note">
+            💡 <strong>Remember:</strong>
+            Equality means having dignity, opportunity and fair treatment
+            without unfair discrimination.
+        </div>
+
+    </div>
+
+</div>
+</body>
+
+</html>

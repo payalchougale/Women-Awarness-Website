@@ -1,0 +1,7542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        NariAdhikar | Women's Legal Rights
+    </title>
+
+
+    <!-- =====================================
+         GOOGLE FONT
+    ====================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================
+         MAIN CSS
+    ====================================== -->
+
+    <style>
+
+        /* =====================================
+           VARIABLES
+        ===================================== */
+
+        :root {
+
+            --primary: #b83280;
+
+            --primary-light: #f8e5f1;
+
+            --dark-purple: #54245f;
+
+            --purple: #743c80;
+
+            --gray: #666;
+
+            --light-gray: #f7f5f8;
+
+            --white: #ffffff;
+
+            --border: #e6dce8;
+
+            --green: #238636;
+
+        }
+
+
+        /* =====================================
+           RESET
+        ===================================== */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+        body {
+
+            font-family:
+                "Poppins",
+                sans-serif;
+
+            background:
+                #faf8fb;
+
+            color:
+                #333;
+
+            line-height:
+                1.6;
+
+        }
+
+
+        /* =====================================
+           HEADER
+        ===================================== */
+
+        .main-header {
+
+            width: 100%;
+
+            background:
+                white;
+
+            padding:
+                15px 5%;
+
+            box-shadow:
+                0 3px 15px
+                rgba(70, 30, 80, 0.08);
+
+            position:
+                sticky;
+
+            top:
+                0;
+
+            z-index:
+                1000;
+
+        }
+
+
+        .main-nav {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            gap:
+                30px;
+
+        }
+
+
+        .logo {
+
+            text-decoration:
+                none;
+
+            color:
+                var(--dark-purple);
+
+            font-size:
+                24px;
+
+            font-weight:
+                700;
+
+            white-space:
+                nowrap;
+
+        }
+
+
+        .nav-links {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                20px;
+
+            flex-wrap:
+                wrap;
+
+            justify-content:
+                flex-end;
+
+        }
+
+
+        .nav-links a {
+
+            text-decoration:
+                none;
+
+            color:
+                var(--dark-purple);
+
+            font-size:
+                14px;
+
+            font-weight:
+                600;
+
+            padding:
+                8px 4px;
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .nav-links a:hover {
+
+            color:
+                var(--primary);
+
+        }
+
+
+        .nav-links a.active {
+
+            color:
+                var(--primary);
+
+            border-bottom:
+                3px solid
+                var(--primary);
+
+        }
+
+
+        /* =====================================
+           HERO
+        ===================================== */
+
+        .rights-hero {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f9e8f4,
+                    #eee5f6
+                );
+
+            padding:
+                65px 5% 80px;
+
+            text-align:
+                center;
+
+        }
+
+
+        .hero-icon {
+
+            width:
+                80px;
+
+            height:
+                80px;
+
+            margin:
+                0 auto 20px;
+
+            background:
+                white;
+
+            border-radius:
+                50%;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            font-size:
+                42px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(70,30,80,.10);
+
+        }
+
+
+        .rights-hero h1 {
+
+            color:
+                var(--dark-purple);
+
+            font-size:
+                clamp(32px, 5vw, 52px);
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        .rights-hero p {
+
+            max-width:
+                750px;
+
+            margin:
+                auto;
+
+            color:
+                #666;
+
+            font-size:
+                16px;
+
+        }
+
+
+        .simple-message {
+
+            display:
+                inline-block;
+
+            margin-top:
+                20px;
+
+            padding:
+                10px 20px;
+
+            background:
+                white;
+
+            border-radius:
+                30px;
+
+            color:
+                var(--primary);
+
+            font-weight:
+                600;
+
+        }
+
+
+        /* =====================================
+           SEARCH
+        ===================================== */
+
+        .search-section {
+
+            max-width:
+                900px;
+
+            margin:
+                -30px auto 0;
+
+            padding:
+                0 20px;
+
+            position:
+                relative;
+
+            z-index:
+                5;
+
+        }
+
+
+        .search-box {
+
+            background:
+                white;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                18px;
+
+            padding:
+                10px;
+
+            display:
+                flex;
+
+            gap:
+                10px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(70,30,80,.10);
+
+        }
+
+
+        .search-box input {
+
+            flex:
+                1;
+
+            border:
+                none;
+
+            outline:
+                none;
+
+            padding:
+                12px 15px;
+
+            font-size:
+                15px;
+
+            font-family:
+                inherit;
+
+        }
+
+
+        .search-box button {
+
+            border:
+                none;
+
+            background:
+                var(--primary);
+
+            color:
+                white;
+
+            padding:
+                12px 20px;
+
+            border-radius:
+                12px;
+
+            cursor:
+                pointer;
+
+            font-family:
+                inherit;
+
+            font-weight:
+                600;
+
+        }
+
+
+        .search-box button:hover {
+
+            background:
+                var(--dark-purple);
+
+        }
+
+
+        /* =====================================
+           CATEGORY SECTION
+        ===================================== */
+
+        .category-section {
+
+            padding:
+                45px 5% 20px;
+
+            text-align:
+                center;
+
+        }
+
+
+        .category-section h2 {
+
+            color:
+                var(--dark-purple);
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .category-buttons {
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                10px;
+
+        }
+
+
+        .category-btn {
+
+            border:
+                1px solid
+                var(--border);
+
+            background:
+                white;
+
+            color:
+                var(--dark-purple);
+
+            padding:
+                10px 17px;
+
+            border-radius:
+                30px;
+
+            cursor:
+                pointer;
+
+            font-family:
+                inherit;
+
+            font-weight:
+                500;
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .category-btn:hover {
+
+            border-color:
+                var(--primary);
+
+            color:
+                var(--primary);
+
+        }
+
+
+        .category-btn.active {
+
+            background:
+                var(--primary);
+
+            color:
+                white;
+
+            border-color:
+                var(--primary);
+
+        }
+
+
+        /* =====================================
+           RIGHTS CARDS
+        ===================================== */
+
+        .rights-section {
+
+            max-width:
+                1200px;
+
+            margin:
+                auto;
+
+            padding:
+                30px 5% 70px;
+
+        }
+
+
+        .rights-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(280px, 1fr)
+                );
+
+            gap:
+                25px;
+
+        }
+
+
+        .right-card {
+
+            background:
+                white;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                20px;
+
+            padding:
+                25px;
+
+            box-shadow:
+                0 5px 20px
+                rgba(70,30,80,.06);
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .right-card:hover {
+
+            transform:
+                translateY(-6px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(70,30,80,.12);
+
+        }
+
+
+        .card-icon {
+
+            width:
+                55px;
+
+            height:
+                55px;
+
+            background:
+                var(--primary-light);
+
+            border-radius:
+                15px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            font-size:
+                28px;
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        .right-card h3 {
+
+            color:
+                var(--dark-purple);
+
+            margin-bottom:
+                10px;
+
+            font-size:
+                20px;
+
+        }
+
+
+        .right-card > p {
+
+            color:
+                var(--gray);
+
+            font-size:
+                14px;
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        /* =====================================
+           MORE INFORMATION
+        ===================================== */
+
+        .more-info {
+
+            display:
+                none;
+
+            background:
+                #faf7fb;
+
+            border-left:
+                4px solid
+                var(--primary);
+
+            padding:
+                15px;
+
+            margin:
+                15px 0;
+
+            border-radius:
+                8px;
+
+            font-size:
+                14px;
+
+        }
+
+
+        .more-info ul {
+
+            padding-left:
+                20px;
+
+        }
+
+
+        .more-info li {
+
+            margin-bottom:
+                7px;
+
+        }
+
+
+        /* =====================================
+           CARD BUTTONS
+        ===================================== */
+
+        .card-actions {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                8px;
+
+            margin-top:
+                15px;
+
+        }
+
+
+        .card-actions button {
+
+            border:
+                1px solid
+                var(--border);
+
+            background:
+                white;
+
+            color:
+                var(--dark-purple);
+
+            padding:
+                8px 12px;
+
+            border-radius:
+                9px;
+
+            cursor:
+                pointer;
+
+            font-family:
+                inherit;
+
+            font-size:
+                12px;
+
+            font-weight:
+                600;
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .card-actions button:hover {
+
+            background:
+                var(--primary);
+
+            color:
+                white;
+
+            border-color:
+                var(--primary);
+
+        }
+
+
+        /* =====================================
+           OFFICIAL SOURCE
+        ===================================== */
+
+        .official-source {
+
+            margin-top:
+                18px;
+
+            padding-top:
+                15px;
+
+            border-top:
+                1px solid
+                var(--border);
+
+        }
+
+
+        .official-source small {
+
+            display:
+                block;
+
+            color:
+                #777;
+
+            margin-bottom:
+                8px;
+
+        }
+
+
+        .official-source a {
+
+            color:
+                var(--green);
+
+            text-decoration:
+                none;
+
+            font-weight:
+                600;
+
+            font-size:
+                13px;
+
+        }
+
+
+        .official-source a:hover {
+
+            text-decoration:
+                underline;
+
+        }
+
+
+        /* =====================================
+           HELP SECTION
+        ===================================== */
+
+        .help-section {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #54245f,
+                    #743c80
+                );
+
+            color:
+                white;
+
+            padding:
+                60px 5%;
+
+            text-align:
+                center;
+
+        }
+
+
+        .help-section h2 {
+
+            font-size:
+                32px;
+
+            margin-bottom:
+                12px;
+
+        }
+
+
+        .help-section > p {
+
+            max-width:
+                700px;
+
+            margin:
+                0 auto 30px;
+
+            opacity:
+                .9;
+
+        }
+
+
+        .help-options {
+
+            max-width:
+                1000px;
+
+            margin:
+                auto;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(200px, 1fr)
+                );
+
+            gap:
+                15px;
+
+        }
+
+
+        .help-card {
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    .12
+                );
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    .25
+                );
+
+            padding:
+                20px;
+
+            border-radius:
+                15px;
+
+        }
+
+
+        .help-card .icon {
+
+            font-size:
+                30px;
+
+        }
+
+
+        .help-card h3 {
+
+            margin:
+                8px 0;
+
+        }
+
+
+        /* =====================================
+           SOURCE NOTE
+        ===================================== */
+
+        .source-note {
+
+            max-width:
+                1000px;
+
+            margin:
+                30px auto;
+
+            padding:
+                20px;
+
+            background:
+                #fff8e7;
+
+            border:
+                1px solid
+                #f1dfaa;
+
+            border-radius:
+                15px;
+
+            color:
+                #66572b;
+
+            font-size:
+                13px;
+
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        footer {
+
+            background:
+                #35173d;
+
+            color:
+                white;
+
+            text-align:
+                center;
+
+            padding:
+                25px 5%;
+
+            font-size:
+                13px;
+
+        }
+
+
+        /* =====================================
+           NO RESULTS
+        ===================================== */
+
+        .no-results {
+
+            display:
+                none;
+
+            text-align:
+                center;
+
+            padding:
+                40px;
+
+            color:
+                #777;
+
+        }
+
+
+        .no-results span {
+
+            font-size:
+                45px;
+
+        }
+
+
+        /* =====================================
+           MOBILE
+        ===================================== */
+
+        @media(max-width: 900px) {
+
+            .main-nav {
+
+                flex-direction:
+                    column;
+
+                gap:
+                    12px;
+
+            }
+
+
+            .nav-links {
+
+                justify-content:
+                    center;
+
+            }
+
+        }
+
+
+        @media(max-width: 600px) {
+
+            .rights-hero {
+
+                padding:
+                    45px 5% 65px;
+
+            }
+
+
+            .rights-hero h1 {
+
+                font-size:
+                    30px;
+
+            }
+
+
+            .search-box {
+
+                flex-direction:
+                    column;
+
+            }
+
+
+            .search-box button {
+
+                width:
+                    100%;
+
+            }
+
+
+            .right-card {
+
+                padding:
+                    20px;
+
+            }
+
+
+            .card-actions {
+
+                flex-direction:
+                    column;
+
+            }
+
+
+            .card-actions button {
+
+                width:
+                    100%;
+
+            }
+
+        }
+
+            /* your existing CSS */
+
+    /* =====================================
+       AI LEGAL ASSISTANT
+    ===================================== */
+
+    .ai-assistant-button {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        z-index: 10000;
+
+        padding: 13px 18px;
+        border: none;
+        border-radius: 30px;
+
+        background: linear-gradient(135deg, #54245f, #b83280);
+        color: white;
+
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 700;
+
+        cursor: pointer;
+
+        box-shadow: 0 8px 25px rgba(84,36,95,.35);
+    }
+
+    .ai-assistant-button:hover {
+        transform: translateY(-3px);
+    }
+
+    .ai-assistant-box {
+        position: fixed;
+
+        right: 25px;
+        bottom: 85px;
+
+        width: 390px;
+        max-width: calc(100vw - 30px);
+
+        height: 560px;
+        max-height: calc(100vh - 110px);
+
+        z-index: 9999;
+
+        display: none;
+        flex-direction: column;
+
+        background: white;
+
+        border-radius: 18px;
+
+        overflow: hidden;
+
+        box-shadow: 0 15px 50px rgba(0,0,0,.25);
+
+        border: 1px solid #eadfea;
+    }
+
+    .ai-assistant-box.show {
+        display: flex;
+    }
+
+    .ai-header {
+        min-height: 65px;
+
+        padding: 14px 18px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background: linear-gradient(135deg,#54245f,#b83280);
+
+        color: white;
+    }
+
+    .ai-header strong {
+        display: block;
+        font-size: 16px;
+    }
+
+    .ai-header small {
+        display: block;
+        margin-top: 3px;
+        opacity: .9;
+        font-size: 11px;
+    }
+
+    .ai-close {
+        width: 35px;
+        height: 35px;
+
+        border: none;
+        border-radius: 50%;
+
+        background: rgba(255,255,255,.2);
+
+        color: white;
+
+        font-size: 20px;
+
+        cursor: pointer;
+    }
+
+    .ai-chat-messages {
+        flex: 1;
+        padding: 18px;
+        overflow-y: auto;
+        background: #fff8fc;
+    }
+
+    .ai-message {
+        width: fit-content;
+        max-width: 90%;
+
+        padding: 13px 15px;
+        margin-bottom: 12px;
+
+        background: #f6e8f3;
+        color: #3d2942;
+
+        border-radius: 14px 14px 14px 4px;
+
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .user-message {
+        width: fit-content;
+        max-width: 85%;
+
+        margin-left: auto;
+        margin-bottom: 12px;
+
+        padding: 11px 14px;
+
+        background: #54245f;
+        color: white;
+
+        border-radius: 14px 14px 4px 14px;
+
+        font-size: 13px;
+    }
+
+    .ai-quick-buttons {
+        display: flex;
+        gap: 7px;
+
+        padding: 10px;
+
+        overflow-x: auto;
+
+        border-top: 1px solid #eadfea;
+        background: white;
+    }
+
+    .ai-quick-buttons button {
+        flex-shrink: 0;
+
+        padding: 7px 10px;
+
+        border: 1px solid #d9bfd5;
+        border-radius: 18px;
+
+        background: white;
+        color: #54245f;
+
+        font-family: inherit;
+        font-size: 11px;
+        font-weight: 600;
+
+        cursor: pointer;
+    }
+
+    .ai-input-area {
+        display: flex;
+        gap: 7px;
+
+        padding: 10px;
+
+        border-top: 1px solid #eadfea;
+        background: white;
+    }
+
+    .ai-input-area input {
+        flex: 1;
+        min-width: 0;
+
+        padding: 11px 13px;
+
+        border: 1px solid #d9c6d7;
+        border-radius: 10px;
+
+        outline: none;
+
+        font-family: inherit;
+        font-size: 13px;
+    }
+
+    .ai-input-area button {
+        width: 40px;
+        height: 40px;
+
+        border: none;
+        border-radius: 10px;
+
+        background: #54245f;
+        color: white;
+
+        cursor: pointer;
+    }
+
+    .ai-disclaimer {
+        padding: 8px 12px;
+
+        background: #fff5df;
+        color: #6b552d;
+
+        border-top: 1px solid #f0dfb7;
+
+        font-size: 9px;
+
+        text-align: center;
+    }
+
+    @media (max-width: 600px) {
+
+        .ai-assistant-button {
+            right: 15px;
+            bottom: 15px;
+        }
+
+        .ai-assistant-box {
+            right: 10px;
+            bottom: 75px;
+
+            width: calc(100vw - 20px);
+            height: 70vh;
+        }
+    }
+
+
+        
+        
+
+
+
+/* =========================================
+   AI LEGAL ASSISTANT
+========================================= */
+
+.ai-assistant {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 380px;
+    max-width: calc(100% - 30px);
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(70, 30, 80, 0.25);
+    border: 1px solid #e6dce8;
+    overflow: hidden;
+    z-index: 5000;
+}
+
+/* Header */
+
+.ai-header {
+    background: linear-gradient(135deg, #54245f, #b83280);
+    color: white;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ai-header h3 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.ai-header p {
+    margin: 3px 0 0;
+    font-size: 11px;
+    opacity: 0.9;
+}
+
+.ai-close {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Body */
+
+.ai-body {
+    padding: 18px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.ai-message {
+    background: #f8e5f1;
+    padding: 13px 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Suggestions */
+
+.ai-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+.ai-suggestions button {
+    border: 1px solid #e6dce8;
+    background: white;
+    color: #54245f;
+    padding: 8px 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ai-suggestions button:hover {
+    background: #b83280;
+    color: white;
+}
+
+/* Input */
+
+.ai-input-area {
+    display: flex;
+    gap: 7px;
+    padding: 12px;
+    border-top: 1px solid #e6dce8;
+}
+
+.ai-input-area input {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #d9cbdc;
+    border-radius: 9px;
+    padding: 10px 12px;
+    outline: none;
+    font-family: inherit;
+}
+
+.ai-input-area input:focus {
+    border-color: #b83280;
+}
+
+.ai-send {
+    border: none;
+    background: #b83280;
+    color: white;
+    width: 42px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ai-send:hover {
+    background: #54245f;
+}
+
+/* Disclaimer */
+
+.ai-disclaimer {
+    padding: 10px 15px;
+    background: #fff8e7;
+    color: #66572b;
+    font-size: 10px;
+    border-top: 1px solid #f1dfaa;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .ai-assistant {
+        right: 10px;
+        bottom: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .ai-body {
+        max-height: 350px;
+    }
+}
+/* =========================================
+   DOMESTIC VIOLENCE INFORMATION MODAL
+========================================= */
+
+.domestic-violence-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(35, 15, 42, 0.70);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.domestic-violence-modal.show {
+    display: flex;
+}
+
+.domestic-violence-box {
+    position: relative;
+    width: min(950px, 95%);
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 40px;
+
+    box-shadow: 0 25px 70px rgba(50, 20, 60, 0.35);
+    border: 1px solid #eadfea;
+
+    animation: domesticViolenceOpen 0.25s ease;
+}
+
+@keyframes domesticViolenceOpen {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Close button */
+
+.domestic-violence-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #f4e5f7;
+    color: #54245f;
+
+    font-size: 28px;
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+.domestic-violence-close:hover {
+    background: #54245f;
+    color: white;
+}
+
+/* Icon */
+
+.domestic-violence-icon {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 20px;
+
+    background: #f5e7f8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+/* Main heading */
+
+.domestic-violence-box h2 {
+    color: #54245f;
+    font-size: 30px;
+    line-height: 1.3;
+
+    margin: 0 0 20px;
+}
+
+/* Introduction */
+
+.dv-intro {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.75;
+
+    margin-bottom: 25px;
+}
+
+/* Sections */
+
+.dv-section {
+    margin-top: 25px;
+    padding-top: 22px;
+
+    border-top: 1px solid #eadfea;
+}
+
+.dv-section h3 {
+    color: #54245f;
+    font-size: 19px;
+
+    margin: 0 0 10px;
+}
+
+.dv-section p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.75;
+
+    margin: 0;
+}
+
+/* Two-column information cards */
+
+.dv-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+.dv-card {
+    background: #faf6fc;
+
+    border: 1px solid #eadfea;
+
+    border-radius: 16px;
+
+    padding: 22px;
+}
+
+.dv-card h3 {
+    color: #54245f;
+    font-size: 18px;
+
+    margin: 0 0 12px;
+}
+
+.dv-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.dv-card li {
+    color: #555;
+
+    margin-bottom: 9px;
+
+    line-height: 1.6;
+}
+
+/* Highlight box */
+
+.dv-highlight {
+    margin-top: 25px;
+
+    background: #f8e8f2;
+
+    border-left: 5px solid #b83280;
+
+    border-radius: 10px;
+
+    padding: 18px;
+
+    color: #54245f;
+
+    line-height: 1.7;
+}
+
+/* Important note */
+
+.dv-note {
+    margin-top: 28px;
+
+    padding: 17px 18px;
+
+    background: #fff8e7;
+
+    border-left: 4px solid #d8a62a;
+
+    border-radius: 10px;
+
+    color: #66572b;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+}
+
+/* Source */
+
+.dv-source {
+    margin-top: 22px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #eadfea;
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.dv-source a {
+    color: #238636;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.dv-source a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .domestic-violence-modal {
+        padding: 15px;
+    }
+
+    .domestic-violence-box {
+        width: 100%;
+        max-height: 92vh;
+
+        padding: 28px 20px;
+    }
+
+    .domestic-violence-box h2 {
+        font-size: 24px;
+
+        padding-right: 35px;
+    }
+
+    .dv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dv-intro {
+        font-size: 16px;
+    }
+}
+
+/* =========================================
+   DOWRY INFORMATION MODAL
+========================================= */
+
+.dowry-modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 99999;
+
+    background: rgba(35, 15, 42, 0.70);
+
+    backdrop-filter: blur(4px);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+}
+
+.dowry-modal.show {
+    display: flex;
+}
+
+
+/* Main popup */
+
+.dowry-box {
+    position: relative;
+
+    width: min(950px, 95%);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 25px 70px rgba(50, 20, 60, 0.35);
+
+    border: 1px solid #eadfea;
+
+    animation: dowryOpen 0.25s ease;
+}
+
+
+/* Animation */
+
+@keyframes dowryOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* Close button */
+
+.dowry-close {
+
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f4e5f7;
+
+    color: #54245f;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+.dowry-close:hover {
+
+    background: #54245f;
+
+    color: white;
+
+}
+
+
+/* Icon */
+
+.dowry-icon {
+
+    width: 75px;
+    height: 75px;
+
+    border-radius: 20px;
+
+    background: #f5e7f8;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Heading */
+
+.dowry-box h2 {
+
+    color: #54245f;
+
+    font-size: 30px;
+
+    line-height: 1.3;
+
+    margin: 0 0 20px;
+
+}
+
+
+/* Introduction */
+
+.dowry-intro {
+
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Sections */
+
+.dowry-section {
+
+    margin-top: 25px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #eadfea;
+
+}
+
+.dowry-section h3 {
+
+    color: #54245f;
+
+    font-size: 19px;
+
+    margin: 0 0 10px;
+
+}
+
+.dowry-section p {
+
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    margin: 0;
+
+}
+
+
+/* Information cards */
+
+.dowry-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin-top: 25px;
+
+}
+
+.dowry-card {
+
+    background: #faf6fc;
+
+    border: 1px solid #eadfea;
+
+    border-radius: 16px;
+
+    padding: 22px;
+
+}
+
+.dowry-card h3 {
+
+    color: #54245f;
+
+    font-size: 18px;
+
+    margin: 0 0 12px;
+
+}
+
+.dowry-card ul {
+
+    margin: 0;
+
+    padding-left: 20px;
+
+}
+
+.dowry-card li {
+
+    color: #555;
+
+    margin-bottom: 9px;
+
+    line-height: 1.6;
+
+}
+
+
+/* Highlight */
+
+.dowry-highlight {
+
+    margin-top: 25px;
+
+    background: #f8e8f2;
+
+    border-left: 5px solid #b83280;
+
+    border-radius: 10px;
+
+    padding: 18px;
+
+    color: #54245f;
+
+    line-height: 1.7;
+
+}
+
+
+/* Important note */
+
+.dowry-note {
+
+    margin-top: 28px;
+
+    padding: 17px 18px;
+
+    background: #fff8e7;
+
+    border-left: 4px solid #d8a62a;
+
+    border-radius: 10px;
+
+    color: #66572b;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+}
+
+
+/* Official source */
+
+.dowry-source {
+
+    margin-top: 22px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #eadfea;
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+.dowry-source a {
+
+    color: #238636;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+.dowry-source a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .dowry-modal {
+
+        padding: 15px;
+
+    }
+
+    .dowry-box {
+
+        width: 100%;
+
+        max-height: 92vh;
+
+        padding: 28px 20px;
+
+    }
+
+    .dowry-box h2 {
+
+        font-size: 24px;
+
+        padding-right: 35px;
+
+    }
+
+    .dowry-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .dowry-intro {
+
+        font-size: 16px;
+
+    }
+
+}
+/* =========================================
+   POSH ACT INFORMATION MODAL
+========================================= */
+
+.posh-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(35, 15, 42, 0.70);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.posh-modal.show {
+    display: flex;
+}
+
+.posh-box {
+    position: relative;
+    width: min(950px, 95%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 25px 70px rgba(50, 20, 60, 0.35);
+    border: 1px solid #eadfea;
+    animation: poshOpen 0.25s ease;
+}
+
+@keyframes poshOpen {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.posh-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #f4e5f7;
+    color: #54245f;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.posh-close:hover {
+    background: #54245f;
+    color: white;
+}
+
+.posh-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background: #f5e7f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.posh-box h2 {
+    color: #54245f;
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+.posh-intro {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 25px;
+}
+
+.posh-section {
+    margin-top: 25px;
+    padding-top: 22px;
+    border-top: 1px solid #eadfea;
+}
+
+.posh-section h3 {
+    color: #54245f;
+    font-size: 19px;
+    margin: 0 0 12px;
+}
+
+.posh-section p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 0 12px;
+}
+
+.posh-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.posh-card {
+    background: #faf6fc;
+    border: 1px solid #eadfea;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.posh-card h3 {
+    color: #54245f;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.posh-card p {
+    color: #555;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.posh-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.posh-card li {
+    color: #555;
+    margin-bottom: 9px;
+    line-height: 1.6;
+}
+
+.full-card {
+    grid-column: 1 / -1;
+}
+
+.posh-highlight {
+    margin-top: 25px;
+    background: #f8e8f2;
+    border-left: 5px solid #b83280;
+    border-radius: 10px;
+    padding: 18px;
+    color: #54245f;
+    line-height: 1.7;
+}
+
+.posh-note {
+    margin-top: 20px;
+    padding: 17px 18px;
+    background: #fff8e7;
+    border-left: 4px solid #d8a62a;
+    border-radius: 10px;
+    color: #66572b;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.posh-process {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.posh-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #faf6fc;
+    border: 1px solid #eadfea;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.posh-step > span {
+    min-width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #b83280;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.posh-step strong {
+    color: #54245f;
+}
+
+.posh-step p {
+    margin: 5px 0 0;
+}
+
+.posh-source {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eadfea;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.posh-source a {
+    color: #238636;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.posh-source a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    .posh-modal {
+        padding: 15px;
+    }
+
+    .posh-box {
+        width: 100%;
+        max-height: 92vh;
+        padding: 28px 20px;
+    }
+
+    .posh-box h2 {
+        font-size: 24px;
+        padding-right: 35px;
+    }
+
+    .posh-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-card {
+        grid-column: auto;
+    }
+
+    .posh-intro {
+        font-size: 16px;
+    }
+}
+/* =========================================
+   WORKPLACE SAFETY BUTTON FIX
+========================================= */
+
+.right-card .card-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-top: 18px !important;
+    margin-bottom: 18px !important;
+}
+
+.right-card .read-more-btn,
+.right-card .listen-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 9px 14px !important;
+
+    border: 1px solid #eadfea !important;
+    border-radius: 9px !important;
+
+    background: #ffffff !important;
+    color: #54245f !important;
+
+    font-family: inherit !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+
+    line-height: 1.2 !important;
+
+    cursor: pointer !important;
+
+    box-shadow: none !important;
+    outline: none !important;
+
+    transition: all 0.2s ease !important;
+}
+
+.right-card .read-more-btn:hover,
+.right-card .listen-btn:hover {
+    background: #f8e8f2 !important;
+    border-color: #b83280 !important;
+    color: #b83280 !important;
+}
+
+.right-card .read-more-btn:active,
+.right-card .listen-btn:active {
+    transform: scale(0.97);
+}
+
+/* =========================================
+   PROPERTY & INHERITANCE RIGHTS MODAL
+========================================= */
+
+.property-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(35, 15, 42, 0.70);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.property-modal.show {
+    display: flex;
+}
+
+.property-box {
+    position: relative;
+    width: min(950px, 95%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 25px 70px rgba(50, 20, 60, 0.35);
+    border: 1px solid #eadfea;
+    animation: propertyOpen 0.25s ease;
+}
+
+@keyframes propertyOpen {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.property-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #f4e5f7;
+    color: #54245f;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.property-close:hover {
+    background: #54245f;
+    color: white;
+}
+
+.property-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background: #f5e7f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.property-box h2 {
+    color: #54245f;
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+.property-intro {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 25px;
+}
+
+.property-section {
+    margin-top: 25px;
+    padding-top: 22px;
+    border-top: 1px solid #eadfea;
+}
+
+.property-section h3 {
+    color: #54245f;
+    font-size: 19px;
+    margin: 0 0 12px;
+}
+
+.property-section p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 0 12px;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.property-card {
+    background: #faf6fc;
+    border: 1px solid #eadfea;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.property-card h3 {
+    color: #54245f;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.property-card p {
+    color: #555;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.property-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.property-card li {
+    color: #555;
+    margin-bottom: 9px;
+    line-height: 1.6;
+}
+
+.property-highlight {
+    margin-top: 25px;
+    background: #f8e8f2;
+    border-left: 5px solid #b83280;
+    border-radius: 10px;
+    padding: 18px;
+    color: #54245f;
+    line-height: 1.7;
+}
+
+.property-note {
+    margin-top: 22px;
+    padding: 17px 18px;
+    background: #fff8e7;
+    border-left: 4px solid #d8a62a;
+    border-radius: 10px;
+    color: #66572b;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.property-source {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eadfea;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.property-source a {
+    color: #238636;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.property-source a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    .property-modal {
+        padding: 15px;
+    }
+
+    .property-box {
+        width: 100%;
+        max-height: 92vh;
+        padding: 28px 20px;
+    }
+
+    .property-box h2 {
+        font-size: 24px;
+        padding-right: 35px;
+    }
+
+    .property-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .property-intro {
+        font-size: 16px;
+    }
+}
+
+/* =========================================
+   CYBER ABUSE INFORMATION MODAL
+========================================= */
+
+.cyber-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(35, 15, 42, 0.70);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.cyber-modal.show {
+    display: flex;
+}
+
+.cyber-box {
+    position: relative;
+    width: min(950px, 95%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 25px 70px rgba(50, 20, 60, 0.35);
+    border: 1px solid #eadfea;
+    animation: cyberOpen 0.25s ease;
+}
+
+@keyframes cyberOpen {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.cyber-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #f4e5f7;
+    color: #54245f;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.cyber-close:hover {
+    background: #54245f;
+    color: white;
+}
+
+.cyber-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background: #f5e7f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.cyber-box h2 {
+    color: #54245f;
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+.cyber-intro {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 25px;
+}
+
+.cyber-section {
+    margin-top: 25px;
+    padding-top: 22px;
+    border-top: 1px solid #eadfea;
+}
+
+.cyber-section h3 {
+    color: #54245f;
+    font-size: 19px;
+    margin: 0 0 12px;
+}
+
+.cyber-section p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 0 12px;
+}
+
+.cyber-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.cyber-card {
+    background: #faf6fc;
+    border: 1px solid #eadfea;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.cyber-card h3 {
+    color: #54245f;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.cyber-card p {
+    color: #555;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.cyber-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.cyber-card li {
+    color: #555;
+    margin-bottom: 9px;
+    line-height: 1.6;
+}
+
+.cyber-highlight {
+    margin-top: 25px;
+    background: #f8e8f2;
+    border-left: 5px solid #b83280;
+    border-radius: 10px;
+    padding: 18px;
+    color: #54245f;
+    line-height: 1.7;
+}
+
+.cyber-note {
+    margin-top: 22px;
+    padding: 17px 18px;
+    background: #fff8e7;
+    border-left: 4px solid #d8a62a;
+    border-radius: 10px;
+    color: #66572b;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.cyber-source {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eadfea;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.cyber-source a {
+    color: #238636;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cyber-source a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    .cyber-modal {
+        padding: 15px;
+    }
+
+    .cyber-box {
+        width: 100%;
+        max-height: 92vh;
+        padding: 28px 20px;
+    }
+
+    .cyber-box h2 {
+        font-size: 24px;
+        padding-right: 35px;
+    }
+
+    .cyber-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cyber-intro {
+        font-size: 16px;
+    }
+}
+
+/* =================================
+   CHILD MARRIAGE MODAL
+================================= */
+
+.child-marriage-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(35, 15, 42, 0.70);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.child-marriage-modal.show {
+    display: flex;
+}
+
+.child-marriage-box {
+    position: relative;
+    width: min(950px, 95%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 25px 70px rgba(50, 20, 60, 0.35);
+    border: 1px solid #eadfea;
+    animation: childMarriageOpen 0.25s ease;
+}
+
+@keyframes childMarriageOpen {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.child-marriage-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #f4e5f7;
+    color: #54245f;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.child-marriage-close:hover {
+    background: #54245f;
+    color: white;
+}
+
+.child-marriage-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background: #f5e7f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.child-marriage-box h2 {
+    color: #54245f;
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+.child-marriage-intro {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 25px;
+}
+
+.child-marriage-section {
+    margin-top: 25px;
+    padding-top: 22px;
+    border-top: 1px solid #eadfea;
+}
+
+.child-marriage-section h3 {
+    color: #54245f;
+    font-size: 19px;
+    margin: 0 0 12px;
+}
+
+.child-marriage-section p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 0 12px;
+}
+
+.child-marriage-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.child-marriage-card {
+    background: #faf6fc;
+    border: 1px solid #eadfea;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.child-marriage-card h3 {
+    color: #54245f;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.child-marriage-card p {
+    color: #555;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.child-marriage-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.child-marriage-card li {
+    color: #555;
+    margin-bottom: 9px;
+    line-height: 1.6;
+}
+
+.child-marriage-highlight {
+    margin-top: 25px;
+    background: #f8e8f2;
+    border-left: 5px solid #b83280;
+    border-radius: 10px;
+    padding: 18px;
+    color: #54245f;
+    line-height: 1.7;
+}
+
+.child-marriage-note {
+    margin-top: 22px;
+    padding: 17px 18px;
+    background: #fff8e7;
+    border-left: 4px solid #d8a62a;
+    border-radius: 10px;
+    color: #66572b;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.child-marriage-source {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eadfea;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.child-marriage-source a {
+    color: #238636;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.child-marriage-source a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    .child-marriage-modal {
+        padding: 15px;
+    }
+
+    .child-marriage-box {
+        width: 100%;
+        max-height: 92vh;
+        padding: 28px 20px;
+    }
+
+    .child-marriage-box h2 {
+        font-size: 24px;
+        padding-right: 35px;
+    }
+
+    .child-marriage-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .child-marriage-intro {
+        font-size: 16px;
+    }
+}
+
+/* =================================
+   POLICE & COMPLAINT SUPPORT MODAL
+================================= */
+
+.police-support-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(35, 15, 42, 0.70);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.police-support-modal.show {
+    display: flex;
+}
+
+.police-support-box {
+    position: relative;
+    width: min(950px, 95%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 25px 70px rgba(50, 20, 60, 0.35);
+    border: 1px solid #eadfea;
+    animation: policeSupportOpen 0.25s ease;
+}
+
+@keyframes policeSupportOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+.police-support-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #f4e5f7;
+    color: #54245f;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.police-support-close:hover {
+    background: #54245f;
+    color: white;
+}
+
+.police-support-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background: #f5e7f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.police-support-box h2 {
+    color: #54245f;
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+.police-support-intro {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 25px;
+}
+
+.police-support-section {
+    margin-top: 25px;
+    padding-top: 22px;
+    border-top: 1px solid #eadfea;
+}
+
+.police-support-section h3 {
+    color: #54245f;
+    font-size: 19px;
+    margin: 0 0 12px;
+}
+
+.police-support-section p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 0 12px;
+}
+
+.police-support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.police-support-card {
+    background: #faf6fc;
+    border: 1px solid #eadfea;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.police-support-card h3 {
+    color: #54245f;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.police-support-card p {
+    color: #555;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.police-support-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.police-support-card li {
+    color: #555;
+    margin-bottom: 9px;
+    line-height: 1.6;
+}
+
+.police-support-highlight {
+    margin-top: 25px;
+    background: #f8e8f2;
+    border-left: 5px solid #b83280;
+    border-radius: 10px;
+    padding: 18px;
+    color: #54245f;
+    line-height: 1.7;
+}
+
+.police-support-note {
+    margin-top: 22px;
+    padding: 17px 18px;
+    background: #fff8e7;
+    border-left: 4px solid #d8a62a;
+    border-radius: 10px;
+    color: #66572b;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.police-support-source {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eadfea;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.police-support-source a {
+    color: #238636;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.police-support-source a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    .police-support-modal {
+        padding: 15px;
+    }
+
+    .police-support-box {
+        width: 100%;
+        max-height: 92vh;
+        padding: 28px 20px;
+    }
+
+    .police-support-box h2 {
+        font-size: 24px;
+        padding-right: 35px;
+    }
+
+    .police-support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .police-support-intro {
+        font-size: 16px;
+    }
+
+}
+
+/* =================================
+   FINANCIAL & FAMILY SUPPORT MODAL
+================================== */
+
+.financial-support-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(35, 15, 42, 0.70);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.financial-support-modal.show {
+    display: flex;
+}
+
+.financial-support-box {
+    position: relative;
+    width: min(950px, 95%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 25px 70px rgba(50, 20, 60, 0.35);
+    border: 1px solid #eadfea;
+    animation: financialSupportOpen 0.25s ease;
+}
+
+@keyframes financialSupportOpen {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.financial-support-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #f4e5f7;
+    color: #54245f;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.financial-support-close:hover {
+    background: #54245f;
+    color: white;
+}
+
+.financial-support-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    background: #f5e7f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.financial-support-box h2 {
+    color: #54245f;
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+.financial-support-intro {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 25px;
+}
+
+.financial-support-section {
+    margin-top: 25px;
+    padding-top: 22px;
+    border-top: 1px solid #eadfea;
+}
+
+.financial-support-section h3 {
+    color: #54245f;
+    font-size: 19px;
+    margin: 0 0 12px;
+}
+
+.financial-support-section p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 0 12px;
+}
+
+.financial-support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.financial-support-card {
+    background: #faf6fc;
+    border: 1px solid #eadfea;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.financial-support-card h3 {
+    color: #54245f;
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.financial-support-card p {
+    color: #555;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.financial-support-card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.financial-support-card li {
+    color: #555;
+    margin-bottom: 9px;
+    line-height: 1.6;
+}
+
+.financial-support-highlight {
+    margin-top: 25px;
+    background: #f8e8f2;
+    border-left: 5px solid #b83280;
+    border-radius: 10px;
+    padding: 18px;
+    color: #54245f;
+    line-height: 1.7;
+}
+
+.financial-support-note {
+    margin-top: 22px;
+    padding: 17px 18px;
+    background: #fff8e7;
+    border-left: 4px solid #d8a62a;
+    border-radius: 10px;
+    color: #66572b;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.financial-support-source {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eadfea;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.financial-support-source a {
+    color: #238636;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.financial-support-source a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+
+    .financial-support-modal {
+        padding: 15px;
+    }
+
+    .financial-support-box {
+        width: 100%;
+        max-height: 92vh;
+        padding: 28px 20px;
+    }
+
+    .financial-support-box h2 {
+        font-size: 24px;
+        padding-right: 35px;
+    }
+
+    .financial-support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .financial-support-intro {
+        font-size: 16px;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+
+
+<!-- =====================================
+     NARIADHIKAR HEADER
+===================================== -->
+
+<header class="main-header">
+
+    <nav class="main-nav">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            🌸 NariAdhikar
+        </a>
+
+
+        <!-- NAVIGATION -->
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="legal-rights.html" class="active">
+                Legal Rights
+            </a>
+
+            <a href="awareness.html">
+                Awareness
+            </a>
+
+            <a href="emergency.html">
+                Emergency
+            </a>
+
+            <a href="women-care.html">
+                Women Care
+            </a>
+
+            <a href="career.html">
+                Career
+            </a>
+
+            <a href="rural-safety.html">
+                Rural Safety
+            </a>
+
+            <a href="equality.html">
+                Equality
+            </a>
+
+            
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="rights-hero">
+
+
+    <div class="hero-icon">
+        ⚖️
+    </div>
+
+
+    <h1>
+        Know Your Legal Rights
+    </h1>
+
+
+    <p>
+
+        Every woman has rights.
+        Learn about your legal protections
+        in simple and easy language.
+
+    </p>
+
+
+    <div class="simple-message">
+
+        🌸 You are not alone. Your rights matter.
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================
+     SEARCH
+===================================== -->
+
+<section class="search-section">
+
+    <div class="search-box">
+
+
+        <input
+            type="text"
+            id="rightsSearch"
+            placeholder="Search a right, law or problem..."
+            aria-label="Search legal rights">
+
+
+        <button
+            id="searchRights">
+
+            🔍 Search
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     CATEGORIES
+===================================== -->
+
+<section class="category-section">
+
+
+    <h2>
+        Explore Women's Rights
+    </h2>
+
+
+    <div class="category-buttons">
+
+
+        <button
+            class="category-btn active"
+            data-category="all">
+
+            🌸 All
+
+        </button>
+
+
+        <button
+            class="category-btn"
+            data-category="safety">
+
+            🛡️ Safety
+
+        </button>
+
+
+        <button
+            class="category-btn"
+            data-category="family">
+
+            🏠 Family
+
+        </button>
+
+
+        <button
+            class="category-btn"
+            data-category="work">
+
+            💼 Workplace
+
+        </button>
+
+
+        <button
+            class="category-btn"
+            data-category="property">
+
+            🏡 Property
+
+        </button>
+
+
+        <button
+            class="category-btn"
+            data-category="digital">
+
+            📱 Digital
+
+        </button>
+
+
+        <button
+            class="category-btn"
+            data-category="children">
+
+            👧 Children
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     LEGAL RIGHTS CARDS
+===================================== -->
+
+<section class="rights-section">
+
+
+    <div
+        class="rights-grid"
+        id="rightsGrid">
+
+
+
+        <!-- =================================
+             CARD 1
+        ================================== -->
+
+        <article
+            class="right-card"
+            data-category="safety"
+            data-keywords="domestic violence abuse protection wife woman family">
+
+
+            <div class="card-icon">
+                🛡️
+            </div>
+
+
+            <h3>
+                Protection from Domestic Violence
+            </h3>
+
+
+            <p>
+
+                Women have legal protection
+                against physical, emotional,
+                sexual and economic abuse.
+
+            </p>
+
+
+            <div class="card-actions">
+
+                <button
+                    class="read-more-btn"
+                    onclick="openDomesticViolence()">
+                    📖 Read More
+                </button>
+
+
+                <button class="listen-btn">
+                    🔊 Listen
+                </button>
+
+            </div>
+
+
+            <div class="official-source">
+
+                <small>
+                    📚 Official Information
+                </small>
+
+                <a
+                    href="https://www.indiacode.nic.in/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    India Code → 
+
+                </a>
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================
+             CARD 2
+        ================================== -->
+
+        <article
+            class="right-card"
+            data-category="family"
+            data-keywords="dowry marriage dowry harassment family">
+
+
+            <div class="card-icon">
+                🚫
+            </div>
+
+
+            <h3>
+                Protection Against Dowry
+            </h3>
+
+
+            <p>
+
+                Dowry-related demands
+                and harassment are prohibited
+                under Indian law.
+
+            </p>
+
+            <div class="card-actions">
+
+                <button
+                    class="read-more-btn"
+                    onclick="openDowryInfo()">
+                    📖 Read More
+                </button>
+
+
+                <button class="listen-btn">
+                    🔊 Listen
+                </button>
+
+            </div>
+
+
+            <div class="official-source">
+
+                <small>
+                    📚 Official Information
+                </small>
+
+                <a
+                    href="https://www.indiacode.nic.in/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    India Code →
+
+                </a>
+
+            </div>
+
+
+        </article>
+
+
+
+       <article
+    class="right-card"
+    data-category="work"
+    data-keywords="workplace sexual harassment office job woman POSH">
+
+    <div class="card-icon">
+        💼
+    </div>
+
+    <h3>
+        Workplace Safety
+    </h3>
+
+    <p>
+        Women have protections against sexual harassment at the workplace.
+    </p>
+
+    <div class="card-actions">
+
+        <button
+            type="button"
+            class="read-more-btn"
+            onclick="openPOSHInfo()">
+            📖 Read More
+        </button>
+
+        <button
+            type="button"
+            class="listen-btn"
+            onclick="speakPOSHInfo()">
+            🔊 Listen
+        </button>
+
+    </div>
+
+    <div class="official-source">
+
+        <small>
+            📚 Official Information
+        </small>
+
+        <a
+            href="https://www.indiacode.nic.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+            India Code →
+        </a>
+
+    </div>
+
+</article>
+
+        <!-- =================================
+             CARD 4
+        ================================== -->
+
+        <article
+            class="right-card"
+            data-category="property"
+            data-keywords="property inheritance daughter land house family assets">
+
+
+            <div class="card-icon">
+                🏡
+            </div>
+
+
+            <h3>
+                Property & Inheritance Rights
+            </h3>
+
+
+            <p>
+
+                Women may have legal rights
+                relating to property and inheritance,
+                depending on the applicable law.
+
+            </p>
+            <div class="card-actions">
+
+                <button
+    class="read-more-btn"
+    onclick="openPropertyInfo()">
+    📖 Read More
+</button>
+
+
+                <button class="listen-btn">
+                    🔊 Listen
+                </button>
+
+            </div>
+
+
+            <div class="official-source">
+
+                <small>
+                    📚 Official Information
+                </small>
+
+                <a
+                    href="https://www.indiacode.nic.in/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    India Code →
+
+                </a>
+
+            </div>
+
+
+        </article>
+
+
+
+<!-- =================================
+     CARD 5
+================================== -->
+
+<article
+    class="right-card"
+    data-category="digital"
+    data-keywords="cyber crime online harassment social media photo video internet">
+
+    <div class="card-icon">
+        📱
+    </div>
+
+    <h3>
+        Protection from Cyber Abuse
+    </h3>
+
+    <p>
+        Women can seek help when facing
+        online harassment, threats,
+        impersonation or other cyber offences.
+    </p>
+
+    <div class="card-actions">
+
+        <button
+            type="button"
+            class="read-more-btn"
+            onclick="openCyberInfo()">
+            📖 Read More
+        </button>
+
+        <button
+            type="button"
+            class="listen-btn"
+            onclick="speakCyberInfo()">
+            🔊 Listen
+        </button>
+
+    </div>
+
+    <div class="official-source">
+
+        <small>
+            📚 Official Information
+        </small>
+
+        <a
+            href="https://www.cybercrime.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            India Code →
+
+        </a>
+
+    </div>
+
+</article>
+
+
+       <!-- =================================
+     CARD 6
+================================== -->
+
+<article
+    class="right-card"
+    data-category="child"
+    data-keywords="child marriage protection minor marriage underage marriage girls children">
+
+    <div class="card-icon">
+        👧
+    </div>
+
+    <h3>
+        Protection Against Child Marriage
+    </h3>
+
+    <p>
+        Children have legal protection against marriage
+        before the minimum legal age. The law provides
+        measures to prevent child marriage and protect
+        children affected by it.
+    </p>
+
+    <div class="card-actions">
+
+        <button
+            type="button"
+            class="read-more-btn"
+            onclick="openChildMarriageInfo()">
+            📖 Read More
+        </button>
+
+        <button
+            type="button"
+            class="listen-btn"
+            onclick="speakChildMarriageInfo()">
+            🔊 Listen
+        </button>
+
+    </div>
+
+    <div class="official-source">
+
+        <small>
+            📚 Official Information
+        </small>
+
+        <a
+            href="https://www.indiacode.nic.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            India Code →
+
+        </a>
+
+    </div>
+
+</article>
+
+
+<!-- =================================
+     CARD 7
+================================== -->
+
+<article
+    class="right-card"
+    data-category="police"
+    data-keywords="police complaint FIR zero FIR crime report complaint support women police station legal aid">
+
+    <div class="card-icon">
+        👮‍♀️
+    </div>
+
+    <h3>
+        Police & Complaint Support
+    </h3>
+
+    <p>
+        Women have the right to report offences, seek
+        immediate protection, register complaints and
+        receive appropriate support during the criminal
+        justice process.
+    </p>
+
+    <div class="card-actions">
+
+        <button
+            type="button"
+            class="read-more-btn"
+            onclick="openPoliceSupportInfo()">
+            📖 Read More
+        </button>
+
+        <button
+            type="button"
+            class="listen-btn"
+            onclick="speakPoliceSupportInfo()">
+            🔊 Listen
+        </button>
+
+    </div>
+
+    <div class="official-source">
+
+        <small>
+            📚 Official Information
+        </small>
+
+        <a
+            href="https://www.indiacode.nic.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            India Code →
+
+        </a>
+
+    </div>
+
+</article>
+
+
+  <!-- =================================
+     FINANCIAL & FAMILY SUPPORT
+================================== -->
+
+<article
+    class="right-card"
+    data-category="financial"
+    data-keywords="financial support family support maintenance inheritance property maternity domestic violence women">
+
+    <div class="card-icon">
+        💰
+    </div>
+
+    <h3>
+        Financial & Family Support
+    </h3>
+
+    <p>
+        Women may have legal rights relating to family
+        property, inheritance, maintenance, maternity
+        protection and financial relief in appropriate cases.
+    </p>
+
+    <div class="card-actions">
+
+        <button
+            type="button"
+            class="read-more-btn"
+            onclick="openFinancialSupportInfo()">
+            📖 Read More
+        </button>
+
+        <button
+            type="button"
+            class="listen-btn"
+            onclick="speakFinancialSupportInfo()">
+            🔊 Listen
+        </button>
+
+    </div>
+
+    <div class="official-source">
+
+        <small>
+            📚 Official Information
+        </small>
+
+        <a
+            href="https://www.indiacode.nic.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            India Code →
+
+        </a>
+
+    </div>
+
+</article>
+
+    <!-- NO RESULTS -->
+
+    <div
+        class="no-results"
+        id="noResults">
+
+        <span>
+            🔎
+        </span>
+
+        <h3>
+            No rights found
+        </h3>
+
+        <p>
+            Try another search word or category.
+        </p>
+
+    </div>
+
+
+</section>
+
+<!-- =================================
+     CHILD MARRIAGE INFORMATION MODAL
+================================= -->
+
+<div class="child-marriage-modal" id="childMarriageModal">
+
+    <div class="child-marriage-box">
+
+        <button
+            class="child-marriage-close"
+            onclick="closeChildMarriageInfo()"
+            aria-label="Close">
+            ×
+        </button>
+
+        <div class="child-marriage-icon">
+            👧
+        </div>
+
+        <h2>
+            Protection Against Child Marriage
+        </h2>
+
+        <p class="child-marriage-intro">
+            Child marriage is a marriage in which one or both
+            contracting parties are below the legal age of marriage.
+            In India, the Prohibition of Child Marriage Act, 2006
+            provides a legal framework for preventing child marriages
+            and protecting children affected by them.
+        </p>
+
+
+        <div class="child-marriage-section">
+
+            <h3>
+                ⚖️ Prohibition of Child Marriage Act, 2006
+            </h3>
+
+            <p>
+                The Prohibition of Child Marriage Act, 2006 is the
+                principal legislation dealing with child marriage
+                in India. It replaced the earlier Child Marriage
+                Restraint Act, 1929.
+            </p>
+
+        </div>
+
+
+        <div class="child-marriage-grid">
+
+            <div class="child-marriage-card">
+
+                <h3>
+                    👧 Who is a Child?
+                </h3>
+
+                <p>
+                    Under the Act, a female is a child if she has
+                    not completed 18 years of age, while a male is
+                    a child if he has not completed 21 years of age.
+                </p>
+
+            </div>
+
+
+            <div class="child-marriage-card">
+
+                <h3>
+                    🚫 Marriage Before Legal Age
+                </h3>
+
+                <p>
+                    A marriage involving a person below the applicable
+                    legal age can be treated as a child marriage under
+                    the Act and can attract legal consequences.
+                </p>
+
+            </div>
+
+
+            <div class="child-marriage-card">
+
+                <h3>
+                    🛡️ Protection of Children
+                </h3>
+
+                <p>
+                    The law provides mechanisms for preventing child
+                    marriages and for seeking protection and relief
+                    for children affected by such marriages.
+                </p>
+
+            </div>
+
+
+            <div class="child-marriage-card">
+
+                <h3>
+                    ⚖️ Punishment
+                </h3>
+
+                <p>
+                    Persons who perform, conduct, direct or promote
+                    a child marriage may face punishment under the
+                    Prohibition of Child Marriage Act, 2006.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="child-marriage-section">
+
+            <h3>
+                👮 Prevention of Child Marriage
+            </h3>
+
+            <p>
+                The Act provides for Child Marriage Prohibition
+                Officers and other authorities to help prevent
+                child marriages and create awareness about the law.
+            </p>
+
+        </div>
+
+
+        <div class="child-marriage-section">
+
+            <h3>
+                📋 What Can Be Done if a Child Marriage is Planned?
+            </h3>
+
+            <ul>
+
+                <li>
+                    Inform the appropriate local authorities or
+                    Child Marriage Prohibition Officer.
+                </li>
+
+                <li>
+                    Seek help from the police or child-protection
+                    authorities when immediate intervention is required.
+                </li>
+
+                <li>
+                    A child or concerned person can seek appropriate
+                    legal protection and assistance.
+                </li>
+
+                <li>
+                    If a child is in immediate danger, contact
+                    emergency services.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="child-marriage-highlight">
+
+            <strong>💗 Remember:</strong>
+
+            Child marriage can affect a child's education,
+            health, safety, independence and future opportunities.
+            Children should be protected from forced or underage
+            marriage and should have access to appropriate support.
+
+        </div>
+
+
+        <div class="child-marriage-note">
+
+            <strong>⚠️ Important Legal Note:</strong>
+
+            This section provides general legal-awareness information
+            and is not legal advice. The legal consequences of a
+            particular marriage depend on the facts and the applicable
+            law. For a specific case, seek assistance from a qualified
+            legal professional or appropriate government authority.
+
+        </div>
+
+
+        <div class="child-marriage-source">
+
+            <strong>📚 Official Source</strong>
+            <br>
+
+            <a
+                href="https://www.indiacode.nic.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                India Code →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================================
+     POSH ACT INFORMATION MODAL
+========================================= -->
+
+<div class="posh-modal" id="poshModal">
+
+    <div class="posh-box">
+
+        <button class="posh-close"
+                onclick="closePOSHInfo()"
+                aria-label="Close">×</button>
+
+        <div class="posh-icon">🛡️</div>
+
+        <h2>
+            Sexual Harassment of Women at Workplace
+            (Prevention, Prohibition and Redressal) Act, 2013
+        </h2>
+
+        <p class="posh-intro">
+            The Sexual Harassment of Women at Workplace (Prevention,
+            Prohibition and Redressal) Act, 2013, commonly known as the
+            POSH Act, provides protection to women against sexual
+            harassment at the workplace and establishes mechanisms for
+            prevention and redressal of complaints.
+        </p>
+
+        <div class="posh-section">
+            <h3>📋 About the Act</h3>
+
+            <p>
+                The Act is an important law for creating a safe and
+                respectful working environment for women. It provides
+                a legal framework for preventing sexual harassment and
+                for handling complaints through designated complaint
+                mechanisms.
+            </p>
+
+            <div class="posh-highlight">
+                <strong>Act No. 14 of 2013</strong><br>
+                The Act applies throughout India and came into force
+                on 9 December 2013.
+            </div>
+        </div>
+
+
+        <div class="posh-section">
+            <h3>🚫 What is Sexual Harassment?</h3>
+
+            <p>
+                Sexual harassment includes unwelcome acts or behaviour
+                of a sexual nature at the workplace. The law provides
+                protection against such conduct and establishes a
+                mechanism for making and resolving complaints.
+            </p>
+
+            <p>
+                Sexual harassment may include conduct such as unwanted
+                physical contact or advances, demands or requests for
+                sexual favours, sexually coloured remarks, showing
+                pornography, or other unwelcome physical, verbal or
+                non-verbal conduct of a sexual nature.
+            </p>
+        </div>
+
+
+        <div class="posh-section">
+            <h3>🏢 What is a Workplace?</h3>
+
+            <p>
+                The meaning of workplace under the Act is broad. It can
+                include offices and organisations in the public and
+                private sectors, educational institutions, hospitals,
+                nursing homes, sports institutions and other places
+                connected with work.
+            </p>
+
+            <p>
+                A workplace can also include places visited by an
+                employee during the course of employment, including
+                transportation provided in connection with employment.
+            </p>
+        </div>
+
+
+        <div class="posh-grid">
+
+            <div class="posh-card">
+                <h3>💼 Safe Workplace</h3>
+
+                <p>
+                    Women have the right to work in an environment free
+                    from sexual harassment and to be treated with dignity
+                    and respect.
+                </p>
+            </div>
+
+
+            <div class="posh-card">
+                <h3>📝 Making a Complaint</h3>
+
+                <p>
+                    A woman facing sexual harassment can use the
+                    complaint mechanism established under the Act and
+                    approach the appropriate complaints committee.
+                </p>
+            </div>
+
+
+            <div class="posh-card">
+                <h3>🏢 Internal Committee</h3>
+
+                <p>
+                    Employers are required to establish an Internal
+                    Committee at workplaces covered by the Act, including
+                    offices or branches having 10 or more employees.
+                </p>
+            </div>
+
+
+            <div class="posh-card">
+                <h3>🏛️ Local Committee</h3>
+
+                <p>
+                    The Act provides for a Local Committee at the
+                    district level to receive complaints in situations
+                    covered by the law, including certain cases where
+                    an Internal Committee is not available.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="posh-section">
+            <h3>⚖️ Complaint and Inquiry Process</h3>
+
+            <p>
+                The complaints mechanism under the Act provides a
+                procedure for dealing with allegations of sexual
+                harassment. The committee conducts an inquiry according
+                to the procedure prescribed by the Act and Rules.
+            </p>
+
+            <div class="posh-process">
+
+                <div class="posh-step">
+                    <span>1</span>
+                    <div>
+                        <strong>Complaint</strong>
+                        <p>
+                            A complaint can be made through the
+                            appropriate complaints committee.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="posh-step">
+                    <span>2</span>
+                    <div>
+                        <strong>Conciliation</strong>
+                        <p>
+                            Conciliation may be considered where the
+                            complainant requests it, subject to the Act.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="posh-step">
+                    <span>3</span>
+                    <div>
+                        <strong>Inquiry</strong>
+                        <p>
+                            Where required, the committee conducts an
+                            inquiry according to the prescribed procedure.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="posh-step">
+                    <span>4</span>
+                    <div>
+                        <strong>Report and Action</strong>
+                        <p>
+                            After the inquiry, the report is submitted
+                            to the appropriate authority for further
+                            action as required by law.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="posh-section">
+            <h3>⏱️ Important Time Limits</h3>
+
+            <div class="posh-grid">
+
+                <div class="posh-card">
+                    <h3>90 Days</h3>
+                    <p>
+                        The inquiry is required to be completed within
+                        the time period prescribed by the Act.
+                    </p>
+                </div>
+
+                <div class="posh-card">
+                    <h3>60 Days</h3>
+                    <p>
+                        After completion of the inquiry, the appropriate
+                        authority is required to take action on the
+                        recommendations within the prescribed period.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="posh-section">
+            <h3>🔒 Confidentiality</h3>
+
+            <p>
+                The Act provides confidentiality protections concerning
+                complaints and inquiry proceedings. Information relating
+                to the complaint and inquiry should not be disclosed
+                except as permitted by law.
+            </p>
+        </div>
+
+
+        <div class="posh-section">
+            <h3>📚 Employer Responsibilities</h3>
+
+            <div class="posh-card full-card">
+
+                <ul>
+                    <li>
+                        Provide a workplace environment that is safe
+                        and free from sexual harassment.
+                    </li>
+
+                    <li>
+                        Constitute the required Internal Committee where
+                        applicable.
+                    </li>
+
+                    <li>
+                        Display information relating to the Act and
+                        consequences of sexual harassment at the workplace.
+                    </li>
+
+                    <li>
+                        Conduct awareness and sensitisation programmes
+                        as required.
+                    </li>
+
+                    <li>
+                        Provide the required support for handling
+                        complaints under the Act.
+                    </li>
+
+                    <li>
+                        Comply with the obligations prescribed under
+                        the Act and Rules.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="posh-section">
+            <h3>🛡️ Protection for Women</h3>
+
+            <p>
+                The Act is intended to protect women against sexual
+                harassment in workplaces across different sectors.
+                The definition of an aggrieved woman is broad and can
+                cover women irrespective of their employment status in
+                circumstances covered by the Act.
+            </p>
+        </div>
+
+
+        <div class="posh-section">
+            <h3>⚠️ False or Malicious Complaints</h3>
+
+            <p>
+                The Act contains provisions dealing with complaints
+                that are proved to have been made maliciously or with
+                knowledge that the allegations were false, subject to
+                the requirements of the law.
+            </p>
+
+            <div class="posh-note">
+                <strong>Important:</strong>
+                A complaint should not be treated as false merely
+                because it could not be proved. The legal requirements
+                for action relating to malicious or false complaints
+                must be followed.
+            </div>
+        </div>
+
+
+        <div class="posh-section">
+            <h3>🌸 Why Workplace Awareness Matters</h3>
+
+            <p>
+                Awareness of workplace sexual-harassment protections
+                helps women understand their rights and helps
+                organisations create safer and more respectful
+                workplaces.
+            </p>
+
+            <p>
+                Employees should know who the appropriate complaints
+                committee members are and how to report concerns within
+                their organisation.
+            </p>
+        </div>
+
+
+        <div class="posh-highlight">
+
+            <strong>💗 Remember:</strong>
+
+            Every woman has the right to a workplace where she can
+            work with dignity and safety. If you experience sexual
+            harassment, you can seek help through the appropriate
+            complaints mechanism and, where appropriate, other legal
+            or support services.
+
+        </div>
+
+
+        <div class="posh-note">
+
+            <strong>⚠️ Important Legal Note:</strong>
+
+            This page provides general legal-awareness information and
+            is not legal advice. The application of the law depends on
+            the facts and circumstances of each case. For a specific
+            legal issue, consult a qualified lawyer or an appropriate
+            legal-aid service.
+
+        </div>
+
+
+        <div class="posh-source">
+
+            <strong>📚 Official Source</strong>
+            <br>
+
+            <a href="https://www.indiacode.nic.in/"
+               target="_blank"
+               rel="noopener noreferrer">
+                India Code → Sexual Harassment of Women at Workplace
+                (Prevention, Prohibition and Redressal) Act, 2013
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- =========================================
+     PROPERTY & INHERITANCE RIGHTS MODAL
+========================================= -->
+
+<div class="property-modal" id="propertyModal">
+
+    <div class="property-box">
+
+        <button
+            class="property-close"
+            onclick="closePropertyInfo()"
+            aria-label="Close">
+            ×
+        </button>
+
+        <div class="property-icon">
+            🏠
+        </div>
+
+        <h2>
+            Women's Property & Inheritance Rights
+        </h2>
+
+        <p class="property-intro">
+            Women's property rights are property and inheritance
+            rights enjoyed by women as a category within a society.
+            These rights can relate to ownership, inheritance,
+            access to land, use of property and control over
+            resources.
+        </p>
+
+
+        <!-- BASIC INFORMATION -->
+
+        <div class="property-section">
+
+            <h3>
+                📖 What Are Property Rights?
+            </h3>
+
+            <p>
+                Property rights are claims to property that are
+                legally and socially recognised and enforceable
+                by an authorised authority.
+            </p>
+
+            <p>
+                Land rights can include different legitimate
+                claims to land and the benefits or products
+                produced from that land.
+            </p>
+
+            <p>
+                These rights may include ownership or rights
+                to use property.
+            </p>
+
+        </div>
+
+
+        <!-- LAND AND INHERITANCE -->
+
+        <div class="property-section">
+
+            <h3>
+                🌱 Land, Property and Inheritance
+            </h3>
+
+            <p>
+                Property and land rights can arise through
+                inheritance, transfers from the State,
+                tenancy arrangements and purchase of land.
+            </p>
+
+            <p>
+                Having access to property and land can have
+                important economic and social consequences
+                for women and their families.
+            </p>
+
+        </div>
+
+
+        <!-- IMPORTANT AREAS -->
+
+        <div class="property-section">
+
+            <h3>
+                ⭐ Important Areas
+            </h3>
+
+        </div>
+
+
+        <div class="property-grid">
+
+            <div class="property-card">
+
+                <h3>
+                    🏡 Ownership
+                </h3>
+
+                <p>
+                    Property ownership can provide women with
+                    greater control over resources and can
+                    strengthen their economic independence.
+                </p>
+
+            </div>
+
+
+            <div class="property-card">
+
+                <h3>
+                    📜 Inheritance
+                </h3>
+
+                <p>
+                    Inheritance is one of the ways through which
+                    property and land can be transferred to
+                    family members.
+                </p>
+
+            </div>
+
+
+            <div class="property-card">
+
+                <h3>
+                    🌾 Land Rights
+                </h3>
+
+                <p>
+                    Access to land can be important for women,
+                    particularly in rural and agricultural
+                    communities where land may support
+                    livelihoods and food production.
+                </p>
+
+            </div>
+
+
+            <div class="property-card">
+
+                <h3>
+                    💰 Economic Independence
+                </h3>
+
+                <p>
+                    Greater access to property and resources
+                    can support women's economic security,
+                    decision-making and independence.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- GENDER BIAS -->
+
+        <div class="property-section">
+
+            <h3>
+                ⚖️ Impact of Gender Bias
+            </h3>
+
+            <p>
+                Traditional systems of property ownership and
+                inheritance have often resulted in men receiving
+                greater control over property and resources.
+            </p>
+
+            <p>
+                Gender-biased practices can reduce women's
+                ability to control property, make financial
+                decisions and improve their economic position.
+            </p>
+
+        </div>
+
+
+        <!-- PATRIARCHAL SYSTEMS -->
+
+        <div class="property-section">
+
+            <h3>
+                👨‍👩‍👧 Patriarchal Property Systems
+            </h3>
+
+            <p>
+                In some societies, property and inheritance
+                practices have traditionally followed male
+                family lines.
+            </p>
+
+            <p>
+                Such practices can make women dependent on
+                male relatives and can limit their influence
+                over how property is used or transferred.
+            </p>
+
+        </div>
+
+
+        <!-- MARRIAGE -->
+
+        <div class="property-section">
+
+            <h3>
+                💍 Marriage and Property Rights
+            </h3>
+
+            <p>
+                Women's access to property can sometimes be
+                affected by marriage, divorce or the death
+                of a spouse.
+            </p>
+
+            <p>
+                Traditional marriage practices may also
+                influence how families understand women's
+                rights to property and inheritance.
+            </p>
+
+        </div>
+
+
+        <!-- BARRIERS -->
+
+        <div class="property-section">
+
+            <h3>
+                🚧 Barriers to Property Rights
+            </h3>
+
+        </div>
+
+
+        <div class="property-grid">
+
+            <div class="property-card">
+
+                <h3>
+                    ⚠️ Inadequate Laws and Enforcement
+                </h3>
+
+                <p>
+                    Even where laws provide property or
+                    inheritance rights, weak implementation
+                    and enforcement can create difficulties
+                    in exercising those rights.
+                </p>
+
+            </div>
+
+
+            <div class="property-card">
+
+                <h3>
+                    📚 Lack of Awareness
+                </h3>
+
+                <p>
+                    Limited awareness of existing laws and
+                    legal remedies can make it difficult for
+                    women to understand or claim their rights.
+                </p>
+
+            </div>
+
+
+            <div class="property-card">
+
+                <h3>
+                    👥 Traditional Attitudes
+                </h3>
+
+                <p>
+                    Traditional gender expectations and
+                    stereotypes can act as barriers to women's
+                    ownership and control of property.
+                </p>
+
+            </div>
+
+
+            <div class="property-card">
+
+                <h3>
+                    🏛️ Administrative Barriers
+                </h3>
+
+                <p>
+                    Property and inheritance claims may involve
+                    administrative systems where lack of legal
+                    awareness or unequal decision-making can
+                    create additional difficulties.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- AWARENESS -->
+
+        <div class="property-section">
+
+            <h3>
+                📢 Why Awareness Matters
+            </h3>
+
+            <p>
+                Awareness of property and inheritance rights can
+                help women understand the importance of ownership,
+                land access and control over resources.
+            </p>
+
+            <p>
+                Understanding available legal rights and legal
+                redress options can also help women seek
+                appropriate assistance when their rights are
+                denied.
+            </p>
+
+        </div>
+
+
+        <!-- SOCIAL AND ECONOMIC IMPACT -->
+
+        <div class="property-section">
+
+            <h3>
+                🌸 Social and Economic Importance
+            </h3>
+
+            <p>
+                Greater access to property can have economic,
+                psychological and social benefits for women.
+            </p>
+
+            <p>
+                Property ownership and secure access to land
+                can contribute to greater economic security,
+                decision-making power and improved opportunities
+                for women and their families.
+            </p>
+
+        </div>
+
+
+        <!-- KEY MESSAGE -->
+
+        <div class="property-highlight">
+
+            <strong>💡 Remember:</strong>
+
+            Property and inheritance rights can play an
+            important role in women's economic independence
+            and security. Women should be aware of the property
+            rights available to them under the applicable law.
+
+        </div>
+
+
+        <!-- LEGAL NOTE -->
+
+        <div class="property-note">
+
+            <strong>⚠️ Important Legal Note:</strong>
+
+            This section provides general awareness information
+            about women's property and inheritance rights based
+            on the source material provided. Property and
+            inheritance laws differ between countries, communities
+            and applicable personal or statutory laws.
+
+            For an India-specific property or inheritance dispute,
+            the applicable law and current legal provisions should
+            be checked and appropriate legal advice should be
+            obtained.
+
+        </div>
+
+
+        <!-- SOURCE -->
+
+        <div class="property-source">
+
+            <strong>
+                📚 Legal Information
+            </strong>
+
+            <br>
+
+            <a
+                href="https://www.indiacode.nic.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                India Code →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================================
+     CYBER ABUSE INFORMATION MODAL
+========================================= -->
+
+<div class="cyber-modal" id="cyberModal">
+
+    <div class="cyber-box">
+
+        <button
+            class="cyber-close"
+            onclick="closeCyberInfo()"
+            aria-label="Close">
+            ×
+        </button>
+
+        <div class="cyber-icon">
+            💻
+        </div>
+
+        <h2>
+            Protection from Cyber Abuse
+        </h2>
+
+        <p class="cyber-intro">
+            Cyber crimes are offences committed using computers,
+            mobile devices, networks or the internet. Online abuse
+            can affect women even when the perpetrator does not
+            have physical contact with the victim or does not
+            reveal their identity.
+        </p>
+
+
+        <!-- TYPES OF CYBER ABUSE -->
+
+        <div class="cyber-section">
+
+            <h3>
+                🚨 Common Forms of Cyber Abuse
+            </h3>
+
+        </div>
+
+
+        <div class="cyber-grid">
+
+            <div class="cyber-card">
+
+                <h3>
+                    👀 Cyber Stalking
+                </h3>
+
+                <p>
+                    Repeatedly contacting or monitoring a woman
+                    through the internet, email or other electronic
+                    communication can amount to stalking when the
+                    legal requirements are satisfied.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    💬 Cyber Bullying
+                </h3>
+
+                <p>
+                    Online bullying can include repeated abusive,
+                    threatening or humiliating behaviour through
+                    digital platforms.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    📱 Cyber Harassment
+                </h3>
+
+                <p>
+                    Unwanted online communication, threats,
+                    abusive messages or sexually inappropriate
+                    content may form part of cyber harassment.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    🪪 Identity Theft
+                </h3>
+
+                <p>
+                    Using another person's password, electronic
+                    signature or other unique identification feature
+                    dishonestly or fraudulently is addressed by
+                    Section 66C of the Information Technology Act.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    🔐 Privacy Violation
+                </h3>
+
+                <p>
+                    Section 66E of the Information Technology Act
+                    addresses capturing, publishing or transmitting
+                    images of a private area of a person without
+                    consent in circumstances violating privacy.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    📸 Voyeurism
+                </h3>
+
+                <p>
+                    The Bharatiya Nyaya Sanhita, 2023 contains
+                    provisions concerning voyeurism, including
+                    watching, capturing or disseminating images
+                    of a woman engaged in a private act in
+                    circumstances covered by the law.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CURRENT CRIMINAL LAW -->
+
+        <div class="cyber-section">
+
+            <h3>
+                ⚖️ Current Criminal-Law Provisions
+            </h3>
+
+            <p>
+                The older source material refers to Sections 354A,
+                354C, 354D, 499, 503, 507 and 509 of the Indian
+                Penal Code. These IPC provisions should not be
+                presented as the current criminal-law provisions
+                because the IPC was replaced by the Bharatiya
+                Nyaya Sanhita, 2023 from 1 July 2024.
+            </p>
+
+        </div>
+
+
+        <div class="cyber-grid">
+
+            <div class="cyber-card">
+
+                <h3>
+                    ⚠️ BNS Section 75
+                </h3>
+
+                <p>
+                    Section 75 of the Bharatiya Nyaya Sanhita,
+                    2023 deals with sexual harassment, including
+                    specified unwelcome sexual conduct,
+                    demands for sexual favours, showing pornography
+                    against a woman's will and sexually coloured
+                    remarks.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    👀 BNS Section 78
+                </h3>
+
+                <p>
+                    Section 78 deals with stalking and includes
+                    monitoring a woman's use of the internet,
+                    email or other electronic communication.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    📸 BNS Section 77
+                </h3>
+
+                <p>
+                    Section 77 deals with voyeurism, including
+                    watching, capturing or disseminating images
+                    of a woman engaging in a private act in
+                    circumstances covered by the provision.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    🚨 BNS Section 351
+                </h3>
+
+                <p>
+                    Section 351 deals with criminal intimidation,
+                    including threats involving a person's body,
+                    reputation or property. Anonymous threats are
+                    also addressed by the provision.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    📢 BNS Section 79
+                </h3>
+
+                <p>
+                    Section 79 addresses words, sounds, gestures,
+                    objects or conduct intended to insult the
+                    modesty of a woman, including intrusion upon
+                    her privacy.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    📝 BNS Section 356
+                </h3>
+
+                <p>
+                    Section 356 deals with defamation. Whether an
+                    online publication constitutes an offence
+                    depends on the facts and applicable law.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IT ACT -->
+
+        <div class="cyber-section">
+
+            <h3>
+                💻 Information Technology Act, 2000
+            </h3>
+
+            <p>
+                The Information Technology Act, 2000 contains
+                provisions dealing with several forms of
+                computer-related and electronic offences.
+            </p>
+
+        </div>
+
+
+        <div class="cyber-grid">
+
+            <div class="cyber-card">
+
+                <h3>
+                    🪪 Section 66C
+                </h3>
+
+                <p>
+                    Deals with punishment for identity theft,
+                    including dishonest or fraudulent use of
+                    another person's electronic signature,
+                    password or unique identification feature.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    🔒 Section 66E
+                </h3>
+
+                <p>
+                    Deals with violation of privacy through
+                    capturing, publishing or transmitting
+                    images of a private area without consent
+                    in circumstances covered by the Act.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    🚫 Section 67
+                </h3>
+
+                <p>
+                    Deals with publishing or transmitting
+                    obscene material in electronic form.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    🔞 Section 67A
+                </h3>
+
+                <p>
+                    Deals with publishing or transmitting
+                    material containing sexually explicit
+                    acts in electronic form.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    🧒 Section 67B
+                </h3>
+
+                <p>
+                    Deals with electronic material depicting
+                    children in sexually explicit acts or
+                    conduct covered by the provision.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- NON-CONSENSUAL CONTENT -->
+
+        <div class="cyber-section">
+
+            <h3>
+                📸 Non-Consensual Sharing of Intimate Content
+            </h3>
+
+            <p>
+                Sharing or transmitting intimate or sexually
+                explicit material without consent can have
+                serious legal consequences. Depending on the
+                facts, provisions of the Information Technology
+                Act and criminal law may apply.
+            </p>
+
+            <p>
+                A victim should preserve relevant evidence and
+                seek appropriate legal assistance rather than
+                continuing to engage with or threaten the
+                perpetrator.
+            </p>
+
+        </div>
+
+
+        <!-- WHAT TO DO -->
+
+        <div class="cyber-section">
+
+            <h3>
+                🛡️ What to Do if You Face Cyber Abuse
+            </h3>
+
+        </div>
+
+
+        <div class="cyber-grid">
+
+            <div class="cyber-card">
+
+                <h3>
+                    📸 Preserve Evidence
+                </h3>
+
+                <p>
+                    Keep screenshots, messages, emails, profile
+                    links, URLs, dates and other relevant
+                    digital evidence.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    🔐 Secure Your Accounts
+                </h3>
+
+                <p>
+                    Change compromised passwords, enable
+                    two-factor authentication and review
+                    account security settings.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    🚫 Report the Content
+                </h3>
+
+                <p>
+                    Use the reporting and blocking tools provided
+                    by the relevant social-media or online platform
+                    where appropriate.
+                </p>
+
+            </div>
+
+
+            <div class="cyber-card">
+
+                <h3>
+                    👮 Seek Legal Help
+                </h3>
+
+                <p>
+                    Depending on the circumstances, a victim can
+                    approach the police, cyber-crime authorities,
+                    legal-aid services or another appropriate
+                    authority.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- KEY MESSAGE -->
+
+        <div class="cyber-highlight">
+
+            <strong>💗 Remember:</strong>
+
+            Online abuse is serious. Save evidence, protect your
+            accounts and seek appropriate help when you face
+            stalking, threats, harassment, identity theft,
+            privacy violations or non-consensual intimate content.
+
+        </div>
+
+
+        <!-- LEGAL NOTE -->
+
+        <div class="cyber-note">
+
+            <strong>⚠️ Important Legal Note:</strong>
+
+            This section provides general legal-awareness
+            information and is not legal advice.
+
+            The legal provisions applicable to an online incident
+            depend on the facts, the nature of the content,
+            the persons involved and the date on which the conduct
+            occurred.
+
+            The IPC references in the source material are historical.
+            For incidents governed by current criminal law,
+            the Bharatiya Nyaya Sanhita, 2023 and other applicable
+            laws should be checked.
+
+        </div>
+
+
+        <!-- SOURCE -->
+
+        <div class="cyber-source">
+
+            <strong>
+                📚 Official Sources
+            </strong>
+
+            <br>
+
+            <a
+                href="https://www.indiacode.nic.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                India Code →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================================
+     DOMESTIC VIOLENCE INFORMATION MODAL
+========================================= -->
+
+<div class="domestic-violence-modal" id="domesticViolenceModal">
+
+    <div class="domestic-violence-box">
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            class="domestic-violence-close"
+            onclick="closeDomesticViolence()"
+            aria-label="Close">
+            ×
+        </button>
+
+
+        <!-- ICON -->
+
+        <div class="domestic-violence-icon">
+            🛡️
+        </div>
+
+
+        <!-- TITLE -->
+
+        <h2>
+            Protection of Women from Domestic Violence Act, 2005
+        </h2>
+
+
+        <!-- INTRODUCTION -->
+
+        <p class="dv-intro">
+
+            The Protection of Women from Domestic Violence Act, 2005
+            (Act No. 43 of 2005) provides legal protection and remedies
+            for women who face domestic violence. The Act was enacted
+            to provide more effective protection of the rights of women
+            who are victims of violence occurring within the family.
+
+            The Act came into force on 26 October 2006.
+
+        </p>
+
+
+        <!-- WHAT IS DOMESTIC VIOLENCE -->
+
+        <div class="dv-section">
+
+            <h3>
+                📖 What is Domestic Violence?
+            </h3>
+
+            <p>
+
+                Section 3 of the Act defines domestic violence broadly.
+                It includes physical, sexual, verbal and emotional abuse
+                and economic abuse. It also covers certain unlawful
+                demands for dowry, property or valuable security,
+                threats, and conduct causing physical or mental harm.
+
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT TO RESIDENCE -->
+
+        <div class="dv-section">
+
+            <h3>
+                🏠 Right to Reside in the Shared Household
+            </h3>
+
+            <p>
+
+                Section 17 recognises an aggrieved woman's right to
+                reside in the shared household. This right is not
+                simply dependent on whether the house is owned or
+                registered in her name.
+
+            </p>
+
+        </div>
+
+
+        <!-- MAIN FEATURES -->
+
+        <div class="dv-section">
+
+            <h3>
+                ⭐ Important Features of the Act
+            </h3>
+
+            <p>
+                The Act provides several forms of protection and relief
+                to women facing domestic violence.
+            </p>
+
+        </div>
+
+
+        <!-- FEATURES GRID -->
+
+        <div class="dv-grid">
+
+            <!-- CARD 1 -->
+
+            <div class="dv-card">
+
+                <h3>
+                    🏠 Protection and Residence
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Right to reside in the shared household
+                        under Section 17.
+                    </li>
+
+                    <li>
+                        Protection against domestic violence.
+                    </li>
+
+                    <li>
+                        Residence orders may be granted by the court.
+                    </li>
+
+                    <li>
+                        Protection can cover different forms of
+                        domestic abuse.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="dv-card">
+
+                <h3>
+                    💰 Economic Protection
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Economic abuse is recognised under the Act.
+                    </li>
+
+                    <li>
+                        Monetary relief may be available under
+                        Section 20.
+                    </li>
+
+                    <li>
+                        Relief may include expenses and maintenance
+                        for the woman and her children, where ordered.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="dv-card">
+
+                <h3>
+                    💗 Emotional and Verbal Abuse
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Verbal and emotional abuse is covered.
+                    </li>
+
+                    <li>
+                        Psychological harm may form part of domestic
+                        violence.
+                    </li>
+
+                    <li>
+                        Threats and conduct causing mental harm may
+                        also be relevant.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="dv-card">
+
+                <h3>
+                    👧 Child Custody
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Temporary custody orders may be granted
+                        under Section 21.
+                    </li>
+
+                    <li>
+                        The court may make appropriate arrangements
+                        regarding children.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- REMEDIES -->
+
+        <div class="dv-section">
+
+            <h3>
+                ⚖️ Main Remedies Available
+            </h3>
+
+            <p>
+
+                Depending on the circumstances of the case, an
+                aggrieved woman may seek different types of relief
+                under the Act.
+
+            </p>
+
+        </div>
+
+
+        <!-- REMEDIES GRID -->
+
+        <div class="dv-grid">
+
+            <div class="dv-card">
+
+                <h3>
+                    🛡️ Section 18 – Protection Order
+                </h3>
+
+                <p>
+                    A court may pass a protection order to protect
+                    the aggrieved person from acts of domestic
+                    violence.
+                </p>
+
+            </div>
+
+
+            <div class="dv-card">
+
+                <h3>
+                    🏠 Section 19 – Residence Order
+                </h3>
+
+                <p>
+                    The Magistrate may pass appropriate residence
+                    orders in accordance with the Act.
+                </p>
+
+            </div>
+
+
+            <div class="dv-card">
+
+                <h3>
+                    💰 Section 20 – Monetary Relief
+                </h3>
+
+                <p>
+                    Monetary relief may be ordered for expenses,
+                    losses and maintenance as provided under the Act.
+                </p>
+
+            </div>
+
+
+            <div class="dv-card">
+
+                <h3>
+                    👧 Section 21 – Custody Order
+                </h3>
+
+                <p>
+                    Temporary custody of children may be granted
+                    where appropriate.
+                </p>
+
+            </div>
+
+
+            <div class="dv-card">
+
+                <h3>
+                    💗 Section 22 – Compensation
+                </h3>
+
+                <p>
+                    Compensation may be awarded for injuries,
+                    including mental torture and emotional distress,
+                    as provided under the Act.
+                </p>
+
+            </div>
+
+
+            <div class="dv-card">
+
+                <h3>
+                    ⏳ Section 23 – Interim Orders
+                </h3>
+
+                <p>
+                    The Magistrate may grant interim and, where
+                    legally appropriate, ex parte orders.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROTECTION OFFICERS -->
+
+        <div class="dv-section">
+
+            <h3>
+                👩‍⚖️ Protection Officers
+            </h3>
+
+            <p>
+
+                Protection Officers are appointed by the Government
+                under the Act. Their duties include assisting an
+                aggrieved woman, facilitating access to legal aid
+                and relief, assisting with Domestic Incident Reports,
+                and helping coordinate the implementation of orders
+                with the appropriate authorities.
+
+            </p>
+
+        </div>
+
+
+        <!-- SERVICE PROVIDERS -->
+
+        <div class="dv-section">
+
+            <h3>
+                🤝 Service Providers
+            </h3>
+
+            <p>
+
+                Notified service providers, including eligible
+                organisations, may assist women with Domestic
+                Incident Reports and may help provide or arrange
+                services such as shelter, counselling and medical
+                assistance as provided under the Act.
+
+            </p>
+
+        </div>
+
+
+        <!-- WHERE TO APPROACH -->
+
+        <div class="dv-section">
+
+            <h3>
+                📍 Where Can a Woman Seek Help?
+            </h3>
+
+            <p>
+
+                An aggrieved woman may approach the appropriate
+                Magistrate's court, Protection Officer, police
+                station, service provider or other available
+                support channel depending on her circumstances.
+
+            </p>
+
+        </div>
+
+
+        <!-- COURT TIME -->
+
+        <div class="dv-section">
+
+            <h3>
+                ⏱️ 60-Day Provision
+            </h3>
+
+            <p>
+
+                Section 12(5) provides that the Magistrate shall
+                endeavour to dispose of every application made under
+                the Act within 60 days from the date of its first
+                hearing.
+
+            </p>
+
+        </div>
+
+
+        <!-- ADDITIONAL SUPPORT -->
+
+        <div class="dv-section">
+
+            <h3>
+                ⚖️ Legal Aid and Other Proceedings
+            </h3>
+
+            <p>
+
+                Women may be eligible for free legal services
+                according to applicable legal-aid provisions.
+                Relief under the Domestic Violence Act can also
+                operate alongside other legal proceedings where
+                applicable.
+
+            </p>
+
+        </div>
+
+
+        <!-- HIGHLIGHT -->
+
+        <div class="dv-highlight">
+
+            <strong>
+                💡 Remember:
+            </strong>
+
+            A woman facing domestic violence does not have to
+            remain silent. The law provides different forms of
+            protection and relief, depending on the facts of the
+            situation.
+
+        </div>
+
+
+        <!-- IMPORTANT NOTE -->
+
+        <div class="dv-note">
+
+            <strong>
+                ⚠️ Important:
+            </strong>
+
+            This information is provided for general legal awareness
+            and is not legal advice. The appropriate remedy depends
+            on the individual circumstances of a case. For the
+            current text of the law, users should refer to the
+            official India Code source or seek assistance from a
+            qualified legal professional or legal-aid service.
+
+        </div>
+
+
+        <!-- OFFICIAL SOURCE -->
+
+        <div class="dv-source">
+
+            <strong>
+                📚 Official Source
+            </strong>
+
+            <br>
+
+            <a
+                href="https://www.indiacode.nic.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                India Code → Protection of Women from Domestic
+                Violence Act, 2005
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<!-- =========================================
+     DOWRY INFORMATION MODAL
+========================================= -->
+
+<div class="dowry-modal" id="dowryModal">
+
+    <div class="dowry-box">
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            class="dowry-close"
+            onclick="closeDowryInfo()"
+            aria-label="Close">
+
+            ×
+
+        </button>
+
+
+        <!-- ICON -->
+
+        <div class="dowry-icon">
+            💍
+        </div>
+
+
+        <!-- TITLE -->
+
+        <h2>
+            Dowry System in India
+        </h2>
+
+
+        <!-- INTRODUCTION -->
+
+        <p class="dowry-intro">
+
+            Dowry refers to property, valuable goods, money or other
+            articles that may be demanded or transferred in connection
+            with a marriage. When such property or valuable security
+            is demanded as a condition or consideration for marriage,
+            the practice can become a serious social and legal issue.
+
+            The Dowry Prohibition Act, 1961 is the principal legislation
+            dealing with dowry in India.
+
+        </p>
+
+
+        <!-- WHAT IS DOWRY -->
+
+        <div class="dowry-section">
+
+            <h3>
+                📖 What is Dowry?
+            </h3>
+
+            <p>
+
+                Dowry generally refers to property or valuable security
+                given or agreed to be given, directly or indirectly,
+                by one party to a marriage to the other party, or by
+                the parents or other persons to either party, in
+                connection with the marriage, as covered by the
+                Dowry Prohibition Act, 1961.
+
+            </p>
+
+        </div>
+
+
+        <!-- LAW -->
+
+        <div class="dowry-section">
+
+            <h3>
+                ⚖️ Dowry Prohibition Act, 1961
+            </h3>
+
+            <p>
+
+                The Dowry Prohibition Act, 1961 was enacted to prohibit
+                the giving and taking of dowry and to address demands
+                for dowry connected with marriage.
+
+                The Act is an important part of India's legal framework
+                for preventing dowry-related practices.
+
+            </p>
+
+        </div>
+
+
+        <!-- MAIN FEATURES -->
+
+        <div class="dowry-section">
+
+            <h3>
+                ⭐ Important Points
+            </h3>
+
+        </div>
+
+
+        <!-- INFORMATION GRID -->
+
+        <div class="dowry-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="dowry-card">
+
+                <h3>
+                    🚫 Giving and Taking Dowry
+                </h3>
+
+                <ul>
+
+                    <li>
+                        The law prohibits giving or taking dowry.
+                    </li>
+
+                    <li>
+                        Dowry-related transactions can have legal
+                        consequences.
+                    </li>
+
+                    <li>
+                        The law applies to dowry connected with
+                        marriage.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="dowry-card">
+
+                <h3>
+                    ⚠️ Dowry Demands
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Demanding dowry in connection with marriage
+                        is prohibited.
+                    </li>
+
+                    <li>
+                        Pressure or coercion to obtain property or
+                        valuable security may be associated with
+                        dowry-related offences.
+                    </li>
+
+                    <li>
+                        Women and their families can seek appropriate
+                        legal assistance.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="dowry-card">
+
+                <h3>
+                    💗 Dowry Harassment
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Dowry-related demands may be accompanied by
+                        harassment or cruelty.
+                    </li>
+
+                    <li>
+                        Such conduct may also involve domestic
+                        violence.
+                    </li>
+
+                    <li>
+                        Depending on the circumstances, additional
+                        legal provisions may apply.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="dowry-card">
+
+                <h3>
+                    🛡️ Protection of Women
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Women facing dowry-related harassment can
+                        seek help through appropriate legal channels.
+                    </li>
+
+                    <li>
+                        Protection and other relief may be available
+                        under applicable laws.
+                    </li>
+
+                    <li>
+                        Legal aid may be available to eligible
+                        persons.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- DOWRY CRIMES -->
+
+        <div class="dowry-section">
+
+            <h3>
+                🚨 Dowry-Related Crimes
+            </h3>
+
+            <p>
+
+                Dowry-related abuse can take different forms.
+                It may involve harassment, cruelty, physical or
+                emotional abuse, domestic violence, threats,
+                coercion, or in serious cases, death.
+
+                The legal consequences depend on the facts and
+                the applicable law.
+
+            </p>
+
+        </div>
+
+
+        <!-- TYPES -->
+
+        <div class="dowry-grid">
+
+
+            <div class="dowry-card">
+
+                <h3>
+                    💔 Cruelty and Harassment
+                </h3>
+
+                <p>
+
+                    Repeated harassment or cruelty connected with
+                    unlawful demands for property or valuable security
+                    can have serious legal consequences.
+
+                </p>
+
+            </div>
+
+
+            <div class="dowry-card">
+
+                <h3>
+                    🏠 Domestic Violence
+                </h3>
+
+                <p>
+
+                    Dowry-related abuse may also fall within the
+                    forms of domestic violence recognised under the
+                    Protection of Women from Domestic Violence Act,
+                    2005.
+
+                </p>
+
+            </div>
+
+
+            <div class="dowry-card">
+
+                <h3>
+                    ⚠️ Serious Violence
+                </h3>
+
+                <p>
+
+                    In serious cases, dowry-related harassment can
+                    be associated with physical violence, suicide,
+                    or death. Such cases require immediate legal
+                    intervention and protection.
+
+                </p>
+
+            </div>
+
+
+            <div class="dowry-card">
+
+                <h3>
+                    📢 Report and Seek Help
+                </h3>
+
+                <p>
+
+                    A woman facing dowry-related threats or violence
+                    should consider contacting the police, legal-aid
+                    services, Protection Officers, or other appropriate
+                    support services.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SOCIAL IMPACT -->
+
+        <div class="dowry-section">
+
+            <h3>
+                🌸 Social Impact of Dowry
+            </h3>
+
+            <p>
+
+                The dowry system can create financial pressure on
+                the bride's family and can contribute to inequality
+                and dependence within marriage.
+
+                Dowry-related demands may also lead to emotional
+                abuse, harassment and violence against women.
+
+            </p>
+
+        </div>
+
+
+        <!-- AWARENESS -->
+
+        <div class="dowry-section">
+
+            <h3>
+                📢 Why Awareness Matters
+            </h3>
+
+            <p>
+
+                Awareness about dowry laws can help women and families
+                understand their rights and recognise unlawful
+                demands.
+
+                Marriage should not become a reason for demanding
+                money, property or valuable security from a woman
+                or her family.
+
+            </p>
+
+        </div>
+
+
+        <!-- HIGHLIGHT -->
+
+        <div class="dowry-highlight">
+
+            <strong>
+                💡 Remember:
+            </strong>
+
+            Dowry is not a condition that a woman or her family
+            should have to accept for marriage. If someone is
+            facing a dowry-related demand, harassment or violence,
+            appropriate legal and support services can be approached.
+
+        </div>
+
+
+        <!-- IMPORTANT LEGAL NOTE -->
+
+        <div class="dowry-note">
+
+            <strong>
+                ⚠️ Important Legal Note:
+            </strong>
+
+            This page provides general legal awareness information
+            and is not legal advice.
+
+            Criminal-law provisions concerning dowry and cruelty
+            have changed with India's new criminal-law framework.
+            Therefore, users should check the current law applicable
+            to their situation and seek advice from a qualified
+            legal professional or legal-aid service.
+
+        </div>
+
+
+        <!-- OFFICIAL SOURCE -->
+
+        <div class="dowry-source">
+
+            <strong>
+                📚 Official Source
+            </strong>
+
+            <br>
+
+            <a
+                href="https://www.indiacode.nic.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                India Code → Dowry Prohibition Act, 1961
+
+            </a>
+
+        </div>
+
+
+    </div>
+</div>
+
+<!-- =================================
+     POLICE & COMPLAINT SUPPORT MODAL
+================================= -->
+
+<div class="police-support-modal" id="policeSupportModal">
+
+    <div class="police-support-box">
+
+        <button
+            class="police-support-close"
+            onclick="closePoliceSupportInfo()"
+            aria-label="Close">
+            ×
+        </button>
+
+        <div class="police-support-icon">
+            👮‍♀️
+        </div>
+
+        <h2>
+            Police & Complaint Support
+        </h2>
+
+        <p class="police-support-intro">
+            Reporting an offence to the police can be an important
+            step towards protection, investigation, justice and
+            access to support services. Women reporting crimes
+            should be treated with dignity and their safety and
+            privacy should be respected.
+        </p>
+
+
+        <div class="police-support-section">
+
+            <h3>
+                🚨 1. Immediate Safety
+            </h3>
+
+            <p>
+                If there is an immediate threat to life or safety,
+                move to a safe place where possible and contact
+                emergency services. In India, emergency assistance
+                can be reached through <strong>112</strong>.
+            </p>
+
+        </div>
+
+
+        <div class="police-support-section">
+
+            <h3>
+                📝 2. Registration of an FIR
+            </h3>
+
+            <p>
+                For information relating to a cognisable offence,
+                the Bharatiya Nagarik Suraksha Sanhita, 2023
+                provides the framework for recording information
+                by the police.
+            </p>
+
+            <div class="police-support-grid">
+
+                <div class="police-support-card">
+
+                    <h3>📄 FIR Copy</h3>
+
+                    <p>
+                        Ask for the FIR number and a copy of the
+                        recorded information for your records.
+                    </p>
+
+                </div>
+
+
+                <div class="police-support-card">
+
+                    <h3>👮 Investigating Officer</h3>
+
+                    <p>
+                        Keep the name and designation of the
+                        investigating officer handling the case.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="police-support-section">
+
+            <h3>
+                📍 3. Zero FIR
+            </h3>
+
+            <p>
+                Zero FIR refers to the practice of registering
+                information concerning a cognisable offence at
+                a police station even when the offence falls
+                outside that police station's territorial
+                jurisdiction, followed by transfer to the
+                appropriate police station.
+            </p>
+
+        </div>
+
+
+        <div class="police-support-section">
+
+            <h3>
+                👩‍✈️ 4. Statement of a Woman
+            </h3>
+
+            <p>
+                In appropriate cases, particularly involving
+                sexual offences, statements may be recorded by
+                a woman police officer or woman officer in
+                accordance with applicable law and procedure.
+            </p>
+
+            <p>
+                A survivor can communicate concerns about
+                privacy, safety, language or the need for
+                appropriate support.
+            </p>
+
+        </div>
+
+
+        <div class="police-support-section">
+
+            <h3>
+                🏥 5. Medical Examination
+            </h3>
+
+            <p>
+                Survivors of sexual violence should receive
+                prompt medical attention. Medical and forensic
+                examination should follow the applicable legal
+                procedure and informed consent requirements.
+            </p>
+
+            <p>
+                In an emergency, seek medical treatment
+                immediately rather than waiting for police
+                formalities.
+            </p>
+
+        </div>
+
+
+        <div class="police-support-section">
+
+            <h3>
+                📸 6. Preserve Evidence
+            </h3>
+
+            <div class="police-support-grid">
+
+                <div class="police-support-card">
+
+                    <h3>📱 Digital Evidence</h3>
+
+                    <ul>
+                        <li>Messages</li>
+                        <li>Emails</li>
+                        <li>Screenshots</li>
+                        <li>Social-media profiles</li>
+                        <li>Photos and videos</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="police-support-card">
+
+                    <h3>📋 Other Evidence</h3>
+
+                    <ul>
+                        <li>Medical reports</li>
+                        <li>Photographs of injuries</li>
+                        <li>Relevant documents</li>
+                        <li>CCTV information</li>
+                        <li>Witness details</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="police-support-section">
+
+            <h3>
+                ⚠️ 7. If Police Refuse to Register a Complaint
+            </h3>
+
+            <p>
+                If information disclosing a cognisable offence
+                is not appropriately recorded, a person can seek
+                the remedies available under the applicable
+                criminal procedure law, including approaching
+                senior police authorities and other appropriate
+                legal authorities.
+            </p>
+
+            <p>
+                Legal Services Authorities can also provide
+                assistance to eligible persons who require
+                legal aid.
+            </p>
+
+        </div>
+
+
+        <div class="police-support-section">
+
+            <h3>
+                🔎 8. During Investigation
+            </h3>
+
+            <p>
+                Police investigation may include recording
+                statements, examining the scene, collecting
+                evidence, identifying witnesses, taking lawful
+                action against accused persons and submitting
+                the appropriate report before the court.
+            </p>
+
+        </div>
+
+
+        <div class="police-support-section">
+
+            <h3>
+                💗 9. Support After Reporting
+            </h3>
+
+            <div class="police-support-grid">
+
+                <div class="police-support-card">
+                    <h3>⚖️ Legal Aid</h3>
+                    <p>
+                        Eligible survivors can seek assistance
+                        through legal services authorities.
+                    </p>
+                </div>
+
+                <div class="police-support-card">
+                    <h3>🧠 Counselling</h3>
+                    <p>
+                        Psychological and emotional support can
+                        be important during recovery.
+                    </p>
+                </div>
+
+                <div class="police-support-card">
+                    <h3>🏠 Shelter Support</h3>
+                    <p>
+                        Appropriate shelter and protection
+                        services may be available depending
+                        on the circumstances.
+                    </p>
+                </div>
+
+                <div class="police-support-card">
+                    <h3>🛡️ Protection</h3>
+                    <p>
+                        Where necessary, survivors can seek
+                        appropriate protection and safety
+                        measures.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="police-support-highlight">
+
+            <strong>💗 Remember:</strong>
+
+            Reporting a crime is an important step, but a survivor
+            does not have to face the process alone. Preserve
+            relevant evidence, seek appropriate support and
+            prioritise personal safety.
+
+        </div>
+
+
+        <div class="police-support-note">
+
+            <strong>⚠️ Important Legal Note:</strong>
+
+            This section provides general legal-awareness
+            information and is not legal advice. The procedure
+            and rights applicable to a particular complaint can
+            depend on the nature of the offence and the facts
+            of the case.
+
+        </div>
+
+
+        <div class="police-support-source">
+
+            <strong>📚 Official Source</strong>
+            <br>
+
+            <a
+                href="https://www.indiacode.nic.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                India Code →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- =====================================
+     SOURCE NOTE
+===================================== -->
+
+<div class="source-note">
+
+    <strong>
+        📚 About the information
+    </strong>
+
+    <br><br>
+
+    NariAdhikar provides awareness information
+    to help women understand where they may
+    find support. Laws and legal procedures can
+    depend on the facts of an individual case.
+    For specific legal advice, contact a qualified
+    legal professional or legal-aid service.
+
+</div>
+
+
+
+<!-- =====================================
+     GET HELP
+===================================== -->
+
+<section class="help-section">
+
+
+    <h2>
+        💗 You Don't Have to Face It Alone
+    </h2>
+
+
+    <p>
+
+        If you or someone you know is facing
+        a problem, reaching out for help is
+        an important first step.
+
+    </p>
+
+
+    <div class="help-options">
+
+
+        <div class="help-card">
+
+            <div class="icon">
+                👮
+            </div>
+
+            <h3>
+                Police
+            </h3>
+
+            <p>
+                For immediate danger or
+                criminal matters.
+            </p>
+
+        </div>
+
+
+        <div class="help-card">
+
+            <div class="icon">
+                ⚖️
+            </div>
+
+            <h3>
+                Legal Aid
+            </h3>
+
+            <p>
+                Find information about
+                legal assistance.
+            </p>
+
+        </div>
+
+
+        <div class="help-card">
+
+            <div class="icon">
+                🏥
+            </div>
+
+            <h3>
+                Hospital
+            </h3>
+
+            <p>
+                Seek medical help when
+                required.
+            </p>
+
+        </div>
+
+
+        <div class="help-card">
+
+            <div class="icon">
+                🤝
+            </div>
+
+            <h3>
+                Trusted Person
+            </h3>
+
+            <p>
+                Talk to someone you trust.
+                You do not have to stay silent.
+            </p>
+
+        </div>
+
+
+    </div>
+<!-- =================================
+     FINANCIAL & FAMILY SUPPORT POPUP
+================================== -->
+
+<div
+    class="financial-support-modal"
+    id="financialSupportModal">
+
+    <div class="financial-support-box">
+
+        <button
+            class="financial-support-close"
+            onclick="closeFinancialSupportInfo()"
+            aria-label="Close">
+
+            ×
+
+        </button>
+
+        <div class="financial-support-icon">
+            💰
+        </div>
+
+        <h2>
+            Financial & Family Support
+        </h2>
+
+        <p class="financial-support-intro">
+
+            Women may have legal rights and protections
+            relating to family property, inheritance,
+            maintenance, maternity and financial relief.
+            These rights depend on the applicable law and
+            the circumstances of the individual case.
+
+        </p>
+
+
+        <!-- FAMILY PROPERTY -->
+
+        <div class="financial-support-section">
+
+            <h3>
+                🏠 1. Property & Inheritance Rights
+            </h3>
+
+            <p>
+                Women's property and inheritance rights in
+                India can depend on the applicable personal
+                law, religion and other circumstances.
+            </p>
+
+            <div class="financial-support-grid">
+
+                <div class="financial-support-card">
+
+                    <h3>
+                        📜 Hindu Succession Act, 1956
+                    </h3>
+
+                    <p>
+                        The Hindu Succession Act provides
+                        rules relating to inheritance and
+                        succession for persons covered by
+                        Hindu personal law.
+                    </p>
+
+                </div>
+
+
+                <div class="financial-support-card">
+
+                    <h3>
+                        👩‍👧‍👦 Daughters' Rights
+                    </h3>
+
+                    <p>
+                        The Hindu Succession (Amendment) Act,
+                        2005 gave daughters equal coparcenary
+                        status with sons in the Hindu joint
+                        family system.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAINTENANCE -->
+
+        <div class="financial-support-section">
+
+            <h3>
+                💵 2. Maintenance & Family Financial Support
+            </h3>
+
+            <p>
+                The source material discusses maintenance
+                rights available to wives, children and
+                parents under applicable family and
+                maintenance laws.
+            </p>
+
+            <div class="financial-support-card">
+
+                <h3>
+                    👨‍👩‍👧 Family Maintenance
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Eligible family members may seek
+                        financial maintenance under applicable law.
+                    </li>
+
+                    <li>
+                        Maintenance can help meet necessary
+                        living expenses.
+                    </li>
+
+                    <li>
+                        The exact right and procedure depend
+                        on the applicable law and circumstances.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- DOMESTIC VIOLENCE -->
+
+        <div class="financial-support-section">
+
+            <h3>
+                🛡️ 3. Financial Relief in Domestic Violence
+            </h3>
+
+            <p>
+                The Protection of Women from Domestic Violence
+                Act, 2005 provides remedies and protections
+                for women facing domestic violence.
+            </p>
+
+            <div class="financial-support-card">
+
+                <h3>
+                    💰 Monetary & Economic Relief
+                </h3>
+
+                <p>
+                    The Act includes remedies relating to
+                    monetary relief and economic abuse in
+                    appropriate cases.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MATERNITY -->
+
+        <div class="financial-support-section">
+
+            <h3>
+                🤰 4. Maternity & Financial Protection
+            </h3>
+
+            <p>
+                Article 42 of the Constitution directs the
+                State to make provisions for securing just
+                and humane conditions of work and maternity
+                relief.
+            </p>
+
+            <div class="financial-support-card">
+
+                <h3>
+                    📋 Maternity Benefit Act, 1961
+                </h3>
+
+                <p>
+                    The source identifies the Maternity Benefit
+                    Act, 1961 as legislation relating to
+                    maternity protection for women.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ECONOMIC PARTICIPATION -->
+
+        <div class="financial-support-section">
+
+            <h3>
+                💼 5. Women's Economic Participation
+            </h3>
+
+            <p>
+                Women in India participate in agriculture,
+                business, employment and other economic
+                activities. The source also discusses
+                women-owned businesses and women's
+                participation in the workforce.
+            </p>
+
+        </div>
+
+
+        <!-- HIGHLIGHT -->
+
+        <div class="financial-support-highlight">
+
+            <strong>
+                💗 Remember:
+            </strong>
+
+            Women can have important rights relating to
+            property, inheritance, maintenance, maternity
+            protection and financial relief. Understanding
+            the applicable law can help women and families
+            make informed decisions and seek appropriate
+            support.
+
+        </div>
+
+
+        <!-- NOTE -->
+
+        <div class="financial-support-note">
+
+            <strong>
+                ⚠️ Important Legal Note:
+            </strong>
+
+            This section provides general legal-awareness
+            information and is not legal advice. Property,
+            inheritance, maintenance and family rights can
+            differ depending on the applicable personal law,
+            facts and circumstances. For a specific matter,
+            seek assistance from a qualified legal professional
+            or appropriate legal-aid service.
+
+        </div>
+
+
+        <!-- SOURCE -->
+
+        <div class="financial-support-source">
+
+            <strong>
+                📚 Official Legal Source
+            </strong>
+
+            <br>
+
+            <a
+                href="https://www.indiacode.nic.in/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                India Code →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+    🌸 NariAdhikar
+
+    <br>
+
+    Know Your Rights • Raise Your Voice • Stay Safe
+
+    <br><br>
+
+    © 2026 NariAdhikar
+
+</footer>
+
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script src="js/language.js"></script>
+
+<script src="js/legal-rights.js"></script>
+<script src="js/ai-legal-assistance.js"></script>
+</body>
+
+</html>
